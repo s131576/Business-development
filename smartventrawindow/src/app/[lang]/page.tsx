@@ -3,14 +3,17 @@ import getTranslation from "./components/translation/getTranslation";
 import { Locale } from "../utils/i18n-config";
 import { HomePage } from "./components/HomePage";
 
-const Page = async ({ params }: { params: { lang: Locale } }) => {
-  const translation = await getTranslation(params.lang); // ✅ Correct gebruik van await
+export default async function Page({ params }: { params: { lang: Locale } }) {
+  const translation = await getTranslation(params.lang); // ✅ Vertaling ophalen
 
   return (
     <div>
-      <HomePage translation={translation} /> {/* ✅ Correcte prop naam */}
+      <HomePage translation={translation} />
     </div>
   );
-};
+}
 
-export default Page;
+// ✅ Voeg deze functie toe voor statische generatie van pagina's
+export async function generateStaticParams() {
+  return [{ lang: "nl" }, { lang: "en" }, { lang: "fr" }]; // Zorgt dat Next.js weet welke talen beschikbaar zijn
+}
