@@ -1,0 +1,76 @@
+{
+  "detail": {
+      "internshipdetails": "Stage details",
+      "back": "Terug naar overzicht",
+      "share": "Delen",
+      "writeevaluationform": "Beoordelingsformulier invullen",
+      "goals": "Doelen",
+      "newgoal": "Nieuw doel",
+      "addcomment": "Opmerking toevoegen",
+      "editgoal": "Doel bewerken",
+      "addgoal": "Doel toevoegen",
+      "title": "Titel",
+      "enddate": "Einddatum",
+      "checklist": "Checklist",
+      "intern": "Stagiair",
+      "supervisor": "Begeleider",
+      "additem": "Item toevoegen",
+      "addsection": "Sectie toevoegen",
+      "description": "Beschrijving",
+      "internshipsupervisors": "Stagebegeleider(s)",
+      "internshipduration": "Stageperiode",
+      "school": "School",
+      "contactperson": "Contactpersoon",
+      "startdate": "Startdatum",
+      "date": "Datum",
+      "name": "Naam",
+      "phonenumber": "Telefoonnummer",
+      "email": "E-mail",
+      "documents": "Documenten",
+      "adddocument": "Document toevoegen",
+      "comment": "Opmerking",
+      "cancel": "Annuleren",
+      "save": "Opslaan",
+      "post": "Publiceren",
+      "upload": "Uploaden",
+      "nogoals": "Er werden nog geen doelen gedefinieerd",
+      "nodata": "Er is nog geen stagebeschrijving gedefinieerd",
+      "nodocuments": "Er werden nog geen documenten gedeeld in deze stage",
+      "by": "door",
+      "nocomments": "Geen opmerkingen beschikbaar.",
+      "areyousure": "Bent u zeker?",
+      "yes": "Ja",
+      "no": "Nee",
+      "checklistitem": "Checklist item",
+      "checklisttitle": "Titel",
+      "section": "Titel",
+      "changesectiontitle": "Section titel wijzigen",
+      "stageInfo": "Jouw stageoverzicht",
+      "edititem": "Item bewerken"
+  },
+  "login": {
+      "verdergaanmetgoogle": "Verdergaan met Google",
+      "stagebegeleiding": "Stage begeleiding"
+  },
+  "logout": {
+      "header": "Afmelden",
+      "subtext": "Weet u zeker dat u wilt afmelden?",
+      "button": "Afmelden"
+  },
+  "userStagiair": {
+      "name": "Naam",
+      "e-mail": "E-mail",
+      "startingdate": "Startdatum",
+      "endingdata": "Einddatum",
+      "internshipsupervisors": "Stagebegeleider(s)",
+      "internedit": "Stagiair bewerken",
+      "save": "Opslaan",
+      "noresultfound": "Geen resultaten gevonden.",
+      "searchintern": "Zoek stagiair",
+      "searchBtn": "Zoeken"
+
+  },
+  "fetchingData": {
+      "fetchingData": "Data ophalen..."
+  }
+}
