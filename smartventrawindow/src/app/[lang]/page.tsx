@@ -3,8 +3,9 @@ import getTranslation from "./components/translation/getTranslation";
 import { Locale } from "../utils/i18n-config";
 import { HomePage } from "./components/HomePage";
 
-export default async function Page({ params }: { params: { lang: Locale } }) {
-  const translation = await getTranslation(params.lang); // ✅ Vertaling ophalen
+export default async function Page({ params }: { params: { lang: string } }) {
+  const lang = await Promise.resolve(params.lang); // ✅ Zorgt dat Next.js params als string herkent
+  const translation = await getTranslation(lang as Locale); // ✅ Correct ophalen van vertaling
 
   return (
     <div>
@@ -13,7 +14,7 @@ export default async function Page({ params }: { params: { lang: Locale } }) {
   );
 }
 
-// ✅ Voeg deze functie toe voor statische generatie van pagina's
+// ✅ Voeg deze functie toe voor statische generatie van talen
 export async function generateStaticParams() {
-  return [{ lang: "nl" }, { lang: "en" }, { lang: "fr" }]; // Zorgt dat Next.js weet welke talen beschikbaar zijn
+  return [{ lang: "nl" }, { lang: "en" }, { lang: "fr" }];
 }
