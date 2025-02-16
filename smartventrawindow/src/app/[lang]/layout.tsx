@@ -21,13 +21,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,lang
+  children
 }: Readonly<{
   children: React.ReactNode;
   lang:Locale
 }>) {
   return (
-    <html lang={lang}>
+    <html>
       <body>
         <LanguageProvider>
         <Navbar />
