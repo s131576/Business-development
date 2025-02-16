@@ -13,5 +13,5 @@ const dictionaries = {
   fr: fr,
 }
 
-export const getDictionary = (locale: Locale) =>
+export const getDictionary =  async(locale: Locale) =>
   dictionaries[locale] ?? dictionaries.en

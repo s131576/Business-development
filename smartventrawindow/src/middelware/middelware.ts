@@ -22,13 +22,22 @@ function getLocale(request: NextRequest): string | undefined {
   return locale;
 }
 
-export function middleware(req: NextRequest) {
-  const { nextUrl } = req;
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
 
-  if (nextUrl.pathname === '/') {
-    return NextResponse.redirect(new URL('/nl', req.url));
+  // ✅ Redirect alleen als de gebruiker nog geen taal heeft geselecteerd
+  const pathnameIsMissingLocale = i18n.locales.every(
+    (locale) => !pathname.startsWith(`/${locale}`)
+  );
+
+  if (pathnameIsMissingLocale) {
+    const locale = getLocale(request);
+    return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
   }
 
   return NextResponse.next();
 }
 
+export const config = {
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+};
