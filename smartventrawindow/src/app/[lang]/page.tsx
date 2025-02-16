@@ -1,22 +1,14 @@
 import React from "react";
 import getTranslation from "./components/translation/getTranslation";
 import { Locale } from "../utils/i18n-config";
+import { HomePage } from "./components/HomePage";
 
 const Page = async ({ params }: { params: { lang: Locale } }) => {
-  const translation = await getTranslation(params.lang);
+  const translation = await getTranslation(params.lang); // ✅ Correct gebruik van await
 
   return (
     <div>
-      <h1>{translation.home.welcome}</h1>
-      <p>{translation.home.description}</p>
-      <h1>{translation.home.welcome}</h1>
-      <p>{translation.home.description}</p>
-      <h1>{translation.home.welcome}</h1>
-      <p>{translation.home.description}</p>
-      <h1>{translation.home.welcome}</h1>
-      <p>{translation.home.description}</p>
-      <h1>{translation.home.welcome}</h1>
-      <p>{translation.home.description}</p>
+      <HomePage translation={translation} /> {/* ✅ Correcte prop naam */}
     </div>
   );
 };
