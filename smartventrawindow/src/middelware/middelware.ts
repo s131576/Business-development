@@ -22,3 +22,13 @@ function getLocale(request: NextRequest): string | undefined {
   return locale;
 }
 
+export function middleware(req: NextRequest) {
+  const { nextUrl } = req;
+
+  if (nextUrl.pathname === '/') {
+    return NextResponse.redirect(new URL('/nl', req.url));
+  }
+
+  return NextResponse.next();
+}
+

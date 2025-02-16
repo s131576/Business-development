@@ -1,0 +1,24 @@
+{
+  "home": {
+    "welcome": "Welcome to our platform",
+    "description": "We offer innovative solutions for businesses and individuals. Discover what we can do for you!",
+    "contact": "Get in touch with us for more information",
+    "learn_more": "Learn more about our services"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout"
+  },
+  "errors": {
+    "not_found": "Page not found",
+    "server_error": "An error occurred on the server",
+    "forbidden": "Access denied"
+  }
+}
