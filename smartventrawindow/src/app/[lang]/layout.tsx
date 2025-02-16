@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang={lang}>
       <body>
         <LanguageProvider>
-        <Navbar lang={lang} />
+        <Navbar />
         {children}
         </LanguageProvider>
       </body>
