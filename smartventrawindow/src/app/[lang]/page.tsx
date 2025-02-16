@@ -3,10 +3,9 @@ import getTranslation from "./components/translation/getTranslation";
 import { Locale } from "../utils/i18n-config";
 import { HomePage } from "./components/HomePage";
 
-export default async function Page({ params }: { params: { lang: string } }) {
-  const lang = await Promise.resolve(params.lang); // ✅ Zorgt dat Next.js params als string herkent
-  const translation = await getTranslation(lang as Locale); // ✅ Correct ophalen van vertaling
-
+const Page = async ({ params }: { params: Promise<{lang: Locale }> }) => {
+  const resolvedParams = await params;
+  const translation = await getTranslation(resolvedParams.lang);
   return (
     <div>
       <HomePage translation={translation} />
@@ -18,3 +17,4 @@ export default async function Page({ params }: { params: { lang: string } }) {
 export async function generateStaticParams() {
   return [{ lang: "nl" }, { lang: "en" }, { lang: "fr" }];
 }
+ export default Page;
