@@ -25,7 +25,7 @@ const Navbar = () => {
     { code: "fr", name: "Français", flag: "FR" },
   ];
 
-  // ✅ Haal vertalingen op zodra de taal verandert
+  // Haal vertalingen op zodra de taal verandert
   useEffect(() => {
     async function fetchTranslation() {
       const langTranslation = await getTranslation(currentLang as Locale);
