@@ -68,3 +68,8 @@ a {
 a:hover {
   transform: scale(1.05);
 }
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
