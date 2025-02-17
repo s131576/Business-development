@@ -9,23 +9,23 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Alle velden zijn verplicht." }, { status: 400 });
     }
 
-    // 🔥 Nodemailer instellen met jouw Outlook-app-wachtwoord
+    // nodemailer instellen met jouw Outlook-app-wachtwoord
     const transporter = nodemailer.createTransport({
-      host: "smtp.office365.com", // ✅ Outlook SMTP server
-      port: 587, // ✅ Gebruik poort 587 voor STARTTLS
-      secure: false, // ✅ false = STARTTLS gebruiken
+      host: "smtp.office365.com", //Outlook SMTP server
+      port: 587, //Gebruik poort 587 voor STARTTLS
+      secure: false, // false = STARTTLS gebruiken
       auth: {
-        user: "smartventrawindow@outlook.com", // 🔥 Jouw Outlook e-mail
-        pass: "lxgbonizfgtahixx", // 🔥 Gebruik het nieuw gegenereerde app-wachtwoord
+        user: "smartventrawindow@outlook.com", // Jouw Outlook e-mail
+        pass: "lxgbonizfgtahixx", //Gebruik het nieuw gegenereerde app-wachtwoord
       },
       tls: {
-        rejectUnauthorized: false, // 🔥 Fix voor self-signed certificaten
+        rejectUnauthorized: false, // Fix voor self-signed certificaten
       },
     });
     
     
 
-    // 📧 Stuur e-mail naar jouw inbox (Rachad)
+    //Stuur e-mail naar bedrijf
     await transporter.sendMail({
       from: "SmartVentraWindow <smartventrawindow@outlook.com>",
       to: "rachad.bouhjar@hotmail.com",
@@ -38,10 +38,9 @@ export async function POST(req: Request) {
       `,
     });
 
-    // 📩 Stuur bevestigingsmail naar de gebruiker
+    //Stuur bevestigingsmail naar de gebruiker
     await transporter.sendMail({
       from: "SmartVentraWindow <smartventrawindow@outlook.com>",
-      to: email, // ✅ Gebruiker ontvangt een bevestiging
       subject: "Bevestiging: We hebben je bericht ontvangen!",
       text: `Hallo ${name},\n\nBedankt voor je bericht! We nemen zo snel mogelijk contact met je op.\n\nMet vriendelijke groet,\nHet SmartVentraWindow Team`,
       html: `

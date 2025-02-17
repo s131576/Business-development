@@ -13,7 +13,6 @@ const Page = async ({ params }: { params: Promise<{lang: Locale }> }) => {
   );
 }
 
-// ✅ Voeg deze functie toe voor statische generatie van talen
 export async function generateStaticParams() {
   return [{ lang: "nl" }, { lang: "en" }, { lang: "fr" }];
 }

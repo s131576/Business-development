@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -15,17 +16,17 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [translation, setTranslation] = useState<any>(null);
 
-  // Bepaal huidige taal op basis van de URL
+  // Huidige taal bepalen op basis van URL
   const currentLang = pathname.startsWith("/nl") ? "nl" : pathname.startsWith("/en") ? "en" : "fr";
 
-  // Ondersteunde talen met vlaggen
+  // Ondersteunde talen
   const languages = [
     { code: "nl", name: "Nederlands", flag: "NL" },
     { code: "en", name: "English", flag: "GB" },
     { code: "fr", name: "Français", flag: "FR" },
   ];
 
-  // Haal vertalingen op zodra de taal verandert
+  // Dynamisch vertalingen ophalen bij taalverandering
   useEffect(() => {
     async function fetchTranslation() {
       const langTranslation = await getTranslation(currentLang as Locale);
@@ -34,12 +35,12 @@ const Navbar = () => {
     fetchTranslation();
   }, [currentLang]);
 
-  // Navigatie-items met iconen (nu dynamisch vertaald)
+  // Dynamische navigatie-items
   const menuItems = translation
     ? [
         { name: translation.navigation.home, path: "", icon: <FaHome /> },
         { name: translation.navigation.about, path: "about", icon: <FaInfoCircle /> },
-        { name: translation.navigation.services, path: "services", icon: <FaBriefcase /> },
+        { name: translation.navigation.services, path: "service", icon: <FaBriefcase /> },
         { name: translation.navigation.contact, path: "contact", icon: <FaEnvelope /> },
       ]
     : [];
@@ -125,16 +126,32 @@ const Navbar = () => {
             exit={{ y: -20, opacity: 0 }}
             className="md:hidden bg-blue-600 text-white p-6 shadow-lg absolute top-16 left-0 w-full"
           >
-            {menuItems.map((item) => (
-              <Link
-                key={item.name}
-                href={`/${currentLang}/${item.path}`}
-                className="block py-2 text-lg items-center gap-2 hover:text-yellow-300 transition-all"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item.icon} {item.name}
-              </Link>
-            ))}
+            {menuItems.length > 0 &&
+              menuItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={`/${currentLang}/${item.path}`}
+                  className="block py-2 text-lg items-center gap-2 hover:text-yellow-300 transition-all"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.icon} {item.name}
+                </Link>
+              ))}
+
+            {/* Taalkeuze in mobiel menu */}
+            <div className="border-t border-white mt-4 pt-4 flex flex-col space-y-2">
+              <span className="text-white text-center text-lg">🌍 Kies een taal:</span>
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => changeLanguage(lang.code)}
+                  className="w-full text-center px-4 py-2 bg-white text-blue-600 hover:bg-gray-100 flex items-center justify-center gap-2 rounded-md"
+                >
+                  <Flag code={lang.flag} style={{ width: 20, height: 15 }} />
+                  {lang.name}
+                </button>
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
