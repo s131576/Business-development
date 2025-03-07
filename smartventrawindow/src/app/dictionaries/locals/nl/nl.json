@@ -1,25 +1,86 @@
 {
-    "home": {
-      "welcome": "Welkom bij SmartVentraWindow",
-      "description": "Wij bieden innovatieve oplossingen voor bedrijven en particulieren. Ontdek wat wij voor jou kunnen betekenen!",
-      "contact": "Neem contact met ons op voor meer informatie",
-      "learn_more": "Lees meer over onze diensten"
-    },
-    "navigation": {
-      "home": "Home",
-      "about": "Over ons",
-      "services": "Diensten",
-      "contact": "Contact"
-    },
-    "auth": {
-      "login": "Inloggen",
-      "signup": "Registreren",
-      "logout": "Uitloggen"
-    },
-    "errors": {
-      "not_found": "Pagina niet gevonden",
-      "server_error": "Er is een fout opgetreden op de server",
-      "forbidden": "Toegang geweigerd"
-    }
+  "home": {
+    "welcome": "Welkom bij SmartVentraWindow",
+    "description": "Wij bieden innovatieve oplossingen voor bedrijven en particulieren. Ontdek wat wij voor jou kunnen betekenen!",
+    "contact": "Neem contact met ons op voor meer informatie",
+    "learn_more": "Lees meer over onze diensten"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "Over ons",
+    "services": "Diensten",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Duurzame & innovatieve ramen voor elk gebouw.",
+    "about": "Over Ons",
+    "services": "Diensten",
+    "contact": "Contact",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "auth": {
+    "login": "Inloggen",
+    "signup": "Registreren",
+    "logout": "Uitloggen"
+  },
+  "errors": {
+    "not_found": "Pagina niet gevonden",
+    "server_error": "Er is een fout opgetreden op de server",
+    "forbidden": "Toegang geweigerd"
+  },
+  "about": {
+    "title": "Wie zijn wij?",
+    "description": "SmartVentraWindow is een startup die ramen slimmer maakt. Wij combineren technologie met design om de ventilatie en isolatie van woningen te optimaliseren.",
+    "mission": "Onze reis is net begonnen, maar we hebben grootse plannen! 🌍",
+    "team_title": "🚀 Ons Team 🚀",
+    "cta_title": "Klaar om de toekomst van ramen te ontdekken?",
+    "cta_description": "Word een van onze eerste klanten of partners en help ons innoveren!",
+    "cta_button": "Neem contact op 📩"
+  },
+  "service": {
+    "title": "Onze Diensten",
+    "description": "Ontdek de innovatieve oplossingen van SmartVentraWindow. Van slimme sensoren tot premium ramen, wij brengen technologie naar jouw woning!",
+    "cta_title": "Vraag uw offerte aan!",
+    "cta_description": "Vraag vrijblijvend meer informatie over onze innovatieve oplossingen.",
+    "cta_button": "Start mijn aanvraag",
+    "sensors_title": "Slimme Sensoren",
+    "windows_title": "Premium Ramen",
+    "order_button": "Bestel Nu",
+    "cta_contact": "Meer weten? Neem contact op!",
+    "cta_contact_button": "Contacteer Ons",
+    "sensors": [
+      {
+        "name": "Slimme CO2 Sensor",
+        "price": 100,
+        "description": "Meet en analyseert de luchtkwaliteit in realtime."
+      },
+      {
+        "name": "Geavanceerde Temperatuursensor",
+        "price": 150,
+        "description": "Houdt de temperatuur en vochtigheid in huis stabiel."
+      },
+      {
+        "name": "Slimme Bewegingssensor",
+        "price": 120,
+        "description": "Detecteert beweging en optimaliseert ventilatie."
+      }
+    ],
+    "windows": [
+      {
+        "name": "Thermisch Isolerend Raam",
+        "price": 50,
+        "description": "Houdt de warmte binnen en bespaart energie."
+      },
+      {
+        "name": "Geluidsisolerend Raam",
+        "price": 50,
+        "description": "Vermindert externe geluiden voor maximale rust."
+      },
+      {
+        "name": "Automatisch Ventilerend Raam",
+        "price": 50,
+        "description": "Past zich aan de luchtkwaliteit aan voor optimaal comfort."
+      }
+    ]
   }
-  
+}

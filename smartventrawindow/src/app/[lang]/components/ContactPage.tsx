@@ -27,7 +27,7 @@ const ContactForm = () => {
         "template_8jeha3l", 
         {
           from_name: formData.name,
-          to_name: "Rachad", 
+          to_name: "SmartVentraWindow ", 
           reply_to: formData.email,
           message: formData.message,
         },
@@ -47,7 +47,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+    <div className="flex justify-center items-center min-h-screen bg-[#0D1117] py-20">
+      <div className="w-full max-w-xl bg-gray-800 p-8 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold text-yellow-400 text-center mb-4">Neem Contact Op 📩</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
@@ -85,6 +86,8 @@ const ContactForm = () => {
       </form>
       {status && <p className="text-center mt-4 text-gray-300">{status}</p>}
     </div>
+    </div>
+
   );
 };
 

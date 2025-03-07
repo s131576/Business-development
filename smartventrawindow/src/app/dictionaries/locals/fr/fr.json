@@ -11,6 +11,13 @@
     "services": "Services",
     "contact": "Contact"
   },
+  "footer": {
+    "tagline": "Des fenêtres durables et innovantes pour chaque bâtiment.",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  },
   "auth": {
     "login": "Se connecter",
     "signup": "S'inscrire",
@@ -20,5 +27,60 @@
     "not_found": "Page non trouvée",
     "server_error": "Une erreur est survenue sur le serveur",
     "forbidden": "Accès refusé"
+  },
+  "about": {
+    "title": "Qui sommes-nous?",
+    "description": "SmartVentraWindow est une startup qui rend les fenêtres plus intelligentes. Nous combinons la technologie et le design pour optimiser la ventilation et l’isolation.",
+    "mission": "Notre voyage vient de commencer, mais nous avons de grands projets en tête! 🌍",
+    "team_title": "🚀 Notre Équipe 🚀",
+    "cta_title": "Prêt à découvrir l’avenir des fenêtres?",
+    "cta_description": "Devenez l’un de nos premiers clients ou partenaires et aidez-nous à innover!",
+    "cta_button": "Contactez-nous 📩"
+  },
+  "service": {
+    "title": "Nos Services",
+    "description": "Découvrez les solutions innovantes de SmartVentraWindow. Des capteurs intelligents aux fenêtres premium, nous apportons la technologie à votre maison!",
+    "cta_title": "Demandez votre devis!",
+    "cta_description": "Demandez des informations sans engagement sur nos solutions innovantes.",
+    "cta_button": "Démarrer ma demande",
+    "sensors_title": "Capteurs Intelligents",
+    "windows_title": "Fenêtres Premium",
+    "order_button": "Commander maintenant",
+    "cta_contact": "Vous voulez en savoir plus? Contactez-nous!",
+    "cta_contact_button": "Nous contacter",
+    "sensors": [
+      {
+        "name": "Capteur de CO2 intelligent",
+        "price": 100,
+        "description": "Mesure et analyse la qualité de l'air en temps réel."
+      },
+      {
+        "name": "Capteur de température avancé",
+        "price": 150,
+        "description": "Maintient la température et l'humidité de votre maison stables."
+      },
+      {
+        "name": "Capteur de mouvement intelligent",
+        "price": 120,
+        "description": "Détecte les mouvements et optimise la ventilation."
+      }
+    ],
+    "windows": [
+      {
+        "name": "Fenêtre isolante thermique",
+        "price": 50,
+        "description": "Conserve la chaleur à l'intérieur et économise de l'énergie."
+      },
+      {
+        "name": "Fenêtre isolante phonique",
+        "price": 50,
+        "description": "Réduit les bruits extérieurs pour un maximum de tranquillité."
+      },
+      {
+        "name": "Fenêtre à ventilation automatique",
+        "price": 50,
+        "description": "S'ajuste à la qualité de l'air pour un confort optimal."
+      }
+    ]
   }
 }

@@ -11,6 +11,13 @@
     "services": "Services",
     "contact": "Contact"
   },
+  "footer": {
+    "tagline": "Sustainable & innovative windows for every building.",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
   "auth": {
     "login": "Login",
     "signup": "Sign Up",
@@ -20,5 +27,60 @@
     "not_found": "Page not found",
     "server_error": "An error occurred on the server",
     "forbidden": "Access denied"
+  },
+  "about": {
+    "title": "Who Are We?",
+    "description": "SmartVentraWindow is a startup making windows smarter. We combine technology with design to optimize ventilation and insulation.",
+    "mission": "Our journey has just begun, but we have big plans ahead! 🌍",
+    "team_title": "🚀 Our Team 🚀",
+    "cta_title": "Ready to discover the future of windows?",
+    "cta_description": "Become one of our first customers or partners and help us innovate!",
+    "cta_button": "Get in touch 📩"
+  },
+  "service": {
+    "title": "Our Services",
+    "description": "Discover the innovative solutions of SmartVentraWindow. From smart sensors to premium windows, we bring technology to your home!",
+    "cta_title": "Request your quote!",
+    "cta_description": "Request information without obligation about our innovative solutions.",
+    "cta_button": "Start my request",
+    "sensors_title": "Smart Sensors",
+    "windows_title": "Premium Windows",
+    "order_button": "Order Now",
+    "cta_contact": "Want to learn more? Get in touch!",
+    "cta_contact_button": "Contact Us",
+    "sensors": [
+      {
+        "name": "Smart CO2 Sensor",
+        "price": 100,
+        "description": "Measures and analyzes air quality in real-time."
+      },
+      {
+        "name": "Advanced Temperature Sensor",
+        "price": 150,
+        "description": "Keeps your home's temperature and humidity stable."
+      },
+      {
+        "name": "Smart Motion Sensor",
+        "price": 120,
+        "description": "Detects movement and optimizes ventilation."
+      }
+    ],
+    "windows": [
+      {
+        "name": "Thermal Insulating Window",
+        "price": 50,
+        "description": "Keeps the heat inside and saves energy."
+      },
+      {
+        "name": "Soundproof Window",
+        "price": 50,
+        "description": "Reduces external noise for maximum peace."
+      },
+      {
+        "name": "Automatic Ventilating Window",
+        "price": 50,
+        "description": "Adjusts to air quality for optimal comfort."
+      }
+    ]
   }
 }

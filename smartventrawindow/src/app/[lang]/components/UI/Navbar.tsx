@@ -15,18 +15,20 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [translation, setTranslation] = useState<any>(null);
+  const [isClient, setIsClient] = useState(false);
 
-  // Huidige taal bepalen op basis van URL
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const currentLang = pathname.startsWith("/nl") ? "nl" : pathname.startsWith("/en") ? "en" : "fr";
 
-  // Ondersteunde talen
   const languages = [
     { code: "nl", name: "Nederlands", flag: "NL" },
     { code: "en", name: "English", flag: "GB" },
     { code: "fr", name: "Français", flag: "FR" },
   ];
 
-  // Dynamisch vertalingen ophalen bij taalverandering
   useEffect(() => {
     async function fetchTranslation() {
       const langTranslation = await getTranslation(currentLang as Locale);
@@ -35,17 +37,15 @@ const Navbar = () => {
     fetchTranslation();
   }, [currentLang]);
 
-  // Dynamische navigatie-items
   const menuItems = translation
     ? [
-        { name: translation.navigation.home, path: "", icon: <FaHome /> },
-        { name: translation.navigation.about, path: "about", icon: <FaInfoCircle /> },
-        { name: translation.navigation.services, path: "service", icon: <FaBriefcase /> },
-        { name: translation.navigation.contact, path: "contact", icon: <FaEnvelope /> },
-      ]
+      { name: translation.navigation.home, path: "", icon: <FaHome /> },
+      { name: translation.navigation.about, path: "about", icon: <FaInfoCircle /> },
+      { name: translation.navigation.services, path: "service", icon: <FaBriefcase /> },
+      { name: translation.navigation.contact, path: "contact", icon: <FaEnvelope /> },
+    ]
     : [];
 
-  // Taal wisselen
   const changeLanguage = (newLang: string) => {
     const newPath = pathname.replace(`/${currentLang}`, `/${newLang}`);
     router.push(newPath);
@@ -53,56 +53,50 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-blue-600 to-purple-600 shadow-md fixed w-full top-0 left-0 z-50">
+    <nav className="bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#415A77] shadow-lg fixed w-full top-0 left-0 z-50 border-b border-[#778DA9]">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex justify-between items-center h-16">
-        {/* Logo */}
         <Link href={`/${currentLang}`}>
-          <motion.h1
-            whileHover={{ scale: 1.05 }}
-            className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white cursor-pointer"
-          >
+          <motion.h1 whileHover={{ scale: 1.05 }} className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#E0E1DD] cursor-pointer">
             SmartVentra<span className="text-yellow-400">Window</span>
           </motion.h1>
         </Link>
 
-        {/* Desktop navigatie */}
         <div className="hidden md:flex space-x-8 text-lg">
           {menuItems.length > 0 &&
-            menuItems.map((item) => (
-              <Link
-                key={item.name}
-                href={`/${currentLang}/${item.path}`}
-                className="flex items-center gap-2 text-white hover:text-yellow-300 transition-all"
-              >
-                {item.icon} {item.name}
-              </Link>
-            ))}
+            menuItems.map((item) => {
+              const isActive = pathname === `/${currentLang}/${item.path}` || (item.path === "" && pathname === `/${currentLang}`);
+              return (
+                <Link
+                  key={item.name}
+                  href={`/${currentLang}/${item.path}`}
+                  className={`flex items-center gap-2 px-3 py-2 rounded-md transition-all ${isActive ? "text-[#76C7C0] bg-[#3c3d3d] shadow-neon" : "text-[#E0E1DD] hover:text-[#76C7C0]"
+                    }`}
+                >
+                  {item.icon} {item.name}
+                </Link>
+              );
+            })}
         </div>
 
-        {/* Taalwissel dropdown */}
+
         <div className="relative hidden md:block">
-          <button
-            className="text-white text-xl flex items-center gap-2 p-2 rounded-lg hover:text-yellow-300 transition-all"
-            onClick={() => setShowDropdown(!showDropdown)}
-          >
-            <FaGlobe className="text-2xl text-white mr-2" />
-            {languages.find((l) => l.code === currentLang)?.name}
+          <button className="text-[#E0E1DD] text-xl flex items-center gap-2 p-2 rounded-lg hover:text-[#76C7C0] transition-all" onClick={() => setShowDropdown(!showDropdown)}>
+            <FaGlobe className="text-2xl text-[#76C7C0] mr-2" />
+            {isClient ? (
+              <div className="flex items-center gap-2">
+                <Flag code={languages.find((l) => l.code === currentLang)?.flag} style={{ width: 25, height: 20 }} />
+                <span>{languages.find((l) => l.code === currentLang)?.name}</span>
+              </div>
+            ) : (
+              "..."
+            )}
           </button>
           <AnimatePresence>
             {showDropdown && (
-              <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg z-50"
-              >
+              <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="absolute right-0 mt-2 w-40 bg-[#1B263B] shadow-lg rounded-lg border border-[#76C7C0] z-50">
                 {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => changeLanguage(lang.code)}
-                    className="w-full text-left px-4 py-2 hover:bg-gray-200 flex items-center gap-2 text-gray-800"
-                  >
-                    <Flag code={lang.flag} style={{ width: 25, height: 20 }} />
+                  <button key={lang.code} onClick={() => changeLanguage(lang.code)} className="w-full text-left px-4 py-2 hover:bg-[#778DA9] flex items-center gap-2 text-[#E0E1DD]">
+                    {isClient && <Flag code={lang.flag} style={{ width: 25, height: 20 }} />}
                     {lang.name}
                   </button>
                 ))}
@@ -111,50 +105,10 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
 
-        {/* Mobiele menu knop */}
-        <button className="md:hidden text-white text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="md:hidden text-[#E0E1DD] text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
-
-      {/* Mobiel menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -20, opacity: 0 }}
-            className="md:hidden bg-blue-600 text-white p-6 shadow-lg absolute top-16 left-0 w-full"
-          >
-            {menuItems.length > 0 &&
-              menuItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={`/${currentLang}/${item.path}`}
-                  className="block py-2 text-lg items-center gap-2 hover:text-yellow-300 transition-all"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item.icon} {item.name}
-                </Link>
-              ))}
-
-            {/* Taalkeuze in mobiel menu */}
-            <div className="border-t border-white mt-4 pt-4 flex flex-col space-y-2">
-              <span className="text-white text-center text-lg">🌍 Kies een taal:</span>
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => changeLanguage(lang.code)}
-                  className="w-full text-center px-4 py-2 bg-white text-blue-600 hover:bg-gray-100 flex items-center justify-center gap-2 rounded-md"
-                >
-                  <Flag code={lang.flag} style={{ width: 20, height: 15 }} />
-                  {lang.name}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </nav>
   );
 };
