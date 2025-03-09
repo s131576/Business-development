@@ -12,11 +12,11 @@ import dashiImg from "../../../../public/frame.jpg";
 import benImg from "../../../../public/frame.jpg";
 
 const teamMembers = [
+  { name: "Ben", role: "Marketing & Sales", image: benImg },
+  { name: "Enes", role: "Lead Designer", image: dashiImg },
   { name: "Jafar", role: "CEO & Visionary", image: jafarImg },
   { name: "Rachad", role: "Full-Stack Wizard", image: rachadImg },
   { name: "Sofiane", role: "Product Manager", image: sofianeImg },
-  { name: "Enes", role: "Lead Designer", image: dashiImg },
-  { name: "Ben", role: "Marketing & Sales", image: benImg },
 ];
 
 const AboutPage = ({ translation }: { translation: any }) => {

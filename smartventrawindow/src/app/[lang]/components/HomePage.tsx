@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -7,15 +8,15 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // ✅ Stijl toevoegen
 
 import raam1 from "../../../../public/raamdesign.webp";
-import raam2 from "../../../../public/raam2.webp"; 
-import raam3 from "../../../../public/raam3.webp"; 
+import raam2 from "../../../../public/raam2.webp";
+import raam3 from "../../../../public/raam3.webp";
 
 export const HomePage = ({ translation }: { translation: any }) => {
   const pathname = usePathname();
   const currentLang = pathname.startsWith("/nl") ? "nl" : pathname.startsWith("/en") ? "en" : "fr";
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0D1117] text-white text-center px-4 sm:px-6 md:px-8">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0D1117] text-white text-center py-10 px-4 sm:px-6 md:px-8">
       {/* Geanimeerde introductie */}
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
@@ -26,6 +27,14 @@ export const HomePage = ({ translation }: { translation: any }) => {
         {translation.home.welcome}
       </motion.h1>
 
+      {/* Video met aangepaste grootte */}
+      <div className="mt-6 w-full max-w-4xl">
+        <video autoPlay loop controls className="w-full h-auto rounded-lg shadow-lg">
+          <source src="/videohome.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -35,10 +44,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
         {translation.home.description}
       </motion.p>
 
-      {/* CTA-knoppen met correcte navigatiepaden */}
+      {/* CTA-knoppen */}
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
         <motion.a
-          href={`/${currentLang}/about`}
+          href={`/${currentLang}/service`}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="w-full sm:w-auto bg-yellow-400 text-gray-900 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-500 transition-all text-center"
