@@ -192,7 +192,12 @@
     "product": "Produit",
     "features": "Fonctionnalités",
     "how": "Comment ça marche",
-    "pricing": "Tarifs",
+    "usecases": "Cas d'utilisation",
+    "showcase": "Vitrine",
+    "pricing": "Abonnements",
+    "start": "Commencer",
+    "download": "Téléchargement",
+    "faq": "FAQ",
     "launch": "Lancement",
     "contact": "Contact"
   }

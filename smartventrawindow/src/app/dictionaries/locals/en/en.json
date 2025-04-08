@@ -192,7 +192,12 @@
     "product": "Product",
     "features": "Features",
     "how": "How it works",
-    "pricing": "Pricing",
+    "usecases": "Use Cases",
+    "showcase": "Showcase",
+    "pricing": "Subscriptions",
+    "start": "Get Started",
+    "download": "Download",
+    "faq": "FAQ",
     "launch": "Launch",
     "contact": "Contact"
   }

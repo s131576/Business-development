@@ -192,7 +192,12 @@
     "product": "Product",
     "features": "Functies",
     "how": "Hoe werkt het",
-    "pricing": "Prijzen",
+    "usecases": "Toepassingen",
+    "showcase": "Showcase",
+    "pricing": "Abonnementen",
+    "start": "Starten",
+    "download": "Download",
+    "faq": "FAQ",
     "launch": "Lancering",
     "contact": "Contact"
   }

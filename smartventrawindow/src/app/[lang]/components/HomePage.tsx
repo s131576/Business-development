@@ -464,7 +464,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
 
 
       {/* Partners Section */}
-      <section className="w-full py-20 sm:py-32 text-white text-center relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden px-6 sm:px-10">
+      <section id="partners" className="w-full py-20 sm:py-32 text-white text-center relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden px-6 sm:px-10">
         {/* Glow Achtergrond */}
         <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-[700px] sm:w-[900px] h-[700px] sm:h-[900px] bg-yellow-400/10 rounded-full blur-3xl z-0" />
 
@@ -500,7 +500,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
 
 
       {/* CTA Download Section */}
-      <section className="w-full py-20 sm:py-32  text-center text-white px-6 sm:px-10">
+      <section id="download" className="w-full py-20 sm:py-32  text-center text-white px-6 sm:px-10">
         <h2 className="text-[clamp(2rem,5vw,3rem)] font-extrabold text-yellow-400 mb-6">
           {translation.home.download.title}
         </h2>
@@ -525,7 +525,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
 
 
       {/* FAQ Section */}
-      <section className="w-full py-20 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B263B] via-[#0D1B2A] to-[#1B263B] text-white text-center">
+      <section id="faq" className="w-full py-20 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B263B] via-[#0D1B2A] to-[#1B263B] text-white text-center">
         <h2 className="text-[clamp(2rem,5vw,3rem)] font-extrabold text-yellow-400 mb-12">
           📘 {translation.home.faq_title}
         </h2>
@@ -557,7 +557,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
 
 
       {/* Call to Action */}
-      <section className="w-full py-20 sm:py-32 px-6 sm:px-10 shadow-lg text-center bg-[#0D1117]">
+      <section id="action" className="w-full py-20 sm:py-32 px-6 sm:px-10 shadow-lg text-center bg-[#0D1117]">
         <motion.h2
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}

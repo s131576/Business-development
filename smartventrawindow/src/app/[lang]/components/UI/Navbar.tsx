@@ -11,6 +11,9 @@ import {
   FaEnvelope,
   FaRocket,
   FaPuzzlePiece,
+  FaQuestionCircle,
+  FaPlay,
+  FaDownload
 } from "react-icons/fa";
 import Flag from "react-world-flags";
 import getTranslation from "../translation/getTranslation";
@@ -22,6 +25,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [mobileProductOpen, setMobileProductOpen] = useState(false);
+  const [mobileStartOpen, setMobileStartOpen] = useState(false);
   const [translation, setTranslation] = useState<any>(null);
 
   const languages = [
@@ -45,10 +49,20 @@ const Navbar = () => {
           submenu: [
             { name: translation.navigation.features, path: "#features", icon: "🧩" },
             { name: translation.navigation.how, path: "#how", icon: "✨" },
-            { name: translation.navigation.pricing, path: "#pricing", icon: "💰" },
+            { name: translation.navigation.usecases, path: "#usecases", icon: "🛠️" },
+            { name: translation.navigation.showcase, path: "#tabeven-showcase", icon: "📱" },
           ],
         },
-        { name: translation.navigation.launch, path: "#launch", icon: <FaRocket /> },
+        { name: translation.navigation.pricing, path: "#pricing", icon: "💰" },
+        {
+          name: translation.navigation.start,
+          icon: <FaPlay />,
+          submenu: [
+            { name: translation.navigation.launch, path: "#launch", icon: "🚀" },
+            { name: translation.navigation.download, path: "#download", icon: "⬇️" },
+          ],
+        },
+        { name: translation.navigation.faq, path: "#faq", icon: <FaQuestionCircle /> },
         { name: translation.navigation.contact, path: "#contact", icon: <FaEnvelope /> },
       ]
     : [];
@@ -63,6 +77,7 @@ const Navbar = () => {
     setShowDropdown(false);
     setMenuOpen(false);
     setMobileProductOpen(false);
+    setMobileStartOpen(false);
   };
 
   return (
@@ -82,7 +97,7 @@ const Navbar = () => {
                   <button className="flex items-center gap-2 px-3 py-2 rounded-md text-[#E0E1DD] hover:text-[#76C7C0]">
                     {item.name} ▾
                   </button>
-                  <div className="absolute hidden group-hover:block bg-[#1B263B] mt-2 rounded-md shadow-lg z-50 min-w-[200px]">
+                  <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-[#1B263B] mt-2 rounded-md shadow-lg z-50 min-w-[200px]">
                     {item.submenu.map((subItem, subIndex) => (
                       <a
                         key={subIndex}
@@ -140,13 +155,15 @@ const Navbar = () => {
           <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -20, opacity: 0 }} className="md:hidden bg-[#0D1B2A] text-white p-6 shadow-lg absolute top-16 left-0 w-full">
             {menuItems.map((item, index) => {
               if (item.submenu) {
+                const isProduct = item.name === translation?.navigation.product;
+                const isStart = item.name === translation?.navigation.start;
                 return (
                   <div key={index}>
-                    <button onClick={() => setMobileProductOpen(!mobileProductOpen)} className="flex items-center justify-between w-full px-3 py-2 rounded-md text-[#E0E1DD] hover:text-[#76C7C0]">
-                      <span className="flex items-center gap-2">{item.icon} {item.name}</span>
-                      <span>{mobileProductOpen ? "▲" : "▼"}</span>
+                    <button onClick={() => isProduct ? setMobileProductOpen(!mobileProductOpen) : setMobileStartOpen(!mobileStartOpen)} className="flex items-center justify-between w-full px-3 py-2 rounded-md text-[#E0E1DD] hover:text-[#76C7C0]">
+                      <span className="flex items-center gap-2">{item.name}</span>
+                      <span>{(isProduct && mobileProductOpen) || (isStart && mobileStartOpen) ? "▲" : "▼"}</span>
                     </button>
-                    {mobileProductOpen && (
+                    {((isProduct && mobileProductOpen) || (isStart && mobileStartOpen)) && (
                       <div className="ml-6 mt-2 flex flex-col gap-1">
                         {item.submenu.map((subItem, subIndex) => (
                           <a
@@ -155,7 +172,7 @@ const Navbar = () => {
                             onClick={handleLinkClick}
                             className="text-[#E0E1DD] hover:text-[#76C7C0]"
                           >
-                            {subItem.icon} {subItem.name}
+                            {subItem.name}
                           </a>
                         ))}
                       </div>
@@ -171,22 +188,10 @@ const Navbar = () => {
                   onClick={handleLinkClick}
                   className="flex items-center gap-2 px-3 py-2 rounded-md text-[#E0E1DD] hover:text-[#76C7C0]"
                 >
-                  {item.icon} {item.name}
+                  {item.name}
                 </a>
               );
             })}
-
-            <div className="border-t border-white mt-4 pt-4 flex flex-col items-center space-y-2">
-              <span className="text-white text-lg flex items-center gap-2">
-                🌍 Kies een taal: <Flag code={currentLang.flag} style={{ width: 25, height: 20 }} />
-              </span>
-              {languages.map((lang) => (
-                <button key={lang.code} onClick={() => changeLanguage(lang.code)} className="w-40 flex items-center justify-start px-4 py-2 bg-white text-[#1B263B] hover:bg-gray-100 rounded-md gap-3">
-                  <Flag code={lang.flag} style={{ width: 25, height: 20 }} />
-                  <span className="text-lg">{lang.name}</span>
-                </button>
-              ))}
-            </div>
           </motion.div>
         )}
       </AnimatePresence>
