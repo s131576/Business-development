@@ -23,7 +23,7 @@ const Footer = () => {
   if (!translation) return null;
 
   return (
-    <footer className="bg-[#0D1117] text-gray-300 py-10">
+    <footer className="bg-gradient-to-r from-[#0D1B2A] via-[#010815] to-[#122131] shadow-lg  text-white relative overflow-hidden py-10">
       <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-around items-center">
         
         {/* Logo & Bedrijfsinfo */}
@@ -33,7 +33,7 @@ const Footer = () => {
               whileHover={{ scale: 1.05 }}
               className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white cursor-pointer"
             >
-              SmartVentra<span className="text-yellow-400">Window</span>
+              Tab<span className="text-yellow-400">Even</span>
             </motion.h1>
           </Link>
           <p className="mt-2 text-gray-400">{translation.footer.tagline}</p>

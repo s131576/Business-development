@@ -1,15 +1,174 @@
 {
   "home": {
-    "welcome": "Welcome to SmartVentraWindow",
-    "description": "We offer innovative solutions for businesses and individuals. Discover what we can do for you!",
-    "contact": "Get in touch with us for more information",
-    "learn_more": "Learn more about our services"
-  },
-  "navigation": {
-    "home": "Home",
-    "about": "About us",
-    "services": "Services",
-    "contact": "Contact"
+    "hero": {
+      "scan": "Scan.",
+      "split": "Split.",
+      "pay": "Pay.",
+      "subtitle": "Splitting group expenses has never been easier. Scan your receipt – TabEven handles the rest. No arguments. No hassle.",
+      "cta_start": "Start now",
+      "cta_info": "More info",
+      "title_logo": "TabEven"
+    },
+    "usecases": {
+      "title": "Use TabEven in every situation",
+      "items": [
+        "🍝 Dinner with friends",
+        "🎉 Festival tickets",
+        "🛒 Shared groceries",
+        "🎁 Gift purchase",
+        "🛫 Trip splitting",
+        "🏠 Student housing"
+      ],
+      "reviews": [
+        {
+          "text": "No more arguments after a night out – TabEven takes care of everything.",
+          "author": "Student from Ghent",
+          "rating": 5
+        },
+        {
+          "text": "Traveling with friends? TabEven made splitting costs super easy.",
+          "author": "Traveler from Bruges",
+          "rating": 5
+        },
+        {
+          "text": "At restaurants, we always wondered who paid what. Not anymore!",
+          "author": "Couple from Antwerp",
+          "rating": 4
+        },
+        {
+          "text": "Really useful for weekend trips with friends. Everyone happy.",
+          "author": "Group planner from Leuven",
+          "rating": 5
+        },
+        {
+          "text": "User-friendly and clear. A must-have for families.",
+          "author": "Parent from Mechelen",
+          "rating": 4
+        }
+      ]
+    },
+    "features": {
+      "title": "Why TabEven?",
+      "list": [
+        "OCR automatically detects products, prices, total.",
+        "AI fairly splits the costs.",
+        "Pay directly thro bank integration.",
+        "Guest users can easily join in.",
+        "GDPR2-compliant, fully encrypted.",
+        "Scan → split → done."
+      ]
+    },
+    "how": {
+      "title": "How does TabEven work?",
+      "steps": [
+        {
+          "title": "Scan your receipt",
+          "desc": "Our OCR technology automatically detects items, prices, and date. No manual input needed."
+        },
+        {
+          "title": "AI splits the bill",
+          "desc": "Based on your group and preferences, our AI fairly distributes the costs. Everyone pays their share."
+        },
+        {
+          "title": "Pay directly in the app",
+          "desc": "With PSD2 bank integration, you can instantly pay your share. Everything happens within TabEven. No hassle."
+        }
+      ]
+    },
+    "showcase": {
+      "title": "This is TabEven.",
+      "cards_left": [
+        {
+          "title": "OCR recognition",
+          "desc": "Automatically scan your receipt with item, price, and date."
+        },
+        {
+          "title": "Instant payments",
+          "desc": "PSD2 link to your bank – no need to leave the app."
+        }
+      ],
+      "cards_right": [
+        {
+          "title": "AI splitting",
+          "desc": "Everyone pays fairly — by dish, evenly, or customized."
+        },
+        {
+          "title": "Guest users",
+          "desc": "Send a link to people without an account – they can still join in."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "✨ Choose your TabEven plan ✨",
+      "plans": [
+        {
+          "title": "Free",
+          "price": "€0",
+          "description": "Perfect for starters or those who just want to try it out.",
+          "features": [
+            "OCR receipt scanning",
+            "Basic cost splitting",
+            "Manage group & preferences",
+            "Invite guest users"
+          ],
+          "button": "Start for free"
+        },
+        {
+          "title": "Premium",
+          "price": "€3/month",
+          "description": "Everything automated, no hassle, direct PSD2 payments.",
+          "features": [
+            "All free features",
+            "AI-powered splitting",
+            "In-app payments thro PSD2",
+            "Priority support",
+            "Access to beta features"
+          ],
+          "button": "Upgrade to Premium"
+        }
+      ]
+    },
+    "launch": {
+      "title": "Our launch: in 3 steps",
+      "steps": [
+        "Phase 1: Reach students thro TikTok & Instagram – viral visibility through relatable content.",
+        "Phase 2: Integrations with banks & fintech platforms – frictionless payments, PSD2-first.",
+        "Phase 3: Expand across Europe – thro partnerships, growth loops, and user referrals."
+      ]
+    },
+    "partners": {
+      "title": "🌟 Our (future) partners",
+      "desc": "We aim to collaborate with innovative parties to make payments smooth, secure, and future-ready.",
+      "disclaimer": "Logos are indicative – partnerships are in the future."
+    },
+    "faq_title": "Frequently Asked Questions",
+    "faq": [
+      {
+        "title": "Is TabEven free?",
+        "desc": "Yes, you can use TabEven for free with all basic features. Premium options are available."
+      },
+      {
+        "title": "Do all participants need the app?",
+        "desc": "No, you can also invite people as guests – they can easily contribute without an account."
+      },
+      {
+        "title": "How secure are the payments?",
+        "desc": "We use PSD2 technology and encryption – just like your bank."
+      },
+      {
+        "title": "What if the receipt is blurry?",
+        "desc": "Our OCR does its best. You can always adjust manually or retake the photo."
+      }
+    ],
+    "download": {
+      "title": "Download TabEven and experience it yourself",
+      "desc": "Coming soon to the App Store and Google Play. Get notified when we go live!"
+    },
+    "cta": {
+      "title": "Ready to change how we split expenses?",
+      "desc": "Join the revolution. One receipt at a time. Try TabEven now and experience the power of automation.",
+      "button": "Start with TabEven"
+    }
   },
   "footer": {
     "tagline": "Sustainable & innovative windows for every building.",
@@ -18,69 +177,23 @@
     "contact": "Contact",
     "rights": "All rights reserved."
   },
-  "auth": {
-    "login": "Login",
-    "signup": "Sign Up",
-    "logout": "Logout"
+  "contact": {
+    "title": "Get in touch 📩",
+    "name_placeholder": "Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Your message...",
+    "submit_button": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! ✅",
+    "error": "Error sending message. Please try again. ❌"
   },
-  "errors": {
-    "not_found": "Page not found",
-    "server_error": "An error occurred on the server",
-    "forbidden": "Access denied"
-  },
-  "about": {
-    "title": "Who Are We?",
-    "description": "SmartVentraWindow is a startup making windows smarter. We combine technology with design to optimize ventilation and insulation.",
-    "mission": "Our journey has just begun, but we have big plans ahead! 🌍",
-    "team_title": "🚀 Our Team 🚀",
-    "cta_title": "Ready to discover the future of windows?",
-    "cta_description": "Become one of our first customers or partners and help us innovate!",
-    "cta_button": "Get in touch 📩"
-  },
-  "service": {
-    "title": "Our Services",
-    "description": "Discover the innovative solutions of SmartVentraWindow. From smart sensors to premium windows, we bring technology to your home!",
-    "cta_title": "Request your quote!",
-    "cta_description": "Request information without obligation about our innovative solutions.",
-    "cta_button": "Start my request",
-    "sensors_title": "Smart Sensors",
-    "windows_title": "Premium Windows",
-    "order_button": "Order Now",
-    "cta_contact": "Want to learn more? Get in touch!",
-    "cta_contact_button": "Contact Us",
-    "sensors": [
-      {
-        "name": "Smart CO2 Sensor",
-        "price": 100,
-        "description": "Measures and analyzes air quality in real-time."
-      },
-      {
-        "name": "Advanced Temperature Sensor",
-        "price": 150,
-        "description": "Keeps your home's temperature and humidity stable."
-      },
-      {
-        "name": "Smart Motion Sensor",
-        "price": 120,
-        "description": "Detects movement and optimizes ventilation."
-      }
-    ],
-    "windows": [
-      {
-        "name": "Thermal Insulating Window",
-        "price": 50,
-        "description": "Keeps the heat inside and saves energy."
-      },
-      {
-        "name": "Soundproof Window",
-        "price": 50,
-        "description": "Reduces external noise for maximum peace."
-      },
-      {
-        "name": "Automatic Ventilating Window",
-        "price": 50,
-        "description": "Adjusts to air quality for optimal comfort."
-      }
-    ]
+  "navigation": {
+    "home": "Home",
+    "product": "Product",
+    "features": "Features",
+    "how": "How it works",
+    "pricing": "Pricing",
+    "launch": "Launch",
+    "contact": "Contact"
   }
 }

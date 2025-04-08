@@ -1,15 +1,174 @@
 {
   "home": {
-    "welcome": "Welkom bij SmartVentraWindow",
-    "description": "Wij bieden innovatieve oplossingen voor bedrijven en particulieren. Ontdek wat wij voor jou kunnen betekenen!",
-    "contact": "Neem contact met ons op voor meer informatie",
-    "learn_more": "Lees meer over onze diensten"
-  },
-  "navigation": {
-    "home": "Home",
-    "about": "Over ons",
-    "services": "Diensten",
-    "contact": "Contact"
+    "hero": {
+      "scan": "Scan.",
+      "split": "Verdeel.",
+      "pay": "Betaal.",
+      "subtitle": "Groepskosten verdelen was nog nooit zo simpel. Scan je bonnetje – TabEven regelt de rest. Zonder discussie. Zonder gedoe.",
+      "cta_start": "Start nu",
+      "cta_info": "Meer info",
+      "title_logo": "TabEven"
+    },
+    "usecases": {
+      "title": "Gebruik TabEven in élke situatie",
+      "items": [
+        "🍝 Diner met vrienden",
+        "🎉 Festival tickets",
+        "🛒 Gezamenlijke boodschappen",
+        "🎁 Cadeautje",
+        "🛫 Reis splitten",
+        "🏠 Studentenhuis"
+      ],
+      "reviews": [
+        {
+          "text": "Geen discussies meer na een avondje uit – TabEven regelt alles.",
+          "author": "Student uit Gent",
+          "rating": 5
+        },
+        {
+          "text": "Op reis met vrienden? TabEven maakte het splitsen van kosten super eenvoudig.",
+          "author": "Reiziger uit Brugge",
+          "rating": 5
+        },
+        {
+          "text": "In restaurants vroegen we ons altijd af wie wat betaalde. Nu niet meer!",
+          "author": "Koppel uit Antwerpen",
+          "rating": 4
+        },
+        {
+          "text": "Echt handig voor weekendjes weg met vrienden. Iedereen blij.",
+          "author": "Groepsplanner uit Leuven",
+          "rating": 5
+        },
+        {
+          "text": "Gebruiksvriendelijk en duidelijk. Een must-have voor gezinnen.",
+          "author": "Ouder uit Mechelen",
+          "rating": 4
+        }
+      ]
+    },
+    "features": {
+      "title": "Waarom TabEven?",
+      "list": [
+        "OCR herkent automatisch producten, prijzen, totaal.",
+        "AI verdeelt de kosten eerlijk.",
+        "Betalen kan direct via bankkoppeling.",
+        "Gastgebruikers kunnen makkelijk meedoen.",
+        "GDPR2-conform, alles versleuteld.",
+        "Scan → verdeel → klaar."
+      ]
+    },
+    "how": {
+      "title": "Hoe werkt TabEven?",
+      "steps": [
+        {
+          "title": "Scan je bonnetje",
+          "desc": "Onze OCR-technologie herkent automatisch producten, prijzen en datum. Geen handmatige invoer meer."
+        },
+        {
+          "title": "AI verdeelt de kosten",
+          "desc": "Op basis van je groep en voorkeuren verdeelt onze AI de kosten eerlijk. Iedereen betaalt zijn deel."
+        },
+        {
+          "title": "Betaal direct vanuit de app",
+          "desc": "Via PSD2-bankkoppeling kan je meteen je deel betalen. Alles gebeurt binnen TabEven. Geen gedoe."
+        }
+      ]
+    },
+    "showcase": {
+      "title": "Dit is TabEven.",
+      "cards_left": [
+        {
+          "title": "OCR herkenning",
+          "desc": "Scan automatisch je bon met product, prijs en datum."
+        },
+        {
+          "title": "Directe betalingen",
+          "desc": "PSD2-link naar je bank – zonder de app te verlaten."
+        }
+      ],
+      "cards_right": [
+        {
+          "title": "AI verdeling",
+          "desc": "Iedereen betaalt eerlijk — per gerecht, even, of gepersonaliseerd."
+        },
+        {
+          "title": "Gastgebruikers",
+          "desc": "Stuur een link naar mensen zonder account – ze betalen mee."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "✨ Kies je TabEven-plan ✨",
+      "plans": [
+        {
+          "title": "Gratis",
+          "price": "€0",
+          "description": "Perfect voor starters of wie gewoon wil proberen.",
+          "features": [
+            "OCR scan van bonnetje",
+            "Basis kostenverdeling",
+            "Beheer groep & voorkeuren",
+            "Gastgebruikers uitnodigen"
+          ],
+          "button": "Start gratis"
+        },
+        {
+          "title": "Premium",
+          "price": "€3/maand",
+          "description": "Alles automatisch, geen gedoe, PSD2 direct betalen.",
+          "features": [
+            "Alle gratis functies",
+            "AI-aangedreven verdeling",
+            "In-app betalingen via PSD2",
+            "Prioritaire support",
+            "Toegang tot beta features"
+          ],
+          "button": "Upgrade naar Premium"
+        }
+      ]
+    },
+    "launch": {
+      "title": "Onze lancering: in 3 stappen",
+      "steps": [
+        "Fase 1: Studenten bereiken via TikTok & Instagram – virale zichtbaarheid met herkenbare situaties.",
+        "Fase 2: Integraties met banken & fintech-platformen – frictieloze betalingen, PSD2-first.",
+        "Fase 3: Uitrollen in Europa – via partnerships, growth loops en user referrals."
+      ]
+    },
+    "partners": {
+      "title": "🌟 Onze (toekomstige) partners",
+      "desc": "We willen samenwerken met innovatieve partijen om betalingen vlot, veilig en toekomstgericht te maken.",
+      "disclaimer": "Logos zijn indicatief – samenwerking is toekomstgericht."
+    },
+    "faq_title": "Veelgestelde Vragen",
+    "faq": [
+      {
+        "title": "Is TabEven gratis?",
+        "desc": "Ja, je kan TabEven gratis gebruiken met alle basisfuncties. Premium-opties zijn beschikbaar."
+      },
+      {
+        "title": "Hebben alle deelnemers de app nodig?",
+        "desc": "Nee, je kan ook mensen uitnodigen als gast – zij kunnen eenvoudig meebetalen zonder account."
+      },
+      {
+        "title": "Hoe veilig zijn betalingen?",
+        "desc": "Wij maken gebruik van PSD2-technologie en versleuteling – net zoals je bank."
+      },
+      {
+        "title": "Wat als de bon wazig is?",
+        "desc": "Onze OCR doet z’n best. Je kan altijd manueel aanpassen of een nieuwe foto nemen."
+      }
+    ],
+    "download": {
+      "title": "Download TabEven en ervaar het zelf",
+      "desc": "Binnenkort beschikbaar in de App Store en Google Play. Ontvang een melding zodra we live gaan!"
+    },
+    "cta": {
+      "title": "Klaar om de manier waarop we kosten delen te veranderen??",
+      "desc": "Sluit je aan bij de revolutie. Eén bonnetje tegelijk. Probeer TabEven nu en ervaar de kracht van automatisatie.",
+      "button": "Start met TabEven"
+    }
   },
   "footer": {
     "tagline": "Duurzame & innovatieve ramen voor elk gebouw.",
@@ -18,69 +177,23 @@
     "contact": "Contact",
     "rights": "Alle rechten voorbehouden."
   },
-  "auth": {
-    "login": "Inloggen",
-    "signup": "Registreren",
-    "logout": "Uitloggen"
+  "contact": {
+    "title": "Neem contact op 📩",
+    "name_placeholder": "Naam",
+    "email_placeholder": "E-mail",
+    "message_placeholder": "Uw bericht...",
+    "submit_button": "Verstuur Bericht",
+    "sending": "Versturen...",
+    "success": "Bericht verzonden! ✅",
+    "error": "Fout bij verzenden. Probeer opnieuw. ❌"
   },
-  "errors": {
-    "not_found": "Pagina niet gevonden",
-    "server_error": "Er is een fout opgetreden op de server",
-    "forbidden": "Toegang geweigerd"
-  },
-  "about": {
-    "title": "Wie zijn wij?",
-    "description": "SmartVentraWindow is een startup die ramen slimmer maakt. Wij combineren technologie met design om de ventilatie en isolatie van woningen te optimaliseren.",
-    "mission": "Onze reis is net begonnen, maar we hebben grootse plannen! 🌍",
-    "team_title": "🚀 Ons Team 🚀",
-    "cta_title": "Klaar om de toekomst van ramen te ontdekken?",
-    "cta_description": "Word een van onze eerste klanten of partners en help ons innoveren!",
-    "cta_button": "Neem contact op 📩"
-  },
-  "service": {
-    "title": "Onze Diensten",
-    "description": "Ontdek de innovatieve oplossingen van SmartVentraWindow. Van slimme sensoren tot premium ramen, wij brengen technologie naar jouw woning!",
-    "cta_title": "Vraag uw offerte aan!",
-    "cta_description": "Vraag vrijblijvend meer informatie over onze innovatieve oplossingen.",
-    "cta_button": "Start mijn aanvraag",
-    "sensors_title": "Slimme Sensoren",
-    "windows_title": "Premium Ramen",
-    "order_button": "Bestel Nu",
-    "cta_contact": "Meer weten? Neem contact op!",
-    "cta_contact_button": "Contacteer Ons",
-    "sensors": [
-      {
-        "name": "Slimme CO2 Sensor",
-        "price": 100,
-        "description": "Meet en analyseert de luchtkwaliteit in realtime."
-      },
-      {
-        "name": "Geavanceerde Temperatuursensor",
-        "price": 150,
-        "description": "Houdt de temperatuur en vochtigheid in huis stabiel."
-      },
-      {
-        "name": "Slimme Bewegingssensor",
-        "price": 120,
-        "description": "Detecteert beweging en optimaliseert ventilatie."
-      }
-    ],
-    "windows": [
-      {
-        "name": "Thermisch Isolerend Raam",
-        "price": 50,
-        "description": "Houdt de warmte binnen en bespaart energie."
-      },
-      {
-        "name": "Geluidsisolerend Raam",
-        "price": 50,
-        "description": "Vermindert externe geluiden voor maximale rust."
-      },
-      {
-        "name": "Automatisch Ventilerend Raam",
-        "price": 50,
-        "description": "Past zich aan de luchtkwaliteit aan voor optimaal comfort."
-      }
-    ]
+  "navigation": {
+    "home": "Home",
+    "product": "Product",
+    "features": "Functies",
+    "how": "Hoe werkt het",
+    "pricing": "Prijzen",
+    "launch": "Lancering",
+    "contact": "Contact"
   }
 }

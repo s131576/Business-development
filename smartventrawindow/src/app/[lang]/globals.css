@@ -19,7 +19,7 @@
 body {
   font-family: "Inter", sans-serif;
   color: #333;
-  padding-top: 64px;
+  /* padding-top: 64px; */
 }
 
 
@@ -56,4 +56,7 @@ a {
 
 a:hover {
   transform: scale(1.05);
+}
+html {
+  scroll-behavior: smooth;
 }

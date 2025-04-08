@@ -1,15 +1,174 @@
 {
   "home": {
-    "welcome": "Bienvenue sur SmartVentraWindow",
-    "description": "Nous offrons des solutions innovantes pour les entreprises et les particuliers. Découvrez ce que nous pouvons faire pour vous !",
-    "contact": "Contactez-nous pour plus d'informations",
-    "learn_more": "En savoir plus sur nos services"
-  },
-  "navigation": {
-    "home": "Accueil",
-    "about": "À propos",
-    "services": "Services",
-    "contact": "Contact"
+    "hero": {
+      "scan": "Scanner.",
+      "split": "Partager.",
+      "pay": "Payer.",
+      "subtitle": "Partager les dépenses de groupe n'a jamais été aussi simple. Scanne ton reçu – TabEven s'occupe du reste. Pas de disputes. Pas de tracas.",
+      "cta_start": "Commencer maintenant",
+      "cta_info": "Plus d'infos",
+      "title_logo": "TabEven"
+    },
+    "usecases": {
+      "title": "Utilisez TabEven dans chaque situation",
+      "items": [
+        "🍝 Dîner entre amis",
+        "🎉 Billets de festival",
+        "🛒 Courses partagées",
+        "🎁 Cadeau commun",
+        "🛫 Partager les frais de voyage",
+        "🏠 Maison d'étudiants"
+      ],
+      "reviews": [
+        {
+          "text": "Plus de discussions après une soirée – TabEven gère tout.",
+          "author": "Étudiant de Gand",
+          "rating": 5
+        },
+        {
+          "text": "En voyage avec des amis ? TabEven a rendu le partage des coûts super simple.",
+          "author": "Voyageur de Bruges",
+          "rating": 5
+        },
+        {
+          "text": "Au restaurant, on se demandait toujours qui avait payé quoi. Plus maintenant !",
+          "author": "Couple d'Anvers",
+          "rating": 4
+        },
+        {
+          "text": "Super pratique pour les week-ends entre amis. Tout le monde est content.",
+          "author": "Organisateur de groupe de Louvain",
+          "rating": 5
+        },
+        {
+          "text": "Facile à utiliser et clair. Un must-have pour les familles.",
+          "author": "Parent de Malines",
+          "rating": 4
+        }
+      ]
+    },
+    "features": {
+      "title": "Pourquoi TabEven ?",
+      "list": [
+        "L'OCR reconnaît automatiquement les produits, les prix, le total.",
+        "L'IA partage les coûts équitablement.",
+        "Paiement direct via connexion bancaire.",
+        "Les invités peuvent facilement participer.",
+        "Conforme au RGPD2, tout est crypté.",
+        "Scanner → partager → terminé."
+      ]
+    },
+    "how": {
+      "title": "Comment fonctionne TabEven ?",
+      "steps": [
+        {
+          "title": "Scanne ton reçu",
+          "desc": "Notre technologie OCR reconnaît automatiquement les produits, les prix et la date. Plus besoin de saisie manuelle."
+        },
+        {
+          "title": "L'IA partage les coûts",
+          "desc": "En fonction de ton groupe et des préférences, notre IA répartit les coûts équitablement. Chacun paie sa part."
+        },
+        {
+          "title": "Paie directement depuis l'app",
+          "desc": "Grâce à la connexion bancaire PSD2, tu peux payer ta part immédiatement. Tout se fait dans TabEven. Sans tracas."
+        }
+      ]
+    },
+    "showcase": {
+      "title": "Voici TabEven.",
+      "cards_left": [
+        {
+          "title": "Reconnaissance OCR",
+          "desc": "Scanne automatiquement ton reçu avec produit, prix et date."
+        },
+        {
+          "title": "Paiements directs",
+          "desc": "Lien PSD2 vers ta banque – sans quitter l'application."
+        }
+      ],
+      "cards_right": [
+        {
+          "title": "Répartition par IA",
+          "desc": "Chacun paie équitablement — par plat, à parts égales, ou personnalisé."
+        },
+        {
+          "title": "Utilisateurs invités",
+          "desc": "Envoie un lien aux personnes sans compte – elles peuvent aussi payer."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "✨ Choisis ton plan TabEven ✨",
+      "plans": [
+        {
+          "title": "Gratuit",
+          "price": "€0",
+          "description": "Parfait pour les débutants ou ceux qui veulent simplement essayer.",
+          "features": [
+            "Scan OCR du reçu",
+            "Répartition de base des coûts",
+            "Gérer le groupe et les préférences",
+            "Inviter des utilisateurs invités"
+          ],
+          "button": "Commencer gratuitement"
+        },
+        {
+          "title": "Premium",
+          "price": "€3/mois",
+          "description": "Tout est automatisé, aucun tracas, paiement direct via PSD2.",
+          "features": [
+            "Toutes les fonctions gratuites",
+            "Répartition alimentée par l'IA",
+            "Paiements in-app via PSD2",
+            "Support prioritaire",
+            "Accès aux fonctionnalités bêta"
+          ],
+          "button": "Passer à Premium"
+        }
+      ]
+    },
+    "launch": {
+      "title": "Notre lancement : en 3 étapes",
+      "steps": [
+        "Phase 1 : Atteindre les étudiants via TikTok & Instagram – visibilité virale avec des situations reconnaissables.",
+        "Phase 2 : Intégrations avec les banques & plateformes fintech – paiements sans friction, PSD2-first.",
+        "Phase 3 : Déploiement en Europe – via partenariats, boucles de croissance et parrainages utilisateurs."
+      ]
+    },
+    "partners": {
+      "title": "🌟 Nos (futurs) partenaires",
+      "desc": "Nous voulons collaborer avec des acteurs innovants pour rendre les paiements fluides, sécurisés et tournés vers l'avenir.",
+      "disclaimer": "Logos à titre indicatif – la collaboration est prévue pour l'avenir."
+    },
+    "faq_title": "Questions Fréquemment Posées",
+    "faq": [
+      {
+        "title": "TabEven est-il gratuit ?",
+        "desc": "Oui, tu peux utiliser TabEven gratuitement avec toutes les fonctionnalités de base. Des options premium sont disponibles."
+      },
+      {
+        "title": "Tous les participants doivent-ils avoir l'application ?",
+        "desc": "Non, tu peux aussi inviter des personnes en tant qu'invité – elles peuvent payer facilement sans compte."
+      },
+      {
+        "title": "Les paiements sont-ils sécurisés ?",
+        "desc": "Nous utilisons la technologie PSD2 et le cryptage – comme ta banque."
+      },
+      {
+        "title": "Et si le reçu est flou ?",
+        "desc": "Notre OCR fait de son mieux. Tu peux toujours modifier manuellement ou prendre une nouvelle photo."
+      }
+    ],
+    "download": {
+      "title": "Télécharge TabEven et essaie-le toi-même",
+      "desc": "Bientôt disponible sur l'App Store et Google Play. Reçois une notification dès que nous sommes en ligne !"
+    },
+    "cta": {
+      "title": "Prêt à changer la façon dont on partage les dépenses ?",
+      "desc": "Rejoins la révolution. Un reçu à la fois. Essaie TabEven maintenant et découvre la puissance de l'automatisation.",
+      "button": "Commencer avec TabEven"
+    }
   },
   "footer": {
     "tagline": "Des fenêtres durables et innovantes pour chaque bâtiment.",
@@ -18,69 +177,23 @@
     "contact": "Contact",
     "rights": "Tous droits réservés."
   },
-  "auth": {
-    "login": "Se connecter",
-    "signup": "S'inscrire",
-    "logout": "Se déconnecter"
+  "contact": {
+    "title": "Contactez-nous 📩",
+    "name_placeholder": "Nom",
+    "email_placeholder": "E-mail",
+    "message_placeholder": "Votre message...",
+    "submit_button": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé ! ✅",
+    "error": "Erreur lors de l'envoi. Veuillez réessayer. ❌"
   },
-  "errors": {
-    "not_found": "Page non trouvée",
-    "server_error": "Une erreur est survenue sur le serveur",
-    "forbidden": "Accès refusé"
-  },
-  "about": {
-    "title": "Qui sommes-nous?",
-    "description": "SmartVentraWindow est une startup qui rend les fenêtres plus intelligentes. Nous combinons la technologie et le design pour optimiser la ventilation et l’isolation.",
-    "mission": "Notre voyage vient de commencer, mais nous avons de grands projets en tête! 🌍",
-    "team_title": "🚀 Notre Équipe 🚀",
-    "cta_title": "Prêt à découvrir l’avenir des fenêtres?",
-    "cta_description": "Devenez l’un de nos premiers clients ou partenaires et aidez-nous à innover!",
-    "cta_button": "Contactez-nous 📩"
-  },
-  "service": {
-    "title": "Nos Services",
-    "description": "Découvrez les solutions innovantes de SmartVentraWindow. Des capteurs intelligents aux fenêtres premium, nous apportons la technologie à votre maison!",
-    "cta_title": "Demandez votre devis!",
-    "cta_description": "Demandez des informations sans engagement sur nos solutions innovantes.",
-    "cta_button": "Démarrer ma demande",
-    "sensors_title": "Capteurs Intelligents",
-    "windows_title": "Fenêtres Premium",
-    "order_button": "Commander maintenant",
-    "cta_contact": "Vous voulez en savoir plus? Contactez-nous!",
-    "cta_contact_button": "Nous contacter",
-    "sensors": [
-      {
-        "name": "Capteur de CO2 intelligent",
-        "price": 100,
-        "description": "Mesure et analyse la qualité de l'air en temps réel."
-      },
-      {
-        "name": "Capteur de température avancé",
-        "price": 150,
-        "description": "Maintient la température et l'humidité de votre maison stables."
-      },
-      {
-        "name": "Capteur de mouvement intelligent",
-        "price": 120,
-        "description": "Détecte les mouvements et optimise la ventilation."
-      }
-    ],
-    "windows": [
-      {
-        "name": "Fenêtre isolante thermique",
-        "price": 50,
-        "description": "Conserve la chaleur à l'intérieur et économise de l'énergie."
-      },
-      {
-        "name": "Fenêtre isolante phonique",
-        "price": 50,
-        "description": "Réduit les bruits extérieurs pour un maximum de tranquillité."
-      },
-      {
-        "name": "Fenêtre à ventilation automatique",
-        "price": 50,
-        "description": "S'ajuste à la qualité de l'air pour un confort optimal."
-      }
-    ]
+  "navigation": {
+    "home": "Accueil",
+    "product": "Produit",
+    "features": "Fonctionnalités",
+    "how": "Comment ça marche",
+    "pricing": "Tarifs",
+    "launch": "Lancement",
+    "contact": "Contact"
   }
 }
