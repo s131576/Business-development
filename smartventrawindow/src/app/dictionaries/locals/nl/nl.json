@@ -171,9 +171,18 @@
     }
   },
   "footer": {
-    "tagline": "Duurzame & innovatieve ramen voor elk gebouw.",
-    "about": "Over Ons",
-    "services": "Diensten",
+    "tagline": "De slimme manier om gezamenlijke uitgaven te beheren.",
+    "home": "Home",
+    "product": "Product",
+    "features": "Functies",
+    "how": "Hoe werkt het",
+    "usecases": "Toepassingen",
+    "showcase": "Showcase",
+    "pricing": "Abonnementen",
+    "start": "Starten",
+    "download": "Download",
+    "faq": "FAQ",
+    "launch": "Lancering",
     "contact": "Contact",
     "rights": "Alle rechten voorbehouden."
   },

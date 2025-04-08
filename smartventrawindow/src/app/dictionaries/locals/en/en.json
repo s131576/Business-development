@@ -171,9 +171,18 @@
     }
   },
   "footer": {
-    "tagline": "Sustainable & innovative windows for every building.",
-    "about": "About Us",
-    "services": "Services",
+    "tagline": "The smart way to manage shared expenses.",
+    "home": "Home",
+    "product": "Product",
+    "features": "Features",
+    "how": "How it works",
+    "usecases": "Use Cases",
+    "showcase": "Showcase",
+    "pricing": "Subscriptions",
+    "start": "Get Started",
+    "download": "Download",
+    "faq": "FAQ",
+    "launch": "Launch",
     "contact": "Contact",
     "rights": "All rights reserved."
   },

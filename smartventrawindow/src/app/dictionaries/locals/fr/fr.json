@@ -171,9 +171,18 @@
     }
   },
   "footer": {
-    "tagline": "Des fenêtres durables et innovantes pour chaque bâtiment.",
-    "about": "À propos",
-    "services": "Services",
+    "tagline": "La manière intelligente de gérer les dépenses partagées.",
+    "home": "Accueil",
+    "product": "Produit",
+    "features": "Fonctionnalités",
+    "how": "Comment ça marche",
+    "usecases": "Cas d'utilisation",
+    "showcase": "Vitrine",
+    "pricing": "Abonnements",
+    "start": "Commencer",
+    "download": "Télécharger",
+    "faq": "FAQ",
+    "launch": "Lancement",
     "contact": "Contact",
     "rights": "Tous droits réservés."
   },
