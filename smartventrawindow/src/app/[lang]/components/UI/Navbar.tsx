@@ -66,7 +66,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="shadow-lg fixed w-full top-0 left-0 z-50">
+    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-[#0D1B2A]/80 shadow-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex justify-between items-center h-16">
         <Link href={`/${currentLang.code}`}>
           <motion.h1 whileHover={{ scale: 1.05 }} className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#E0E1DD] cursor-pointer">

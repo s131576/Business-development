@@ -45,7 +45,8 @@ export const HomePage = ({ translation }: { translation: any }) => {
   return (
     <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0D1117] text-white overflow-x-hidden">
       {/* Animated Background Lights */}
-      <div className="pointer-events-none fixed top-0 left-0 w-full h-full z-0 overflow-hidden">
+      {/* Animated Background Lights */}
+      <div className="pointer-events-none fixed top-0 left-0 w-full h-full z-0 overflow-hidden hidden sm:block">
         <motion.div
           animate={{ y: [0, 20, 0], opacity: [0.1, 0.3, 0.1] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -139,6 +140,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
           />
         </svg>
       </div>
+
       {/* Use Cases Section */}
       <section id="usecases" className="w-full py-24 px-6 sm:px-10 text-white">
         <motion.h2
@@ -168,10 +170,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
           <motion.div
             className="flex gap-4 sm:gap-6 animate-scroll-x"
             initial={{ x: 0 }}
-            animate={{ x: [0, -1000] }}
-            transition={{ repeat: Infinity, duration: 60, ease: "easeInOut" }}
+            animate={{ x: [-1000, 0] }} // schuif van rechts naar links
+            transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
           >
-            {translation.home.usecases.reviews.map((review: any, i: number) => (
+            {[...translation.home.usecases.reviews, ...translation.home.usecases.reviews].map((review: any, i: number) => (
               <div
                 key={i}
                 className="w-[260px] sm:w-[300px] bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-xl border border-white/20 shadow-xl flex-shrink-0"
@@ -188,6 +190,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
             ))}
           </motion.div>
         </div>
+
 
         <style jsx>{`
          @keyframes scroll-x {
@@ -248,7 +251,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
             className="rounded-xl overflow-hidden shadow-xl max-w-full"
           >
             <Image
-              src={raam1}
+              src={logo}
               alt="TabEven demo"
               className="w-full h-auto object-contain rounded-2xl"
               priority
@@ -476,7 +479,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </p>
 
         {/* Logos */}
-        <div className="flex flex-wrap justify-center items-center gap-10 sm:gap-20 max-w-6xl mx-auto relative z-10">
+        <div className="flex flex-wrap justify-center items-center gap-10 sm:gap-20 max-w-6xl mx-auto relative z-10 ">
           <div className="transition-transform hover:scale-105 w-[100px] sm:w-[130px]">
             <Image src={kbc} alt="KBC" className="h-auto w-full object-contain" />
           </div>
@@ -497,7 +500,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
 
 
       {/* CTA Download Section */}
-      <section className="w-full py-20 sm:py-32 bg-[#0D1B2A] text-center text-white px-6 sm:px-10">
+      <section className="w-full py-20 sm:py-32  text-center text-white px-6 sm:px-10">
         <h2 className="text-[clamp(2rem,5vw,3rem)] font-extrabold text-yellow-400 mb-6">
           {translation.home.download.title}
         </h2>
