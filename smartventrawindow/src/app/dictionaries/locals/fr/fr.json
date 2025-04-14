@@ -5,7 +5,7 @@
       "split": "Partager.",
       "pay": "Payer.",
       "subtitle": "Partager les dépenses de groupe n'a jamais été aussi simple. Scanne ton reçu – TabEven s'occupe du reste. Pas de disputes. Pas de tracas.",
-      "cta_start": "Commencer maintenant",
+      "cta_start": "Découvrez comment ça fonctionne",
       "cta_info": "Plus d'infos",
       "title_logo": "TabEven"
     },
@@ -51,7 +51,7 @@
       "title": "Pourquoi TabEven ?",
       "list": [
         "L'OCR reconnaît automatiquement les produits, les prix, le total.",
-        "L'IA partage les coûts équitablement.",
+        "L’IA propose une répartition équitable, basée sur les noms reconnus et les paramètres de groupe.",
         "Paiement direct via connexion bancaire.",
         "Les invités peuvent facilement participer.",
         "Conforme au RGPD2, tout est crypté.",
@@ -62,16 +62,16 @@
       "title": "Comment fonctionne TabEven ?",
       "steps": [
         {
-          "title": "Scanne ton reçu",
-          "desc": "Notre technologie OCR reconnaît automatiquement les produits, les prix et la date. Plus besoin de saisie manuelle."
+          "title": "Scanne ton ticket",
+          "desc": "L'OCR détecte automatiquement tous les articles, prix et totaux — aucune saisie manuelle nécessaire."
         },
         {
-          "title": "L'IA partage les coûts",
-          "desc": "En fonction de ton groupe et des préférences, notre IA répartit les coûts équitablement. Chacun paie sa part."
+          "title": "Choisis qui a participé",
+          "desc": "Indique qui a participé ou payé. Invite facilement d'autres personnes via un lien — sans compte requis."
         },
         {
-          "title": "Paie directement depuis l'app",
-          "desc": "Grâce à la connexion bancaire PSD2, tu peux payer ta part immédiatement. Tout se fait dans TabEven. Sans tracas."
+          "title": "Paie directement",
+          "desc": "Chacun paie sa part via une connexion bancaire PSD2 — sécurisé et sans quitter l'application."
         }
       ]
     },
@@ -80,21 +80,29 @@
       "cards_left": [
         {
           "title": "Reconnaissance OCR",
-          "desc": "Scanne automatiquement ton reçu avec produit, prix et date."
+          "desc": "Scannez automatiquement votre ticket avec produits, prix et date."
         },
         {
-          "title": "Paiements directs",
-          "desc": "Lien PSD2 vers ta banque – sans quitter l'application."
+          "title": "Paiements instantanés",
+          "desc": "Lien PSD2 vers votre banque – sans quitter l’app."
+        },
+        {
+          "title": "Utilisation sans compte",
+          "desc": "Partagez un lien – les gens peuvent participer sans s’inscrire."
         }
       ],
       "cards_right": [
         {
           "title": "Répartition par IA",
-          "desc": "Chacun paie équitablement — par plat, à parts égales, ou personnalisé."
+          "desc": "Notre IA propose des répartitions justes : par plat, équitable ou personnalisée."
         },
         {
-          "title": "Utilisateurs invités",
-          "desc": "Envoie un lien aux personnes sans compte – elles peuvent aussi payer."
+          "title": "Processus tout-en-un",
+          "desc": "Scanner → Répartir → Payer. Pas d’étapes séparées ni de confusion."
+        },
+        {
+          "title": "Conforme RGPD & sécurisé",
+          "desc": "Vos données sont cryptées et votre vie privée respectée."
         }
       ]
     },
@@ -115,7 +123,7 @@
         },
         {
           "title": "Premium",
-          "price": "€3/mois",
+          "price": "€15.99/mois",
           "description": "Tout est automatisé, aucun tracas, paiement direct via PSD2.",
           "features": [
             "Toutes les fonctions gratuites",
@@ -138,7 +146,7 @@
     },
     "partners": {
       "title": "🌟 Nos (futurs) partenaires",
-      "desc": "Nous voulons collaborer avec des acteurs innovants pour rendre les paiements fluides, sécurisés et tournés vers l'avenir.",
+      "desc": "Nous visons à collaborer avec des partenaires de paiement fiables pour rendre votre expérience encore plus fluide.",
       "disclaimer": "Logos à titre indicatif – la collaboration est prévue pour l'avenir."
     },
     "faq_title": "Questions Fréquemment Posées",
@@ -162,11 +170,11 @@
     ],
     "download": {
       "title": "Télécharge TabEven et essaie-le toi-même",
-      "desc": "Bientôt disponible sur l'App Store et Google Play. Reçois une notification dès que nous sommes en ligne !"
+      "desc": "Bientôt disponible sur l'App Store et Google Play."
     },
     "cta": {
-      "title": "Prêt à changer la façon dont on partage les dépenses ?",
-      "desc": "Rejoins la révolution. Un reçu à la fois. Essaie TabEven maintenant et découvre la puissance de l'automatisation.",
+      "title": "Prêt à changer la façon dont on partage les dépenses",
+      "desc": "TabEven rend le partage des dépenses plus simple que jamais. Scannez, partagez et payez sans tracas",
       "button": "Commencer avec TabEven"
     }
   },
@@ -199,15 +207,13 @@
   "navigation": {
     "home": "Accueil",
     "product": "Produit",
-    "features": "Fonctionnalités",
+    "features": "Ce qu’il peut faire",
     "how": "Comment ça marche",
-    "usecases": "Cas d'utilisation",
-    "showcase": "Vitrine",
+    "usecases": "Quand l’utiliser",
+    "showcase": "En action",
     "pricing": "Abonnements",
-    "start": "Commencer",
-    "download": "Téléchargement",
+    "download": "Télécharger",
     "faq": "FAQ",
-    "launch": "Lancement",
     "contact": "Contact"
   }
 }

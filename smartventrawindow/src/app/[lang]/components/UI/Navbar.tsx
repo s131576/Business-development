@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "../../context/ThemeContext";
+import { FaSun, FaMoon } from "react-icons/fa";
+
 import {
   FaBars,
   FaTimes,
@@ -27,6 +30,9 @@ const Navbar = () => {
   const [mobileProductOpen, setMobileProductOpen] = useState(false);
   const [mobileStartOpen, setMobileStartOpen] = useState(false);
   const [translation, setTranslation] = useState<any>(null);
+  const { theme, toggleTheme } = useTheme();
+
+
 
   const languages = [
     { code: "nl", name: "Nederlands", flag: "NL" },
@@ -42,29 +48,26 @@ const Navbar = () => {
 
   const menuItems = translation
     ? [
-        { name: translation.navigation.home, path: "#", icon: <FaHome /> },
-        {
-          name: translation.navigation.product,
-          icon: <FaPuzzlePiece />,
-          submenu: [
-            { name: translation.navigation.features, path: "#features", icon: "🧩" },
-            { name: translation.navigation.how, path: "#how", icon: "✨" },
-            { name: translation.navigation.usecases, path: "#usecases", icon: "🛠️" },
-            { name: translation.navigation.showcase, path: "#tabeven-showcase", icon: "📱" },
-          ],
-        },
-        { name: translation.navigation.pricing, path: "#pricing", icon: "💰" },
-        {
-          name: translation.navigation.start,
-          icon: <FaPlay />,
-          submenu: [
-            { name: translation.navigation.launch, path: "#launch", icon: "🚀" },
-            { name: translation.navigation.download, path: "#download", icon: "⬇️" },
-          ],
-        },
-        { name: translation.navigation.faq, path: "#faq", icon: <FaQuestionCircle /> },
-        { name: translation.navigation.contact, path: "#contact", icon: <FaEnvelope /> },
-      ]
+      { name: translation.navigation.home, path: "#", icon: <FaHome /> },
+      {
+        name: translation.navigation.product,
+        icon: <FaPuzzlePiece />,
+        submenu: [
+          { name: translation.navigation.features, path: "#features", icon: "🧩" },
+          { name: translation.navigation.how, path: "#how", icon: "✨" },
+          { name: translation.navigation.usecases, path: "#usecases", icon: "🛠️" },
+          { name: translation.navigation.showcase, path: "#tabeven-showcase", icon: "📱" },
+        ],
+      },
+      { name: translation.navigation.pricing, path: "#pricing", icon: "💰" },
+      {
+        name: translation.navigation.download,
+        path: "#download",
+        icon: <FaDownload />,
+      },
+      { name: translation.navigation.faq, path: "#faq", icon: <FaQuestionCircle /> },
+      { name: translation.navigation.contact, path: "#contact", icon: <FaEnvelope /> },
+    ]
     : [];
 
   const changeLanguage = (newLang: string) => {
@@ -79,16 +82,19 @@ const Navbar = () => {
     setMobileProductOpen(false);
     setMobileStartOpen(false);
   };
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-[#0D1B2A]/80 shadow-md border-b border-white/10">
+    <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-[#0D1B2A]/80 shadow-md ">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex justify-between items-center h-16">
         <Link href={`/${currentLang.code}`}>
           <motion.h1 whileHover={{ scale: 1.05 }} className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#E0E1DD] cursor-pointer">
             Tab<span className="text-yellow-400">Even</span>
           </motion.h1>
         </Link>
-
         <div className="hidden md:flex space-x-8 text-lg">
           {menuItems.map((item, index) => {
             if (item.submenu) {
@@ -112,7 +118,6 @@ const Navbar = () => {
                 </div>
               );
             }
-
             return (
               <a
                 key={index}
@@ -124,7 +129,16 @@ const Navbar = () => {
               </a>
             );
           })}
-
+          {/* Dark/Light toggle */}
+          {/* {mounted && (
+            <button
+              onClick={toggleTheme}
+              className="text-yellow-400 hover:text-white text-xl p-2 rounded-md transition-all"
+              title="Toggle theme"
+            >
+              {theme === "dark" ? <FaSun /> : <FaMoon />}
+            </button>
+          )} */}
           <div className="relative">
             <button className="text-[#E0E1DD] text-lg flex items-center gap-2 p-2 rounded-lg hover:text-[#76C7C0] transition-all" onClick={() => setShowDropdown(!showDropdown)}>
               <Flag code={currentLang.flag} style={{ width: 25, height: 20 }} />
@@ -144,12 +158,10 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
         </div>
-
         <button className="md:hidden text-[#E0E1DD] text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
-
       <AnimatePresence>
         {menuOpen && (
           <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -20, opacity: 0 }} className="md:hidden bg-[#0D1B2A] text-white p-6 shadow-lg absolute top-16 left-0 w-full">
@@ -180,7 +192,6 @@ const Navbar = () => {
                   </div>
                 );
               }
-
               return (
                 <a
                   key={index}
@@ -192,9 +203,24 @@ const Navbar = () => {
                 </a>
               );
             })}
+              {/* Taalkeuze in mobiel menu */}
+             <div className="border-t border-white mt-4 pt-4 flex flex-col space-y-2">
+               <span className="text-white text-center text-lg">🌍 Kies een taal:</span>
+               {languages.map((lang) => (
+                 <button
+                   key={lang.code}
+                   onClick={() => changeLanguage(lang.code)}
+                   className="w-full text-center px-4 py-2 bg-white text-blue-600 hover:bg-gray-100 flex items-center justify-center gap-2 rounded-md"
+                 >
+                   <Flag code={lang.flag} style={{ width: 20, height: 15 }} />
+                   {lang.name}
+                 </button>
+               ))}
+             </div>
           </motion.div>
         )}
       </AnimatePresence>
+      
     </nav>
   );
 };

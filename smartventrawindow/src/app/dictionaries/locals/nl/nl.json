@@ -5,7 +5,7 @@
       "split": "Verdeel.",
       "pay": "Betaal.",
       "subtitle": "Groepskosten verdelen was nog nooit zo simpel. Scan je bonnetje – TabEven regelt de rest. Zonder discussie. Zonder gedoe.",
-      "cta_start": "Start nu",
+      "cta_start": "Ontdek hoe het werkt",
       "cta_info": "Meer info",
       "title_logo": "TabEven"
     },
@@ -51,7 +51,7 @@
       "title": "Waarom TabEven?",
       "list": [
         "OCR herkent automatisch producten, prijzen, totaal.",
-        "AI verdeelt de kosten eerlijk.",
+        "AI stelt een eerlijke verdeling voor, op basis van de herkende namen en groepinstellingen.",
         "Betalen kan direct via bankkoppeling.",
         "Gastgebruikers kunnen makkelijk meedoen.",
         "GDPR2-conform, alles versleuteld.",
@@ -62,16 +62,16 @@
       "title": "Hoe werkt TabEven?",
       "steps": [
         {
-          "title": "Scan je bonnetje",
-          "desc": "Onze OCR-technologie herkent automatisch producten, prijzen en datum. Geen handmatige invoer meer."
+          "title": "Scan je bon",
+          "desc": "OCR herkent automatisch alle producten, prijzen en het totaalbedrag — geen manuele invoer nodig."
         },
         {
-          "title": "AI verdeelt de kosten",
-          "desc": "Op basis van je groep en voorkeuren verdeelt onze AI de kosten eerlijk. Iedereen betaalt zijn deel."
+          "title": "Kies wie meedoet",
+          "desc": "Geef aan wie er mee-eet of betaalde. Nodig gemakkelijk anderen uit via een link – ook zonder account."
         },
         {
-          "title": "Betaal direct vanuit de app",
-          "desc": "Via PSD2-bankkoppeling kan je meteen je deel betalen. Alles gebeurt binnen TabEven. Geen gedoe."
+          "title": "Betaal meteen",
+          "desc": "Iedereen betaalt zijn deel via PSD2-bankkoppeling — veilig en zonder de app te verlaten."
         }
       ]
     },
@@ -85,16 +85,24 @@
         {
           "title": "Directe betalingen",
           "desc": "PSD2-link naar je bank – zonder de app te verlaten."
+        },
+        {
+          "title": "Gebruik zonder account",
+          "desc": "Deel een link – mensen kunnen meedoen zonder zich te registreren."
         }
       ],
       "cards_right": [
         {
           "title": "AI verdeling",
-          "desc": "Iedereen betaalt eerlijk — per gerecht, even, of gepersonaliseerd."
+          "desc": "Onze AI doet eerlijke voorstellen voor verdeling per gerecht, even of gepersonaliseerd."
         },
         {
-          "title": "Gastgebruikers",
-          "desc": "Stuur een link naar mensen zonder account – ze betalen mee."
+          "title": "Alles-in-één flow",
+          "desc": "Scan → Verdeel → Betaal. Geen losse stappen of verwarring."
+        },
+        {
+          "title": "GDPR-conform & veilig",
+          "desc": "Je gegevens zijn versleuteld en privacy is gegarandeerd."
         }
       ]
     },
@@ -115,7 +123,7 @@
         },
         {
           "title": "Premium",
-          "price": "€3/maand",
+          "price": "€15.99/maand",
           "description": "Alles automatisch, geen gedoe, PSD2 direct betalen.",
           "features": [
             "Alle gratis functies",
@@ -138,7 +146,7 @@
     },
     "partners": {
       "title": "🌟 Onze (toekomstige) partners",
-      "desc": "We willen samenwerken met innovatieve partijen om betalingen vlot, veilig en toekomstgericht te maken.",
+      "desc": "We streven naar samenwerkingen met betrouwbare betaalpartners om jouw ervaring nog vlotter te maken.",
       "disclaimer": "Logos zijn indicatief – samenwerking is toekomstgericht."
     },
     "faq_title": "Veelgestelde Vragen",
@@ -162,11 +170,11 @@
     ],
     "download": {
       "title": "Download TabEven en ervaar het zelf",
-      "desc": "Binnenkort beschikbaar in de App Store en Google Play. Ontvang een melding zodra we live gaan!"
+      "desc": "Binnenkort beschikbaar in de App Store en Google Play."
     },
     "cta": {
-      "title": "Klaar om de manier waarop we kosten delen te veranderen??",
-      "desc": "Sluit je aan bij de revolutie. Eén bonnetje tegelijk. Probeer TabEven nu en ervaar de kracht van automatisatie.",
+      "title": "Klaar om de manier waarop we kosten delen te veranderen",
+      "desc": "TabEven maakt kosten delen makkelijker dan ooit. Scan, splits en betaal zonder gedoe",
       "button": "Start met TabEven"
     }
   },
@@ -199,15 +207,13 @@
   "navigation": {
     "home": "Home",
     "product": "Product",
-    "features": "Functies",
+    "features": "Wat kan het",
     "how": "Hoe werkt het",
-    "usecases": "Toepassingen",
-    "showcase": "Showcase",
+    "usecases": "Wanneer gebruiken",
+    "showcase": "In actie",
     "pricing": "Abonnementen",
-    "start": "Starten",
     "download": "Download",
     "faq": "FAQ",
-    "launch": "Lancering",
     "contact": "Contact"
   }
 }

@@ -5,6 +5,10 @@ import { Locale } from "../utils/i18n-config";
 import { LanguageProvider } from "./components/provider/LanguageProvider";
 import Navbar from "./components/UI/Navbar";
 import Footer from "./components/UI/Footer";
+import { ThemeProvider } from "./context/ThemeContext";
+import { useTheme } from "next-themes";
+import { FaSun, FaMoon } from "react-icons/fa";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,11 +33,13 @@ export default async function RootLayout({
   return (
     <html>
       <body>
-        <LanguageProvider>
-        <Navbar />
-        {children}
-        <Footer />
-        </LanguageProvider>
+        <ThemeProvider>
+          <LanguageProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

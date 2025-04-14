@@ -60,3 +60,26 @@ a:hover {
 html {
   scroll-behavior: smooth;
 }
+@layer utilities {
+  .neon-bar-container {
+    @apply relative w-full h-[10px] overflow-hidden rounded-full bg-[#0a0a0a];
+  }
+
+  .neon-bar {
+    @apply absolute top-0 left-0 h-full w-[150px] rounded-full;
+    background: linear-gradient(90deg, transparent, #CCFF00, transparent);
+    filter: drop-shadow(0 0 6px #00FFFF) drop-shadow(0 0 12px #FFFF00);
+    animation: neon-slide 4s linear infinite;
+  }
+
+  @keyframes neon-slide {
+    0% {
+      left: -60px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+}
+
+

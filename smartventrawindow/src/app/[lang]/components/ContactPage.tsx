@@ -49,7 +49,7 @@ const ContactForm = ({ translation }: { translation: any }) => {
   return (
     <section
       id="contact"
-      className="w-full py-32 px-6 bg-gradient-to-r from-[#0D1B2A] via-[#010815] to-[#122131] shadow-lg text-white relative overflow-hidden"
+      className="w-full py-32 px-6 bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] shadow-lg text-white relative overflow-hidden"
     >
       {/* Glow achtergrond */}
       <div className="absolute inset-0 bg-gradient-radial from-yellow-300/10 via-transparent to-transparent blur-3xl z-0" />

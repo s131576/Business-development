@@ -5,7 +5,7 @@
       "split": "Split.",
       "pay": "Pay.",
       "subtitle": "Splitting group expenses has never been easier. Scan your receipt – TabEven handles the rest. No arguments. No hassle.",
-      "cta_start": "Start now",
+      "cta_start": "Discover how it works",
       "cta_info": "More info",
       "title_logo": "TabEven"
     },
@@ -51,7 +51,7 @@
       "title": "Why TabEven?",
       "list": [
         "OCR automatically detects products, prices, total.",
-        "AI fairly splits the costs.",
+        "AI suggests a fair split based on recognized names and group settings",
         "Pay directly thro bank integration.",
         "Guest users can easily join in.",
         "GDPR2-compliant, fully encrypted.",
@@ -63,15 +63,15 @@
       "steps": [
         {
           "title": "Scan your receipt",
-          "desc": "Our OCR technology automatically detects items, prices, and date. No manual input needed."
+          "desc": "OCR automatically detects all items, prices, and totals — no manual input needed."
         },
         {
-          "title": "AI splits the bill",
-          "desc": "Based on your group and preferences, our AI fairly distributes the costs. Everyone pays their share."
+          "title": "Select who joined",
+          "desc": "Indicate who participated or paid. Easily invite others via a link — no account required."
         },
         {
-          "title": "Pay directly in the app",
-          "desc": "With PSD2 bank integration, you can instantly pay your share. Everything happens within TabEven. No hassle."
+          "title": "Pay instantly",
+          "desc": "Everyone pays their share via PSD2 bank integration — secure and without leaving the app."
         }
       ]
     },
@@ -80,21 +80,29 @@
       "cards_left": [
         {
           "title": "OCR recognition",
-          "desc": "Automatically scan your receipt with item, price, and date."
+          "desc": "Automatically scan your receipt with products, price, and date."
         },
         {
           "title": "Instant payments",
-          "desc": "PSD2 link to your bank – no need to leave the app."
+          "desc": "PSD2-link to your bank – without leaving the app."
+        },
+        {
+          "title": "Use without account",
+          "desc": "Share a link – people can join without registering."
         }
       ],
       "cards_right": [
         {
-          "title": "AI splitting",
-          "desc": "Everyone pays fairly — by dish, evenly, or customized."
+          "title": "AI-powered splitting",
+          "desc": "Our AI makes fair suggestions: by dish, equally or personalized."
         },
         {
-          "title": "Guest users",
-          "desc": "Send a link to people without an account – they can still join in."
+          "title": "All-in-one flow",
+          "desc": "Scan → Split → Pay. No separate steps or confusion."
+        },
+        {
+          "title": "GDPR-compliant & secure",
+          "desc": "Your data is encrypted and privacy is guaranteed."
         }
       ]
     },
@@ -115,7 +123,7 @@
         },
         {
           "title": "Premium",
-          "price": "€3/month",
+          "price": "€15.99/month",
           "description": "Everything automated, no hassle, direct PSD2 payments.",
           "features": [
             "All free features",
@@ -138,7 +146,7 @@
     },
     "partners": {
       "title": "🌟 Our (future) partners",
-      "desc": "We aim to collaborate with innovative parties to make payments smooth, secure, and future-ready.",
+      "desc": "We aim to collaborate with trusted payment partners to make your experience even smoother.",
       "disclaimer": "Logos are indicative – partnerships are in the future."
     },
     "faq_title": "Frequently Asked Questions",
@@ -162,11 +170,11 @@
     ],
     "download": {
       "title": "Download TabEven and experience it yourself",
-      "desc": "Coming soon to the App Store and Google Play. Get notified when we go live!"
+      "desc": "Coming soon to the App Store and Google Play."
     },
     "cta": {
-      "title": "Ready to change how we split expenses?",
-      "desc": "Join the revolution. One receipt at a time. Try TabEven now and experience the power of automation.",
+      "title": "Ready to change how we split expenses",
+      "desc": "TabEven makes splitting expenses easier than ever. Scan, split, and pay without hassle",
       "button": "Start with TabEven"
     }
   },
@@ -199,15 +207,13 @@
   "navigation": {
     "home": "Home",
     "product": "Product",
-    "features": "Features",
+    "features": "What it can do",
     "how": "How it works",
-    "usecases": "Use Cases",
-    "showcase": "Showcase",
+    "usecases": "When to use it",
+    "showcase": "In action",
     "pricing": "Subscriptions",
-    "start": "Get Started",
     "download": "Download",
     "faq": "FAQ",
-    "launch": "Launch",
     "contact": "Contact"
   }
 }

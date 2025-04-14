@@ -11,10 +11,8 @@ import tikkie from "../../../../public/tikkie.jpg";
 import scanning from "../../../../public/scanningtabeven.png";
 import logo from "../../../../public/logotabeven.png";
 import showcaseimage from "../../../../public/tabeven.png";
-import raam1 from "../../../../public/raamdesign.webp";
-import raam2 from "../../../../public/raam2.webp";
-import raam3 from "../../../../public/raam3.webp";
-import ContactPage from "../contact/page";
+import appstore from "../../../../public/app-store-png-logo-33112.png";
+import playstorelogo from "../../../../public/google-play-png-logo-3799.png";
 import ContactForm from "./ContactPage";
 
 
@@ -23,8 +21,6 @@ export const HomePage = ({ translation }: { translation: any }) => {
   const pathname = usePathname();
   const currentLang = pathname.startsWith("/nl") ? "nl" : pathname.startsWith("/en") ? "en" : "fr";
   const [showTopButton, setShowTopButton] = useState(false);
-
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,48 +41,30 @@ export const HomePage = ({ translation }: { translation: any }) => {
   return (
     <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0D1117] text-white overflow-x-hidden">
       {/* Animated Background Lights */}
-      {/* Animated Background Lights */}
-      <div className="pointer-events-none fixed top-0 left-0 w-full h-full z-0 overflow-hidden hidden sm:block">
-        <motion.div
-          animate={{ y: [0, 20, 0], opacity: [0.1, 0.3, 0.1] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute w-[400px] h-[400px] bg-yellow-500 rounded-full blur-3xl opacity-10 left-10 top-20"
-        />
-        <motion.div
-          animate={{ y: [0, -30, 0], opacity: [0.1, 0.25, 0.1] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute w-[500px] h-[500px] bg-purple-600 rounded-full blur-[160px] opacity-10 right-10 bottom-10"
-        />
-        <motion.div
-          animate={{ scale: [1, 1.05, 1], rotate: [0, 5, -5, 0] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute w-[700px] h-[700px] bg-blue-400 rounded-full blur-[180px] opacity-10 left-1/2 -translate-x-1/2 top-[30%]"
-        />
-      </div>
 
       {/* Hero Section */}
-      <section className="w-full min-h-[90vh] pt-28 px-6 sm:px-10 bg-gradient-radial from-purple-600/30 via-purple-700/10 to-transparent flex flex-col lg:flex-row items-center justify-center text-left gap-20 lg:gap-32 relative">
-        {/* Glow Background */}
-        <div className="absolute -top-40 left-1/2 transform -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-radial from-transparentyellow-400/20 via-transparent to-transparent blur-3xl z-0" />
+      <section className="w-full min-h-[90vh] pt-28 px-6 sm:px-10 bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] text-white flex flex-col lg:flex-row items-center justify-center gap-20 lg:gap-32 relative overflow-hidden">
+        {/* Glow achtergrond kan behouden worden als visueel element */}
+        <div className="absolute inset-0 bg-gradient-radial from-yellow-400/10 via-purple-600/10 to-transparent blur-3xl z-0" />
 
-        {/* Text Content */}
-        <div className="flex-1 z-10 max-w-xl space-y-6 text-center lg:text-left">
+        {/* Tekstgedeelte */}
+        <div className="flex-1 z-10 max-w-lg space-y-6 text-center lg:text-left">
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center lg:justify-start gap-1 sm:gap-4">
               <span className="text-4xl sm:text-5xl">📸</span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400 drop-shadow-[0_0_10px_rgba(255,224,0,0.3)]">
                 {translation.home.hero.scan}
               </h1>
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center lg:justify-start gap-1 sm:gap-4">
               <span className="text-4xl sm:text-5xl">📊</span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400 drop-shadow-[0_0_10px_rgba(255,224,0,0.3)]">
                 {translation.home.hero.split}
               </h1>
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center lg:justify-start gap-1 sm:gap-4">
               <span className="text-4xl sm:text-5xl">💸</span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400 drop-shadow-[0_0_10px_rgba(255,224,0,0.3)]">
                 {translation.home.hero.pay}
               </h1>
             </div>
@@ -96,53 +74,38 @@ export const HomePage = ({ translation }: { translation: any }) => {
             {translation.home.hero.subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-6">
             <a
-              href="#pricing"
-              className="bg-yellow-400 text-gray-900 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-500 transition-all"
+              href="#how"
+              className="bg-yellow-400 text-[#0D1117] font-bold px-6 py-3 rounded-xl shadow-lg hover:scale-105 hover:bg-yellow-300 transition-all duration-300"
             >
               {translation.home.hero.cta_start}
             </a>
             <a
-              href="#contact"
-              className="border border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg hover:bg-yellow-500 hover:text-gray-900 font-bold transition-all"
+              href="#features"
+              className="border-2 border-yellow-400 text-yellow-400 px-6 py-3 rounded-xl font-bold hover:bg-yellow-400 hover:text-[#0D1117] hover:scale-105 transition-all duration-300"
             >
               {translation.home.hero.cta_info}
             </a>
           </div>
         </div>
 
-        {/* Hero Logo */}
-        <div className="flex-1 relative z-10 w-full max-w-md text-center mt-12 lg:mt-0">
-          <h2 className="text-[64px] sm:text-[90px] md:text-[110px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-yellow-400 drop-shadow-[0_5px_25px_rgba(255,255,255,0.4)] animate-pulse">
+        {/* Logo of titel */}
+        <div className="flex-1 relative z-10 w-full max-w-md text-center">
+          <h2 className="text-[64px] sm:text-[90px] md:text-[110px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-yellow-400 drop-shadow-[0_10px_60px_rgba(255,255,255,0.4)]">
             Tab<span className="text-yellow-400 drop-shadow-[0_5px_25px_rgba(255,255,0,0.4)]">Even</span>
           </h2>
         </div>
       </section>
 
 
-      <div className="w-full overflow-hidden leading-[0] relative">
-        <svg
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          className="w-full h-[100px]"
-        >
-          <defs>
-            <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
-              <feDropShadow dx="0" dy="0" stdDeviation="6" floodColor="#00ffff" floodOpacity="0.6" />
-              <feDropShadow dx="0" dy="0" stdDeviation="10" floodColor="#00ffff" floodOpacity="0.4" />
-            </filter>
-          </defs>
-          <path
-            d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z"
-            fill="#0D1B2A"
-            filter="url(#neon-glow)"
-          />
-        </svg>
-      </div>
+      {/*noen balk */}
+      {/* <div className="neon-bar-container ">
+        <div className="neon-bar" />
+      </div> */}
 
       {/* Use Cases Section */}
-      <section id="usecases" className="w-full py-24 px-6 sm:px-10 text-white">
+      <section id="usecases" className="w-full py-24 px-6 sm:px-10 text-white relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -191,7 +154,6 @@ export const HomePage = ({ translation }: { translation: any }) => {
           </motion.div>
         </div>
 
-
         <style jsx>{`
          @keyframes scroll-x {
           0% {
@@ -208,9 +170,8 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </style>
       </section>
 
-
-      {/* Features Section */}
-      <section id="features" className="w-full py-20 px-6 sm:px-10 shadow-lg">
+      {/* Why Section */}
+      <section id="features" className="w-full bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] py-20 px-6 sm:px-10 shadow-lg">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -221,7 +182,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </motion.h2>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Features List */}
+          {/* Why List */}
           <motion.ul
             initial="hidden"
             whileInView="visible"
@@ -242,7 +203,6 @@ export const HomePage = ({ translation }: { translation: any }) => {
               </motion.li>
             ))}
           </motion.ul>
-
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -261,7 +221,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
       </section>
 
       {/* How It Works Section */}
-      <section id="how" className="w-full bg-gradient-to-r from-[#0D1B2A] via-[#010815] to-[#122131] py-24 px-6 sm:px-10">
+      <section id="how" className="w-full relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden py-24 px-6 sm:px-10">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -301,8 +261,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </div>
       </section>
 
-
-      <section id="tabeven-showcase" className="w-full relative py-28 sm:py-32 px-6 sm:px-10 overflow-hidden text-white">
+      <section id="tabeven-showcase" className="w-full relative py-28 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] overflow-hidden text-white">
         {/* Glow Achtergrond */}
         <div className="absolute inset-0 z-0 bg-gradient-radial from-purple-600/30 via-purple-700/10 to-transparent blur-3xl" />
 
@@ -317,7 +276,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
 
         <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start z-10">
           {/* LINKER CARDS */}
-          <div className="space-y-10 hidden md:block">
+          <div className="space-y-14 hidden md:block pr-4 pt-5">
             {translation.home.showcase.cards_left.map((card: any, index: number) => (
               <motion.div
                 key={index}
@@ -337,7 +296,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2 }}
-            className="mx-auto relative z-10 max-w-[320px] sm:max-w-[380px] md:max-w-[420px]"
+            className="mx-auto relative z-10 max-w-[320px] sm:max-w-[380px] md:max-w-[210px]"
           >
             <Image
               src={showcaseimage}
@@ -348,7 +307,8 @@ export const HomePage = ({ translation }: { translation: any }) => {
           </motion.div>
 
           {/* RECHTER CARDS */}
-          <div className="space-y-10 hidden md:block">
+          <div className="space-y-9 hidden md:block pl-4 pt-5">
+
             {translation.home.showcase.cards_right.map((card: any, index: number) => (
               <motion.div
                 key={index}
@@ -381,11 +341,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </div>
       </section>
 
-
       {/* Pricing Section */}
       <section
         id="pricing"
-        className="w-full bg-gradient-to-r from-[#0D1B2A] via-[#010815] to-[#122131] relative z-10 py-32 px-6 sm:py-52 text-white"
+        className="w-full relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden  z-10 py-32 px-6 sm:py-32 text-white"
       >
         {/* Glow Background */}
         <div className="absolute inset-0 pointer-events-none bg-gradient-radial from-yellow-400/10 via-transparent to-transparent blur-3xl" />
@@ -395,7 +354,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-yellow-400 font-extrabold text-center mb-16 sm:mb-20 text-[clamp(1.75rem,5vw,2.75rem)] max-w-[90%] mx-auto leading-tight"
+          className="text-yellow-400 font-extrabold text-center mb-16  text-[clamp(1.75rem,5vw,2.75rem)] max-w-[90%] mx-auto leading-tight"
         >
           {translation.home.pricing.title}
         </motion.h2>
@@ -419,54 +378,23 @@ export const HomePage = ({ translation }: { translation: any }) => {
                   <li key={i}>✅ {feat}</li>
                 ))}
               </ul>
-              <a
+              {/* <a
                 href="#start"
                 className="inline-block bg-yellow-400 text-black font-bold px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg rounded-full hover:bg-yellow-300 transition"
               >
                 {plan.button}
-              </a>
+              </a> */}
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* Go To Market Section */}
-      <section id="launch" className="w-full py-24 sm:py-32 text-white relative overflow-hidden px-6 sm:px-10">
-        {/* Glow Background */}
-        <div className="absolute inset-0 bg-gradient-radial from-yellow-300/20 to-transparent blur-3xl z-0" />
-
-        {/* Titel */}
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-yellow-300 font-extrabold text-center mb-12 sm:mb-20 text-[clamp(1.75rem,5vw,2.75rem)] leading-tight relative z-10"
-        >
-          {translation.home.launch.title}
-        </motion.h2>
-
-        {/* Stappen */}
-        <div className="max-w-5xl mx-auto space-y-10 sm:space-y-16 relative z-10">
-          {translation.home.launch.steps.map((step: string, index: number) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2, duration: 0.6 }}
-              className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-left text-base sm:text-lg font-medium text-white/90 bg-white/10 p-6 sm:p-8 rounded-xl border border-white/10 shadow-xl backdrop-blur"
-            >
-              <div className="text-2xl sm:text-3xl">{["🎓", "💳", "🌍"][index]}</div>
-              <div className="flex-1">{step}</div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
 
 
       {/* Partners Section */}
       <section id="partners" className="w-full py-20 sm:py-32 text-white text-center relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden px-6 sm:px-10">
         {/* Glow Achtergrond */}
-        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-[700px] sm:w-[900px] h-[700px] sm:h-[900px] bg-yellow-400/10 rounded-full blur-3xl z-0" />
+        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-[700px] sm:w-[900px] h-[700px] sm:h-[900px]  rounded-full blur-3xl z-0" />
 
         {/* Titel */}
         <h2 className="text-[clamp(2rem,6vw,3rem)] font-extrabold text-yellow-400 mb-6 relative z-10 animate-pulse">
@@ -477,30 +405,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
         <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 sm:mb-12 relative z-10">
           {translation.home.partners.desc}
         </p>
-
-        {/* Logos */}
-        <div className="flex flex-wrap justify-center items-center gap-10 sm:gap-20 max-w-6xl mx-auto relative z-10 ">
-          <div className="transition-transform hover:scale-105 w-[100px] sm:w-[130px]">
-            <Image src={kbc} alt="KBC" className="h-auto w-full object-contain" />
-          </div>
-          <div className="transition-transform hover:scale-105 w-[100px] sm:w-[130px]">
-            <Image src={payconiq} alt="Payconiq" className="h-auto w-full object-contain" />
-          </div>
-          <div className="transition-transform hover:scale-105 w-[100px] sm:w-[130px]">
-            <Image src={tikkie} alt="Tikkie" className="h-auto w-full object-contain" />
-          </div>
-        </div>
-
-        {/* Disclaimer */}
-        <p className="mt-14 sm:mt-16 text-sm sm:text-base text-gray-500 italic relative z-10">
-          {translation.home.partners.disclaimer}
-        </p>
       </section>
 
-
-
       {/* CTA Download Section */}
-      <section id="download" className="w-full py-20 sm:py-32  text-center text-white px-6 sm:px-10">
+      <section id="download" className="w-full py-20 sm:py-32 text-center bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] text-white px-6 sm:px-10">
         <h2 className="text-[clamp(2rem,5vw,3rem)] font-extrabold text-yellow-400 mb-6">
           {translation.home.download.title}
         </h2>
@@ -510,19 +418,27 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-          <img
-            src="/appstore.svg"
-            alt="App Store"
-            className="h-12 sm:h-14 opacity-70 hover:opacity-100 transition-opacity"
-          />
-          <img
-            src="/googleplay.svg"
-            alt="Google Play"
-            className="h-12 sm:h-14 opacity-70 hover:opacity-100 transition-opacity"
-          />
+          {/* App Store Button (inactief) */}
+          <div className="relative group w-[180px] sm:w-[200px]">
+            <Image
+              src={appstore}
+              alt="App Store"
+              className="w-full h-auto opacity-70 group-hover:opacity-100 transition-opacity cursor-not-allowed"
+            />
+            <span className="absolute -bottom-14 left-1/2 -translate-x-1/2 text-sm font-extrabold text-yellow-400">Binnenkort</span>
+          </div>
+
+          {/* Google Play Button (inactief) */}
+          <div className="relative group w-[180px] sm:w-[200px]">
+            <Image
+              src={playstorelogo}
+              alt="Google Play"
+              className="w-full h-auto opacity-70 group-hover:opacity-100 transition-opacity cursor-not-allowed"
+            />
+            <span className="absolute -bottom-14 left-1/2 -translate-x-1/2 text-sm font-extrabold text-yellow-400">Binnenkort</span>
+          </div>
         </div>
       </section>
-
 
       {/* FAQ Section */}
       <section id="faq" className="w-full py-20 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B263B] via-[#0D1B2A] to-[#1B263B] text-white text-center">
@@ -554,10 +470,8 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </div>
       </section>
 
-
-
       {/* Call to Action */}
-      <section id="action" className="w-full py-20 sm:py-32 px-6 sm:px-10 shadow-lg text-center bg-[#0D1117]">
+      <section id="action" className="w-full py-20 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] shadow-lg text-center bg-[#0D1117]">
         <motion.h2
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -571,19 +485,19 @@ export const HomePage = ({ translation }: { translation: any }) => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-base sm:text-lg text-gray-400 mb-8 sm:mb-10 max-w-2xl mx-auto"
+          className="text-base sm:text-lg font-extrabold text-yellow-400 mb-8 sm:mb-10 max-w-2xl mx-auto"
         >
           {translation.home.cta.desc}
         </motion.p>
 
-        <motion.a
+        {/* <motion.a
           href="#start"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="inline-block bg-yellow-400 text-black font-bold text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-xl transition"
         >
           {translation.home.cta.button}
-        </motion.a>
+        </motion.a> */}
       </section>
 
       {/* Scroll to Top Button */}

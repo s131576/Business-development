@@ -23,7 +23,7 @@ const Footer = () => {
   if (!translation) return null;
 
   return (
-    <footer className="bg-gradient-to-r from-[#0D1B2A] via-[#010815] to-[#122131] shadow-lg text-white py-10">
+    <footer className="bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] shadow-lg text-white py-10 border-t border-gray-700">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
 
         {/* Logo & Info */}
@@ -64,7 +64,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="mt-6 text-center text-gray-500 text-sm border-t border-gray-700 pt-4">
+      <div className="mt-6 text-center text-gray-500 text-sm pt-4">
         &copy; {new Date().getFullYear()} TabEven. {translation.footer.rights}
       </div>
     </footer>
