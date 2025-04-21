@@ -8,6 +8,8 @@ import { usePathname } from "next/navigation";
 import kbc from "../../../../public/KBC.png";
 import payconiq from "../../../../public/payconiq.png";
 import tikkie from "../../../../public/tikkie.jpg";
+import tabevenlogo1 from "../../../../public/tabevenlogo1-4.png"
+import tabevenlogo from "../../../../public/tabevenlogo.png"
 import members from "../../../../public/members.webp"
 import banks from "../../../../public/choosebank.png"
 import scanning from "../../../../public/scanningtabeven.png";
@@ -211,10 +213,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="rounded-xl overflow-hidden shadow-xl max-w-full"
+            className="rounded-xl overflow-hidden max-w-full"
           >
             <Image
-              src={logo}
+              src={tabevenlogo1}
               alt="TabEven demo"
               className="w-full h-auto object-contain rounded-2xl"
               priority
