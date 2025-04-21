@@ -8,6 +8,8 @@ import { usePathname } from "next/navigation";
 import kbc from "../../../../public/KBC.png";
 import payconiq from "../../../../public/payconiq.png";
 import tikkie from "../../../../public/tikkie.jpg";
+import members from "../../../../public/members.webp"
+import banks from "../../../../public/choosebank.png"
 import scanning from "../../../../public/scanningtabeven.png";
 import logo from "../../../../public/logotabeven.png";
 import showcaseimage from "../../../../public/tabeven.png";
@@ -15,6 +17,7 @@ import appstore from "../../../../public/app-store-png-logo-33112.png";
 import playstorelogo from "../../../../public/google-play-png-logo-3799.png";
 import ContactForm from "./ContactPage";
 
+const stepImages = [scanning, members, banks];
 
 
 export const HomePage = ({ translation }: { translation: any }) => {
@@ -241,7 +244,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
               className={`flex flex-col ${i % 2 !== 0 ? "lg:flex-row-reverse" : "lg:flex-row"} items-center gap-10 lg:gap-16`}
             >
               <Image
-                src={scanning}
+                src={stepImages[i]}
                 alt={translation.home.how.steps[i].title}
                 className="rounded-xl w-full max-w-[250px] sm:max-w-[300px] lg:max-w-[240px] xl:max-w-[280px] shadow-lg h-auto"
               />
