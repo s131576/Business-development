@@ -10,6 +10,7 @@ import payconiq from "../../../../public/payconiq.png";
 import tikkie from "../../../../public/tikkie.jpg";
 import tabevenlogo1 from "../../../../public/tabevenlogo1-4.png";
 import tabevenlogo from "../../../../public/tabevenlogo.png";
+import demo from "../../../../public/demo.gif";
 import members from "../../../../public/members.webp";
 import banks from "../../../../public/choosebank.png";
 import scanning from "../../../../public/scanningtabeven.png";
@@ -99,14 +100,24 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </div>
 
         {/* Logo of titel */}
-        <div className="flex-1 relative z-10 w-full max-w-md text-center">
+        <div className="flex-1 relative z-10 w-full max-w-md flex justify-center overflow-visible">
+
+          <Image
+            src={demo}
+            alt="TabEven test"
+            className="w-[60%]  self-center h-auto rounded-[12px]  shadow-yellow-400/20 shadow-2xl"
+            priority
+          />
+        </div>
+        {/*</div>
           <h2 className="text-[64px] sm:text-[90px] md:text-[110px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-yellow-400 drop-shadow-[0_10px_60px_rgba(255,255,255,0.4)]">
             Tab
             <span className="text-yellow-400 drop-shadow-[0_5px_25px_rgba(255,255,0,0.4)]">
               Even
             </span>
           </h2>
-        </div>
+        </div>*/
+        }
       </section>
 
       {/*noen balk */}
