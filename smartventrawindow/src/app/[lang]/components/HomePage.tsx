@@ -101,21 +101,16 @@ export const HomePage = ({ translation }: { translation: any }) => {
 
         {/* Logo of titel */}
         <div className="flex-1 relative z-10 w-full max-w-md flex justify-center overflow-visible">
-
-          <Image
-            src={demo}
-            alt="TabEven test"
-            className="w-[60%]  self-center h-auto rounded-[12px]  shadow-yellow-400/20 shadow-2xl"
-            priority
-          />
-        </div>
-        {/*</div>
           <h2 className="text-[64px] sm:text-[90px] md:text-[110px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-yellow-400 drop-shadow-[0_10px_60px_rgba(255,255,255,0.4)]">
             Tab
             <span className="text-yellow-400 drop-shadow-[0_5px_25px_rgba(255,255,0,0.4)]">
               Even
             </span>
           </h2>
+
+        </div>
+        {/*</div>
+
         </div>*/
         }
       </section>
@@ -349,7 +344,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
             className="mx-auto relative z-10 max-w-[320px] sm:max-w-[380px] md:max-w-[210px]"
           >
             <Image
-              src={showcaseimage}
+              src={demo}
               alt="TabEven App"
               className="w-full h-auto rounded-[9px] shadow-[0_30px_100px_rgba(255,255,255,0.15)]"
               priority
