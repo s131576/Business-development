@@ -8,10 +8,10 @@ import { usePathname } from "next/navigation";
 import kbc from "../../../../public/KBC.png";
 import payconiq from "../../../../public/payconiq.png";
 import tikkie from "../../../../public/tikkie.jpg";
-import tabevenlogo1 from "../../../../public/tabevenlogo1-4.png"
-import tabevenlogo from "../../../../public/tabevenlogo.png"
-import members from "../../../../public/members.webp"
-import banks from "../../../../public/choosebank.png"
+import tabevenlogo1 from "../../../../public/tabevenlogo1-4.png";
+import tabevenlogo from "../../../../public/tabevenlogo.png";
+import members from "../../../../public/members.webp";
+import banks from "../../../../public/choosebank.png";
 import scanning from "../../../../public/scanningtabeven.png";
 import logo from "../../../../public/logotabeven.png";
 import showcaseimage from "../../../../public/tabeven.png";
@@ -21,10 +21,13 @@ import ContactForm from "./ContactPage";
 
 const stepImages = [scanning, members, banks];
 
-
 export const HomePage = ({ translation }: { translation: any }) => {
   const pathname = usePathname();
-  const currentLang = pathname.startsWith("/nl") ? "nl" : pathname.startsWith("/en") ? "en" : "fr";
+  const currentLang = pathname.startsWith("/nl")
+    ? "nl"
+    : pathname.startsWith("/en")
+    ? "en"
+    : "fr";
   const [showTopButton, setShowTopButton] = useState(false);
 
   useEffect(() => {
@@ -98,11 +101,13 @@ export const HomePage = ({ translation }: { translation: any }) => {
         {/* Logo of titel */}
         <div className="flex-1 relative z-10 w-full max-w-md text-center">
           <h2 className="text-[64px] sm:text-[90px] md:text-[110px] font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-yellow-400 drop-shadow-[0_10px_60px_rgba(255,255,255,0.4)]">
-            Tab<span className="text-yellow-400 drop-shadow-[0_5px_25px_rgba(255,255,0,0.4)]">Even</span>
+            Tab
+            <span className="text-yellow-400 drop-shadow-[0_5px_25px_rgba(255,255,0,0.4)]">
+              Even
+            </span>
           </h2>
         </div>
       </section>
-
 
       {/*noen balk */}
       {/* <div className="neon-bar-container ">
@@ -110,7 +115,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
       </div> */}
 
       {/* Use Cases Section */}
-      <section id="usecases" className="w-full py-24 px-6 sm:px-10 text-white relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden">
+      <section
+        id="usecases"
+        className="w-full py-24 px-6 sm:px-10 text-white relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden"
+      >
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -141,42 +149,54 @@ export const HomePage = ({ translation }: { translation: any }) => {
             animate={{ x: [-1000, 0] }} // schuif van rechts naar links
             transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
           >
-            {[...translation.home.usecases.reviews, ...translation.home.usecases.reviews].map((review: any, i: number) => (
+            {[
+              ...translation.home.usecases.reviews,
+              ...translation.home.usecases.reviews,
+            ].map((review: any, i: number) => (
               <div
                 key={i}
                 className="w-[260px] sm:w-[300px] bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-xl border border-white/20 shadow-xl flex-shrink-0"
               >
                 <div className="flex items-center mb-3 sm:mb-4">
                   <div className="text-yellow-400 text-lg sm:text-xl mr-2">
-                    {"⭐️".repeat(review.rating) + "☆".repeat(5 - review.rating)}
+                    {"⭐️".repeat(review.rating) +
+                      "☆".repeat(5 - review.rating)}
                   </div>
-                  <span className="text-sm text-gray-400">{review.rating}/5</span>
+                  <span className="text-sm text-gray-400">
+                    {review.rating}/5
+                  </span>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base italic break-words">"{review.text}"</p>
+                <p className="text-gray-300 text-sm sm:text-base italic break-words">
+                  "{review.text}"
+                </p>
                 <p className="text-sm text-gray-400 mt-3">– {review.author}</p>
               </div>
             ))}
           </motion.div>
         </div>
 
-        <style jsx>{`
-         @keyframes scroll-x {
-          0% {
-          transform: translateX(0);
-         }
-         100% {
-           transform: translateX(-50%);
-          }
-        }
-         .animate-scroll-x {
-          animation: scroll-x 60s linear infinite;
-      }
-      `}
+        <style jsx>
+          {`
+            @keyframes scroll-x {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+            .animate-scroll-x {
+              animation: scroll-x 60s linear infinite;
+            }
+          `}
         </style>
       </section>
 
       {/* Why Section */}
-      <section id="features" className="w-full bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] py-20 px-6 sm:px-10 shadow-lg">
+      <section
+        id="features"
+        className="w-full bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] py-20 px-6 sm:px-10 shadow-lg"
+      >
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -196,17 +216,19 @@ export const HomePage = ({ translation }: { translation: any }) => {
             variants={{ hidden: {}, visible: {} }}
             className="space-y-6 sm:space-y-8 list-none"
           >
-            {translation.home.features.list.map((item: string, index: number) => (
-              <motion.li
-                key={index}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.15, duration: 0.6 }}
-                className="text-base sm:text-lg text-gray-300 leading-relaxed flex items-start gap-2"
-              >
-                <span className="text-yellow-400 text-xl">✅</span> {item}
-              </motion.li>
-            ))}
+            {translation.home.features.list.map(
+              (item: string, index: number) => (
+                <motion.li
+                  key={index}
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.15, duration: 0.6 }}
+                  className="text-base sm:text-lg text-gray-300 leading-relaxed flex items-start gap-2"
+                >
+                  <span className="text-yellow-400 text-xl">✅</span> {item}
+                </motion.li>
+              )
+            )}
           </motion.ul>
           {/* Image */}
           <motion.div
@@ -226,7 +248,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
       </section>
 
       {/* How It Works Section */}
-      <section id="how" className="w-full relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden py-24 px-6 sm:px-10">
+      <section
+        id="how"
+        className="w-full relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden py-24 px-6 sm:px-10"
+      >
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -243,7 +268,9 @@ export const HomePage = ({ translation }: { translation: any }) => {
               initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className={`flex flex-col ${i % 2 !== 0 ? "lg:flex-row-reverse" : "lg:flex-row"} items-center gap-10 lg:gap-16`}
+              className={`flex flex-col ${
+                i % 2 !== 0 ? "lg:flex-row-reverse" : "lg:flex-row"
+              } items-center gap-10 lg:gap-16`}
             >
               <Image
                 src={stepImages[i]}
@@ -266,7 +293,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </div>
       </section>
 
-      <section id="tabeven-showcase" className="w-full relative py-28 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] overflow-hidden text-white">
+      <section
+        id="tabeven-showcase"
+        className="w-full relative py-28 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] overflow-hidden text-white"
+      >
         {/* Glow Achtergrond */}
         <div className="absolute inset-0 z-0 bg-gradient-radial from-purple-600/30 via-purple-700/10 to-transparent blur-3xl" />
 
@@ -282,18 +312,22 @@ export const HomePage = ({ translation }: { translation: any }) => {
         <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start z-10">
           {/* LINKER CARDS */}
           <div className="space-y-14 hidden md:block pr-4 pt-5">
-            {translation.home.showcase.cards_left.map((card: any, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 + index * 0.2, duration: 0.8 }}
-                className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-white/20 shadow-2xl max-w-sm"
-              >
-                <h4 className="text-base sm:text-lg font-bold text-white mb-1">{card.title}</h4>
-                <p className="text-sm text-gray-300">{card.desc}</p>
-              </motion.div>
-            ))}
+            {translation.home.showcase.cards_left.map(
+              (card: any, index: number) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.2 + index * 0.2, duration: 0.8 }}
+                  className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-white/20 shadow-2xl max-w-sm"
+                >
+                  <h4 className="text-base sm:text-lg font-bold text-white mb-1">
+                    {card.title}
+                  </h4>
+                  <p className="text-sm text-gray-300">{card.desc}</p>
+                </motion.div>
+              )
+            )}
           </div>
 
           {/* MIDDEN IMAGE */}
@@ -306,31 +340,37 @@ export const HomePage = ({ translation }: { translation: any }) => {
             <Image
               src={showcaseimage}
               alt="TabEven App"
-              className="w-full h-auto rounded-[2rem] shadow-[0_30px_100px_rgba(255,255,255,0.15)]"
+              className="w-full h-auto rounded-[9px] shadow-[0_30px_100px_rgba(255,255,255,0.15)]"
               priority
             />
           </motion.div>
 
           {/* RECHTER CARDS */}
           <div className="space-y-9 hidden md:block pl-4 pt-5">
-
-            {translation.home.showcase.cards_right.map((card: any, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 + index * 0.2, duration: 0.8 }}
-                className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-white/20 shadow-2xl max-w-sm"
-              >
-                <h4 className="text-base sm:text-lg font-bold text-white mb-1">{card.title}</h4>
-                <p className="text-sm text-gray-300">{card.desc}</p>
-              </motion.div>
-            ))}
+            {translation.home.showcase.cards_right.map(
+              (card: any, index: number) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 + index * 0.2, duration: 0.8 }}
+                  className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-white/20 shadow-2xl max-w-sm"
+                >
+                  <h4 className="text-base sm:text-lg font-bold text-white mb-1">
+                    {card.title}
+                  </h4>
+                  <p className="text-sm text-gray-300">{card.desc}</p>
+                </motion.div>
+              )
+            )}
           </div>
 
           {/* CARDS VOOR MOBILE (onder afbeelding) */}
           <div className="block md:hidden col-span-full space-y-6 mt-12">
-            {[...translation.home.showcase.cards_left, ...translation.home.showcase.cards_right].map((card: any, index: number) => (
+            {[
+              ...translation.home.showcase.cards_left,
+              ...translation.home.showcase.cards_right,
+            ].map((card: any, index: number) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -338,7 +378,9 @@ export const HomePage = ({ translation }: { translation: any }) => {
                 transition={{ delay: index * 0.15, duration: 0.6 }}
                 className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-white/20 shadow-xl"
               >
-                <h4 className="text-base font-bold text-white mb-1">{card.title}</h4>
+                <h4 className="text-base font-bold text-white mb-1">
+                  {card.title}
+                </h4>
                 <p className="text-sm text-gray-300">{card.desc}</p>
               </motion.div>
             ))}
@@ -375,9 +417,15 @@ export const HomePage = ({ translation }: { translation: any }) => {
               transition={{ delay: index * 0.2, duration: 0.6 }}
             >
               <div className="absolute -inset-px bg-gradient-to-br from-yellow-500/20 via-transparent to-yellow-400/10 rounded-3xl blur-xl pointer-events-none" />
-              <h3 className="text-2xl sm:text-3xl font-bold text-yellow-400">{plan.title}</h3>
-              <p className="text-4xl sm:text-5xl font-extrabold mt-4">{plan.price}</p>
-              <p className="text-gray-300 mt-4 mb-8 text-base sm:text-lg">{plan.description}</p>
+              <h3 className="text-2xl sm:text-3xl font-bold text-yellow-400">
+                {plan.title}
+              </h3>
+              <p className="text-4xl sm:text-5xl font-extrabold mt-4">
+                {plan.price}
+              </p>
+              <p className="text-gray-300 mt-4 mb-8 text-base sm:text-lg">
+                {plan.description}
+              </p>
               <ul className="text-gray-200 space-y-3 text-sm sm:text-base mb-8">
                 {plan.features.map((feat: string, i: number) => (
                   <li key={i}>✅ {feat}</li>
@@ -394,10 +442,11 @@ export const HomePage = ({ translation }: { translation: any }) => {
         </div>
       </section>
 
-
-
       {/* Partners Section */}
-      <section id="partners" className="w-full py-20 sm:py-32 text-white text-center relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden px-6 sm:px-10">
+      <section
+        id="partners"
+        className="w-full py-20 sm:py-32 text-white text-center relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden px-6 sm:px-10"
+      >
         {/* Glow Achtergrond */}
         <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-[700px] sm:w-[900px] h-[700px] sm:h-[900px]  rounded-full blur-3xl z-0" />
 
@@ -413,7 +462,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
       </section>
 
       {/* CTA Download Section */}
-      <section id="download" className="w-full py-20 sm:py-32 text-center bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] text-white px-6 sm:px-10">
+      <section
+        id="download"
+        className="w-full py-20 sm:py-32 text-center bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] text-white px-6 sm:px-10"
+      >
         <h2 className="text-[clamp(2rem,5vw,3rem)] font-extrabold text-yellow-400 mb-6">
           {translation.home.download.title}
         </h2>
@@ -430,7 +482,9 @@ export const HomePage = ({ translation }: { translation: any }) => {
               alt="App Store"
               className="w-full h-auto opacity-70 group-hover:opacity-100 transition-opacity cursor-not-allowed"
             />
-            <span className="absolute -bottom-14 left-1/2 -translate-x-1/2 text-sm font-extrabold text-yellow-400">Binnenkort</span>
+            <span className="absolute -bottom-14 left-1/2 -translate-x-1/2 text-sm font-extrabold text-yellow-400">
+              Binnenkort
+            </span>
           </div>
 
           {/* Google Play Button (inactief) */}
@@ -440,13 +494,18 @@ export const HomePage = ({ translation }: { translation: any }) => {
               alt="Google Play"
               className="w-full h-auto opacity-70 group-hover:opacity-100 transition-opacity cursor-not-allowed"
             />
-            <span className="absolute -bottom-14 left-1/2 -translate-x-1/2 text-sm font-extrabold text-yellow-400">Binnenkort</span>
+            <span className="absolute -bottom-14 left-1/2 -translate-x-1/2 text-sm font-extrabold text-yellow-400">
+              Binnenkort
+            </span>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="w-full py-20 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B263B] via-[#0D1B2A] to-[#1B263B] text-white text-center">
+      <section
+        id="faq"
+        className="w-full py-20 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B263B] via-[#0D1B2A] to-[#1B263B] text-white text-center"
+      >
         <h2 className="text-[clamp(2rem,5vw,3rem)] font-extrabold text-yellow-400 mb-12">
           📘 {translation.home.faq_title}
         </h2>
@@ -461,7 +520,9 @@ export const HomePage = ({ translation }: { translation: any }) => {
                 <summary className="flex justify-between items-center cursor-pointer text-lg sm:text-xl font-semibold text-white group-open:text-yellow-400">
                   {item.title}
                   <span className="text-yellow-400 group-open:hidden">+</span>
-                  <span className="text-yellow-400 hidden group-open:inline">−</span>
+                  <span className="text-yellow-400 hidden group-open:inline">
+                    −
+                  </span>
                 </summary>
 
                 <div className="transition-[max-height] duration-500 ease-in-out overflow-hidden group-open:max-h-[500px] max-h-0">
@@ -476,7 +537,10 @@ export const HomePage = ({ translation }: { translation: any }) => {
       </section>
 
       {/* Call to Action */}
-      <section id="action" className="w-full py-20 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] shadow-lg text-center bg-[#0D1117]">
+      <section
+        id="action"
+        className="w-full py-20 sm:py-32 px-6 sm:px-10 bg-gradient-to-r from-[#1B2E45] via-[#243954] to-[#1B2E45] shadow-lg text-center bg-[#0D1117]"
+      >
         <motion.h2
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -516,7 +580,6 @@ export const HomePage = ({ translation }: { translation: any }) => {
       )}
       {/*call to contact */}
       <ContactForm translation={translation} />
-
     </div>
   );
 };
