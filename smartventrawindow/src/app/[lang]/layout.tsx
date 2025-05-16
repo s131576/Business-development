@@ -8,6 +8,7 @@ import Footer from "./components/UI/Footer";
 import { ThemeProvider } from "./context/ThemeContext";
 import { useTheme } from "next-themes";
 import { FaSun, FaMoon } from "react-icons/fa";
+import { CookieBanner } from "./components/CookieBanner";
 
 
 const geistSans = Geist({
@@ -38,6 +39,7 @@ export default async function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <CookieBanner />
           </LanguageProvider>
         </ThemeProvider>
       </body>

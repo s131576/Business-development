@@ -192,7 +192,9 @@
     "faq": "FAQ",
     "launch": "Lancement",
     "contact": "Contact",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Déclaration sur les cookies"
   },
   "contact": {
     "title": "Contactez-nous 📩",
@@ -215,5 +217,97 @@
     "download": "Télécharger",
     "faq": "FAQ",
     "contact": "Contact"
+  },
+  "about": {
+    "title": "À Propos",
+    "description": "Faites connaissance avec les personnes derrière la magie ! 💫",
+    "team_title": "Notre Équipe",
+    "cta_title": "Envie de collaborer avec nous ?",
+    "cta_description": "Nous sommes toujours ouverts à de nouvelles aventures et partenariats. Contactez-nous et créons quelque chose de beau ensemble !",
+    "cta_button": "Contactez-Nous"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "intro": "Cette politique de confidentialité décrit comment nous recueillons, utilisons et protégeons les données personnelles lorsque vous utilisez notre site web ou nos services.",
+    "sections": {
+      "data": {
+        "title": "1. Données collectées",
+        "items": [
+          "Nom et prénom",
+          "Adresse e-mail",
+          "Adresse IP",
+          "Données d'utilisation (par ex. pages visitées, comportement de clic)",
+          "Cookies (voir la politique relative aux cookies)"
+        ]
+      },
+      "purpose": {
+        "title": "2. Finalités du traitement",
+        "items": [
+          "Assurer le bon fonctionnement de notre site web",
+          "Améliorer l'expérience utilisateur",
+          "Vous contacter si nécessaire",
+          "À des fins d'analyse (par ex. via Google Analytics)"
+        ]
+      },
+      "legal": {
+        "title": "3. Base légale",
+        "text": "Nous traitons les données personnelles uniquement sur la base des fondements légaux tels que le consentement, l'exécution d'un contrat ou l'intérêt légitime."
+      },
+      "retention": {
+        "title": "4. Durée de conservation",
+        "text": "Nous ne conservons pas vos données personnelles plus longtemps que nécessaire aux finalités pour lesquelles elles ont été collectées."
+      },
+      "sharing": {
+        "title": "5. Partage avec des tiers",
+        "text": "Vos données ne sont pas partagées avec des tiers, sauf si cela est nécessaire pour nos services ou exigé par la loi."
+      },
+      "cookies": {
+        "title": "6. Cookies",
+        "text": "Nous utilisons des cookies pour améliorer notre site web. Pour plus d'informations, voir notre",
+        "link": "politique relative aux cookies"
+      },
+      "rights": {
+        "title": "7. Vos droits",
+        "items": [
+          "Demander l'accès à vos données personnelles",
+          "Faire corriger ou supprimer vos données",
+          "Retirer votre consentement",
+          "S'opposer au traitement"
+        ],
+        "contact": "Pour cela, veuillez nous contacter par e-mail"
+      },
+      "changes": {
+        "title": "8. Modifications de cette politique",
+        "text": "Cette politique de confidentialité peut être mise à jour. La dernière mise à jour a eu lieu le"
+      }
+    },
+    "lastUpdated": "16 mai 2025"
+  },
+  "cookiesverklaring": {
+    "title": "Déclaration sur les cookies",
+    "intro": "Ce site utilise des cookies pour améliorer votre expérience utilisateur. Vous trouverez ci-dessous les types de cookies que nous utilisons et pourquoi.",
+    "types_title": "Quels cookies utilisons-nous ?",
+    "types": [
+      {
+        "name": "Cookies fonctionnels",
+        "description": "Nécessaires au fonctionnement du site (par ex. mémorisation du choix de la langue)."
+      },
+      {
+        "name": "Cookies analytiques",
+        "description": "Nous aident à analyser et améliorer l'utilisation du site (par ex. via Google Analytics)."
+      },
+      {
+        "name": "Cookies marketing",
+        "description": "Utilisés pour suivre les utilisateurs et afficher des publicités personnalisées."
+      }
+    ],
+    "manage_title": "Gestion des cookies",
+    "manage_text": "Vous pouvez modifier vos préférences en matière de cookies à tout moment via les paramètres de votre navigateur.",
+    "changes_title": "Modifications de cette déclaration sur les cookies",
+    "changes_text": "Cette déclaration sur les cookies peut être mise à jour. La dernière modification a eu lieu le",
+    "lastUpdated": "16 mai 2025",
+    "bannerText": "Ce site utilise des cookies pour améliorer votre expérience.",
+    "accept": "Accepter",
+    "decline": "Refuser"
   }
 }

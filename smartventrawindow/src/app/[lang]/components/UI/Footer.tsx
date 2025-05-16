@@ -51,6 +51,16 @@ const Footer = () => {
             <li><a href="#pricing" className="hover:text-yellow-400">{translation.footer.pricing}</a></li>
             <li><a href="#faq" className="hover:text-yellow-400">{translation.footer.faq}</a></li>
             <li><a href="#contact" className="hover:text-yellow-400">{translation.footer.contact}</a></li>
+            <li>
+              <Link href={`/${currentLang}/privacy`} className="hover:text-yellow-400">
+                {translation.footer.privacy}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/${currentLang}/cookies`}  className="hover:text-yellow-400">
+                {translation.footer.cookies}
+              </Link>
+            </li>
           </ul>
         </nav>
 

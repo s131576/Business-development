@@ -192,7 +192,9 @@
     "faq": "FAQ",
     "launch": "Lancering",
     "contact": "Contact",
-    "rights": "Alle rechten voorbehouden."
+    "rights": "Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "cookies": "Cookieverklaring"
   },
   "contact": {
     "title": "Neem contact op 📩",
@@ -215,5 +217,97 @@
     "download": "Download",
     "faq": "FAQ",
     "contact": "Contact"
+  },
+  "about": {
+    "title": "Over Ons",
+    "description": "Maak kennis met de mensen achter de magie! 💫",
+    "team_title": "Ons Team",
+    "cta_title": "Wil je met ons samenwerken?",
+    "cta_description": "We staan altijd open voor nieuwe avonturen en partnerschappen. Neem contact op en laten we samen iets moois creëren!",
+    "cta_button": "Contacteer Ons"
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "intro": "Dit privacybeleid beschrijft hoe wij persoonlijke gegevens verzamelen, gebruiken en beschermen wanneer je gebruik maakt van onze website of diensten.",
+    "sections": {
+      "data": {
+        "title": "1. Verzamelde gegevens",
+        "items": [
+          "Naam en voornaam",
+          "E-mailadres",
+          "IP-adres",
+          "Gebruiksgegevens (bv. bezochte pagina’s, klikgedrag)",
+          "Cookies (zie cookieverklaring)"
+        ]
+      },
+      "purpose": {
+        "title": "2. Doeleinden van verwerking",
+        "items": [
+          "Om onze website correct te laten functioneren",
+          "Voor het verbeteren van de gebruikerservaring",
+          "Om contact met je op te nemen indien nodig",
+          "Voor analytische doeleinden (bv. via Google Analytics)"
+        ]
+      },
+      "legal": {
+        "title": "3. Wettelijke basis",
+        "text": "Wij verwerken persoonsgegevens alleen op basis van de wettelijke gronden zoals toestemming, uitvoering van een overeenkomst of gerechtvaardigd belang."
+      },
+      "retention": {
+        "title": "4. Bewaartermijn",
+        "text": "We bewaren je persoonsgegevens niet langer dan noodzakelijk voor de doeleinden waarvoor ze zijn verzameld."
+      },
+      "sharing": {
+        "title": "5. Delen met derden",
+        "text": "Jouw gegevens worden niet gedeeld met derden, tenzij dit noodzakelijk is voor onze dienstverlening of wettelijk verplicht is."
+      },
+      "cookies": {
+        "title": "6. Cookies",
+        "text": "We maken gebruik van cookies om onze website te verbeteren. Voor meer informatie, zie ons",
+        "link": "cookiebeleid"
+      },
+      "rights": {
+        "title": "7. Jouw rechten",
+        "items": [
+          "Inzage te vragen in je persoonsgegevens",
+          "Je gegevens te laten corrigeren of verwijderen",
+          "Je toestemming in te trekken",
+          "Bezwaar te maken tegen verwerking"
+        ],
+        "contact": "Neem hiervoor contact met ons op via e-mail"
+      },
+      "changes": {
+        "title": "8. Wijzigingen in dit beleid",
+        "text": "Dit privacybeleid kan worden bijgewerkt. De laatste update vond plaats op"
+      }
+    },
+    "lastUpdated": "16 mei 2025"
+  },
+  "cookiesverklaring": {
+    "title": "Cookieverklaring",
+    "intro": "Deze website maakt gebruik van cookies om je gebruikerservaring te verbeteren. Hieronder lees je welke cookies we gebruiken en waarom.",
+    "types_title": "Welke cookies gebruiken we?",
+    "types": [
+      {
+        "name": "Functionele cookies",
+        "description": "Noodzakelijk voor de werking van de site (bijv. taalkeuze onthouden)."
+      },
+      {
+        "name": "Analytische cookies",
+        "description": "Helpen ons het gebruik van de site te analyseren en verbeteren (bijv. via Google Analytics)."
+      },
+      {
+        "name": "Marketing cookies",
+        "description": "Gebruikt om gebruikers te volgen en gepersonaliseerde advertenties te tonen."
+      }
+    ],
+    "manage_title": "Cookies beheren",
+    "manage_text": "Je kan je cookievoorkeuren op elk moment wijzigen via de instellingen van je browser.",
+    "changes_title": "Wijzigingen in deze cookieverklaring",
+    "changes_text": "Deze cookieverklaring kan worden bijgewerkt. De laatste wijziging was op",
+    "lastUpdated": "16 mei 2025",
+    "bannerText": "Deze website gebruikt cookies om je ervaring te verbeteren.",
+    "accept": "Akkoord",
+    "decline": "Weiger"
   }
 }

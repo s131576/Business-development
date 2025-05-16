@@ -192,7 +192,9 @@
     "faq": "FAQ",
     "launch": "Launch",
     "contact": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy"
   },
   "contact": {
     "title": "Get in touch 📩",
@@ -215,5 +217,97 @@
     "download": "Download",
     "faq": "FAQ",
     "contact": "Contact"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Meet the people behind the magic! 💫",
+    "team_title": "Our Team",
+    "cta_title": "Want to collaborate with us?",
+    "cta_description": "We’re always open for new adventures and partnerships. Get in touch and let’s create something amazing together!",
+    "cta_button": "Contact Us"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This privacy policy describes how we collect, use, and protect personal data when you use our website or services.",
+    "sections": {
+      "data": {
+        "title": "1. Collected Data",
+        "items": [
+          "First and last name",
+          "Email address",
+          "IP address",
+          "Usage data (e.g., pages visited, click behavior)",
+          "Cookies (see cookie policy)"
+        ]
+      },
+      "purpose": {
+        "title": "2. Purposes of Processing",
+        "items": [
+          "To ensure the proper functioning of our website",
+          "To improve user experience",
+          "To contact you if necessary",
+          "For analytical purposes (e.g., via Google Analytics)"
+        ]
+      },
+      "legal": {
+        "title": "3. Legal Basis",
+        "text": "We process personal data only based on legal grounds such as consent, performance of a contract, or legitimate interest."
+      },
+      "retention": {
+        "title": "4. Retention Period",
+        "text": "We do not keep your personal data longer than necessary for the purposes for which it was collected."
+      },
+      "sharing": {
+        "title": "5. Sharing with Third Parties",
+        "text": "Your data is not shared with third parties unless necessary for our services or legally required."
+      },
+      "cookies": {
+        "title": "6. Cookies",
+        "text": "We use cookies to improve our website. For more information, see our",
+        "link": "cookie policy"
+      },
+      "rights": {
+        "title": "7. Your Rights",
+        "items": [
+          "Request access to your personal data",
+          "Have your data corrected or deleted",
+          "Withdraw your consent",
+          "Object to processing"
+        ],
+        "contact": "Please contact us by email to exercise these rights"
+      },
+      "changes": {
+        "title": "8. Changes to this Policy",
+        "text": "This privacy policy may be updated. The last update was on"
+      }
+    },
+    "lastUpdated": "May 16, 2025"
+  },
+  "cookiesverklaring": {
+    "title": "Cookie Policy",
+    "intro": "This website uses cookies to improve your user experience. Below you can read which cookies we use and why.",
+    "types_title": "Which cookies do we use?",
+    "types": [
+      {
+        "name": "Functional cookies",
+        "description": "Necessary for the site to function properly (e.g., remembering language preference)."
+      },
+      {
+        "name": "Analytical cookies",
+        "description": "Help us analyze and improve site usage (e.g., via Google Analytics)."
+      },
+      {
+        "name": "Marketing cookies",
+        "description": "Used to track users and show personalized ads."
+      }
+    ],
+    "manage_title": "Managing Cookies",
+    "manage_text": "You can change your cookie preferences at any time via your browser settings.",
+    "changes_title": "Changes to this cookie policy",
+    "changes_text": "This cookie policy may be updated. The last change was on",
+    "lastUpdated": "May 16, 2025",
+    "bannerText": "This website uses cookies to improve your experience.",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

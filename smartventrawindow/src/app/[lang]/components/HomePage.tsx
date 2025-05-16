@@ -19,6 +19,7 @@ import showcaseimage from "../../../../public/tabeven.png";
 import appstore from "../../../../public/app-store-png-logo-33112.png";
 import playstorelogo from "../../../../public/google-play-png-logo-3799.png";
 import ContactForm from "./ContactPage";
+import AboutPage from "./AboutPage";
 
 const stepImages = [scanning, members, banks];
 
@@ -396,7 +397,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
 
       {/* Pricing Section */}
       <section
-        id="pricing"
+        id="abonnementen"
         className="w-full relative bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#0D1B2A] overflow-hidden  z-10 py-32 px-6 sm:py-32 text-white"
       >
         {/* Glow Background */}
@@ -573,6 +574,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
         >
           {translation.home.cta.button}
         </motion.a> */}
+        <AboutPage translation={translation} />
       </section>
 
       {/* Scroll to Top Button */}

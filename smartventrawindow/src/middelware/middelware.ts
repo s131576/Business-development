@@ -25,7 +25,7 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // ✅ Redirect alleen als de gebruiker nog geen taal heeft geselecteerd
+  // Redirect alleen als de gebruiker nog geen taal heeft geselecteerd
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}`)
   );
