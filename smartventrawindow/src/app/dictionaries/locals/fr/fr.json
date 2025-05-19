@@ -4,7 +4,7 @@
       "scan": "Scanner.",
       "split": "Partager.",
       "pay": "Payer.",
-      "subtitle": "Partager les dépenses de groupe n'a jamais été aussi simple. Scanne ton reçu – TabEven s'occupe du reste. Pas de disputes. Pas de tracas.",
+      "subtitle": "Partager les dépenses de groupe n'a jamais été aussi simple. Scanne ton reçu - TabEven s'occupe du reste. Pas de disputes. Pas de tracas.",
       "cta_start": "Découvrez comment ça fonctionne",
       "cta_info": "Plus d'infos",
       "title_logo": "TabEven"
@@ -21,7 +21,7 @@
       ],
       "reviews": [
         {
-          "text": "Plus de discussions après une soirée – TabEven gère tout.",
+          "text": "Plus de discussions après une soirée - TabEven gère tout.",
           "author": "Étudiant de Gand",
           "rating": 5
         },
@@ -51,7 +51,7 @@
       "title": "Pourquoi TabEven ?",
       "list": [
         "L'OCR reconnaît automatiquement les produits, les prix, le total.",
-        "L’IA propose une répartition équitable, basée sur les noms reconnus et les paramètres de groupe.",
+        "L'IA propose une répartition équitable, basée sur les noms reconnus et les paramètres de groupe.",
         "Paiement direct via connexion bancaire.",
         "Les invités peuvent facilement participer.",
         "Conforme au RGPD2, tout est crypté.",
@@ -84,11 +84,11 @@
         },
         {
           "title": "Paiements instantanés",
-          "desc": "Lien PSD2 vers votre banque – sans quitter l’app."
+          "desc": "Lien PSD2 vers votre banque - sans quitter l'app."
         },
         {
           "title": "Utilisation sans compte",
-          "desc": "Partagez un lien – les gens peuvent participer sans s’inscrire."
+          "desc": "Partagez un lien - les gens peuvent participer sans s'inscrire."
         }
       ],
       "cards_right": [
@@ -98,7 +98,7 @@
         },
         {
           "title": "Processus tout-en-un",
-          "desc": "Scanner → Répartir → Payer. Pas d’étapes séparées ni de confusion."
+          "desc": "Scanner → Répartir → Payer. Pas d'étapes séparées ni de confusion."
         },
         {
           "title": "Conforme RGPD & sécurisé",
@@ -139,15 +139,15 @@
     "launch": {
       "title": "Notre lancement : en 3 étapes",
       "steps": [
-        "Phase 1 : Atteindre les étudiants via TikTok & Instagram – visibilité virale avec des situations reconnaissables.",
-        "Phase 2 : Intégrations avec les banques & plateformes fintech – paiements sans friction, PSD2-first.",
-        "Phase 3 : Déploiement en Europe – via partenariats, boucles de croissance et parrainages utilisateurs."
+        "Phase 1 : Atteindre les étudiants via TikTok & Instagram - visibilité virale avec des situations reconnaissables.",
+        "Phase 2 : Intégrations avec les banques & plateformes fintech - paiements sans friction, PSD2-first.",
+        "Phase 3 : Déploiement en Europe - via partenariats, boucles de croissance et parrainages utilisateurs."
       ]
     },
     "partners": {
       "title": "🌟 Nos (futurs) partenaires",
       "desc": "Nous visons à collaborer avec des partenaires de paiement fiables pour rendre votre expérience encore plus fluide.",
-      "disclaimer": "Logos à titre indicatif – la collaboration est prévue pour l'avenir."
+      "disclaimer": "Logos à titre indicatif - la collaboration est prévue pour l'avenir."
     },
     "faq_title": "Questions Fréquemment Posées",
     "faq": [
@@ -157,11 +157,11 @@
       },
       {
         "title": "Tous les participants doivent-ils avoir l'application ?",
-        "desc": "Non, tu peux aussi inviter des personnes en tant qu'invité – elles peuvent payer facilement sans compte."
+        "desc": "Non, tu peux aussi inviter des personnes en tant qu'invité - elles peuvent payer facilement sans compte."
       },
       {
         "title": "Les paiements sont-ils sécurisés ?",
-        "desc": "Nous utilisons la technologie PSD2 et le cryptage – comme ta banque."
+        "desc": "Nous utilisons la technologie PSD2 et le cryptage - comme ta banque."
       },
       {
         "title": "Et si le reçu est flou ?",
@@ -194,7 +194,7 @@
     "contact": "Contact",
     "rights": "Tous droits réservés.",
     "privacy": "Politique de confidentialité",
-    "cookies": "Déclaration sur les cookies"
+    "cookies": "Politique en matière de cookies"
   },
   "contact": {
     "title": "Contactez-nous 📩",
@@ -209,9 +209,9 @@
   "navigation": {
     "home": "Accueil",
     "product": "Produit",
-    "features": "Ce qu’il peut faire",
+    "features": "Ce qu'il peut faire",
     "how": "Comment ça marche",
-    "usecases": "Quand l’utiliser",
+    "usecases": "Quand l'utiliser",
     "showcase": "En action",
     "pricing": "Abonnements",
     "download": "Télécharger",
@@ -224,81 +224,218 @@
     "team_title": "Notre Équipe",
     "cta_title": "Envie de collaborer avec nous ?",
     "cta_description": "Nous sommes toujours ouverts à de nouvelles aventures et partenariats. Contactez-nous et créons quelque chose de beau ensemble !",
-    "cta_button": "Contactez-Nous"
+    "cta_button": "Contactez-Nous",
+    "team_members": [
+      {
+        "name": "Ben",
+        "role": "Marketing & Ventes",
+        "funFact": "Adoooore inventer des campagnes complètement folles 🎉"
+      },
+      {
+        "name": "Enes",
+        "role": "Designer en Chef",
+        "funFact": "Croque des idées en continu avec un énorme café ☕"
+      },
+      {
+        "name": "Jafar",
+        "role": "PDG & Visionnaire",
+        "funFact": "Le cerveau derrière nos rêves les plus fous 🚀"
+      },
+      {
+        "name": "Rachad",
+        "role": "Magicien Full-Stack",
+        "funFact": "Débogue plus vite que son ombre 👨"
+      },
+      {
+        "name": "Sofiane",
+        "role": "Chef de Produit",
+        "funFact": "Devine toujours ce que veulent les utilisateurs 📋"
+      }
+    ]
   },
   "privacy": {
     "title": "Politique de confidentialité",
-    "intro": "Cette politique de confidentialité décrit comment nous recueillons, utilisons et protégeons les données personnelles lorsque vous utilisez notre site web ou nos services.",
+    "intro": "Chez TabEven, nous accordons une grande importance à votre vie privée. Cette politique de confidentialité explique quelles données personnelles nous collectons, comment nous les utilisons, les sécurisons et les partageons, ainsi que vos droits. Cette politique s'applique à tous les utilisateurs de notre site web (www.tabeven.app) et de nos services de gestion des dépenses partagées.",
     "sections": {
+      "who": {
+        "title": "1. Qui sommes-nous ?",
+        "text": "TabEven est un service développé par TabEven, situé à [Adresse de l'entreprise], Ellermanstraat 33, Antwerpen 2060, Belgique, enregistré à la Chambre de Commerce sous le numéro [numéro KvK]. Nous sommes le responsable du traitement des données personnelles collectées via notre site web et nos services.",
+        "contact": {
+          "email": "smartventrawindow@outlook.com",
+          "address": "Ellermanstraat 33, 2060 Anvers",
+          "phone": "03 220 33 00"
+        }
+      },
       "data": {
-        "title": "1. Données collectées",
-        "items": [
-          "Nom et prénom",
-          "Adresse e-mail",
-          "Adresse IP",
-          "Données d'utilisation (par ex. pages visitées, comportement de clic)",
-          "Cookies (voir la politique relative aux cookies)"
-        ]
+        "title": "2. Quelles données personnelles collectons-nous ?",
+        "table": [
+          {
+            "category": "Données d'identité",
+            "examples": "Nom, prénom",
+            "source": "Via les formulaires d'inscription ou la création de compte"
+          },
+          {
+            "category": "Données de contact",
+            "examples": "Adresse e-mail, numéro de téléphone (facultatif)",
+            "source": "Via les formulaires de contact ou les paramètres de compte"
+          },
+          {
+            "category": "Données financières",
+            "examples": "Coordonnées bancaires, données de transaction",
+            "source": "Via les paiements d'abonnements ou les transactions de groupe"
+          },
+          {
+            "category": "Données techniques",
+            "examples": "Adresse IP, informations sur l'appareil, navigateur",
+            "source": "Automatiquement via l'utilisation du site ou de l'application"
+          },
+          {
+            "category": "Données d'utilisation",
+            "examples": "Pages visitées, clics, interactions avec les groupes",
+            "source": "Via des outils d'analyse (ex. : Google Analytics)"
+          },
+          {
+            "category": "Données liées aux cookies",
+            "examples": "Préférences, comportement de navigation",
+            "source": "Via les cookies (voir notre politique de cookies)"
+          },
+          {
+            "category": "Données de groupe",
+            "examples": "Informations sur les dépenses partagées, paramètres de groupe",
+            "source": "Via votre utilisation du service TabEven"
+          }
+        ],
+        "note": "Nos services ne sont pas destinés aux personnes de moins de 16 ans. Si nous découvrons que nous avons collecté des données de mineurs sans autorisation parentale, nous les supprimerons. Contactez-nous si vous pensez que cela s'est produit."
       },
       "purpose": {
-        "title": "2. Finalités du traitement",
-        "items": [
-          "Assurer le bon fonctionnement de notre site web",
-          "Améliorer l'expérience utilisateur",
-          "Vous contacter si nécessaire",
-          "À des fins d'analyse (par ex. via Google Analytics)"
+        "title": "3. Pourquoi collectons-nous ces données ?",
+        "table": [
+          {
+            "purpose": "Fournir nos services",
+            "example": "Gérer les transactions de groupe, traiter les paiements",
+            "legal": "Exécution d'un contrat"
+          },
+          {
+            "purpose": "Fonctionnement du site",
+            "example": "Mémoriser vos identifiants de connexion, la langue choisie",
+            "legal": "Intérêt légitime"
+          },
+          {
+            "purpose": "Amélioration de nos services",
+            "example": "Analyser l'utilisation du site via Google Analytics",
+            "legal": "Consentement (données non anonymisées) ou intérêt légitime (données anonymisées)"
+          },
+          {
+            "purpose": "Service client",
+            "example": "Répondre aux questions par e-mail ou via le formulaire de contact",
+            "legal": "Exécution d'un contrat ou intérêt légitime"
+          },
+          {
+            "purpose": "Marketing",
+            "example": "Envoi de newsletters (si vous y avez consenti)",
+            "legal": "Consentement"
+          },
+          {
+            "purpose": "Obligations légales",
+            "example": "Conserver les données de transaction à des fins fiscales",
+            "legal": "Obligation légale"
+          }
         ]
       },
       "legal": {
-        "title": "3. Base légale",
-        "text": "Nous traitons les données personnelles uniquement sur la base des fondements légaux tels que le consentement, l'exécution d'un contrat ou l'intérêt légitime."
+        "title": "4. Base légale du traitement",
+        "text": "Nous traitons les données personnelles uniquement sur la base des fondements juridiques suivants : consentement, exécution d'un contrat, intérêt légitime ou obligation légale."
       },
       "retention": {
-        "title": "4. Durée de conservation",
-        "text": "Nous ne conservons pas vos données personnelles plus longtemps que nécessaire aux finalités pour lesquelles elles ont été collectées."
+        "title": "5. Durée de conservation",
+        "text": "Nous ne conservons les données personnelles que pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées. Elles sont ensuite supprimées ou anonymisées de manière sécurisée."
       },
       "sharing": {
-        "title": "5. Partage avec des tiers",
-        "text": "Vos données ne sont pas partagées avec des tiers, sauf si cela est nécessaire pour nos services ou exigé par la loi."
+        "title": "6. Partage avec des tiers",
+        "text": "Vos données ne sont partagées avec des tiers que si cela est nécessaire à la prestation de nos services (ex. services de paiement) ou si la loi l'exige. Nous avons conclu des accords de traitement des données avec les tiers qui traitent des données en notre nom."
       },
       "cookies": {
-        "title": "6. Cookies",
-        "text": "Nous utilisons des cookies pour améliorer notre site web. Pour plus d'informations, voir notre",
-        "link": "politique relative aux cookies"
+        "title": "7. Cookies",
+        "text": "Nous utilisons des cookies et technologies similaires à des fins fonctionnelles, analytiques et marketing. Pour plus d'informations, consultez notre",
+        "link": "politique en matière de cookies"
       },
       "rights": {
-        "title": "7. Vos droits",
+        "title": "8. Vos droits",
         "items": [
-          "Demander l'accès à vos données personnelles",
-          "Faire corriger ou supprimer vos données",
-          "Retirer votre consentement",
-          "S'opposer au traitement"
+          "Droit d'accès à vos données personnelles",
+          "Droit de rectification de données inexactes",
+          "Droit à l'effacement de vos données",
+          "Droit de limitation ou d'opposition au traitement",
+          "Droit à la portabilité des données",
+          "Droit de retirer votre consentement à tout moment"
         ],
-        "contact": "Pour cela, veuillez nous contacter par e-mail"
+        "contact": "Pour exercer vos droits, contactez-nous à l'adresse: "
       },
       "changes": {
-        "title": "8. Modifications de cette politique",
-        "text": "Cette politique de confidentialité peut être mise à jour. La dernière mise à jour a eu lieu le"
+        "title": "9. Modifications de cette politique de confidentialité",
+        "text": "Nous pouvons mettre à jour cette politique à tout moment, par exemple en cas de changement législatif ou de nouvelles fonctionnalités. La version actuelle est toujours disponible sur notre site. En cas de modifications importantes, nous vous en informerons.",
+        "lastUpdated": "16 mai 2025"
       }
-    },
-    "lastUpdated": "16 mai 2025"
+    }
   },
   "cookiesverklaring": {
-    "title": "Déclaration sur les cookies",
-    "intro": "Ce site utilise des cookies pour améliorer votre expérience utilisateur. Vous trouverez ci-dessous les types de cookies que nous utilisons et pourquoi.",
+    "title": "Politique en matière de cookies",
+    "intro": "Notre site web utilise des cookies et des technologies similaires afin d'améliorer votre expérience utilisateur, garantir le bon fonctionnement du site, analyser son utilisation et, si vous le souhaitez, afficher des publicités personnalisées. Vous trouverez ci-dessous des explications sur ce que sont les cookies, quels cookies nous utilisons, pourquoi nous les utilisons et comment les gérer.",
     "types_title": "Quels cookies utilisons-nous ?",
     "types": [
       {
         "name": "Cookies fonctionnels",
-        "description": "Nécessaires au fonctionnement du site (par ex. mémorisation du choix de la langue)."
+        "description": "Nécessaires au fonctionnement du site (par exemple pour mémoriser la langue choisie)."
       },
       {
         "name": "Cookies analytiques",
-        "description": "Nous aident à analyser et améliorer l'utilisation du site (par ex. via Google Analytics)."
+        "description": "Nous aident à analyser et améliorer l'utilisation du site (par exemple via Google Analytics)."
       },
       {
         "name": "Cookies marketing",
-        "description": "Utilisés pour suivre les utilisateurs et afficher des publicités personnalisées."
+        "description": "Utilisés pour suivre les utilisateurs et afficher des publicités personnalisées (ex. via Facebook Pixel)."
+      }
+    ],
+    "sections": [
+      {
+        "title": "1. Que sont les cookies ?",
+        "content": "Les cookies sont de petits fichiers texte stockés sur votre appareil (ordinateur, tablette, smartphone) lorsque vous visitez notre site. Ils nous permettent de recueillir des informations telles que vos préférences, votre comportement de navigation ou les paramètres de votre appareil, afin de rendre le site plus fonctionnel et pertinent. Nous pouvons également utiliser d'autres technologies similaires comme les pixels ou le stockage local."
+      },
+      {
+        "title": "2. Pourquoi utilisons-nous des cookies ?",
+        "content": "Nous utilisons des cookies pour les objectifs suivants :\n\n- Fonctionnels : pour garantir le bon fonctionnement du site, par exemple pour retenir votre langue ou vos données de connexion.\n- Analytiques : pour comprendre comment les visiteurs utilisent notre site et l'améliorer.\n- Marketing : pour vous proposer des publicités pertinentes sur notre site ou sur des sites tiers.\n- Personnalisation : pour adapter le contenu du site à vos intérêts."
+      },
+      {
+        "title": "3. Quels cookies utilisons-nous ?",
+        "content": "Voici un aperçu des cookies que nous utilisons :\n\n- cookie_notice_accepted (Fonctionnel, 1 an, Première partie) : Mémorise si vous avez accepté la bannière des cookies.\n- lang (Fonctionnel, Session, Première partie) : Mémorise votre choix de langue.\n- _ga (Analytique, 2 ans, Tiers - Google) : Mesure l'utilisation du site (vues de pages, durée de session), adresses IP anonymisées.\n- _gid (Analytique, 24h, Tiers - Google) : Distingue les utilisateurs.\n- fr (Marketing, 3 mois, Tiers - Meta) : Suit le comportement utilisateur à des fins publicitaires.\n- _fbp (Marketing, 3 mois, Tiers - Meta) : Mesure l'efficacité des publicités Facebook."
+      },
+      {
+        "title": "4. Consentement aux cookies",
+        "content": "Lors de votre première visite sur notre site, une bannière s'affiche pour vous permettre de choisir les cookies à autoriser. Vous pouvez :\n\n- Accepter tous les cookies\n- Autoriser uniquement les cookies nécessaires\n- Adapter vos préférences\n\nVous pouvez modifier vos choix à tout moment via les paramètres des cookies sur notre site. Le refus des cookies non essentiels n'affectera pas les fonctionnalités principales du site."
+      },
+      {
+        "title": "5. Gérer les cookies via votre navigateur",
+        "content": "En plus des paramètres de notre site, vous pouvez gérer les cookies via votre navigateur. Vous pouvez :\n\n- Bloquer ou supprimer les cookies\n- Supprimer automatiquement les cookies à la fermeture du navigateur\n- Autoriser ou bloquer des sites spécifiques\n\nVeuillez consulter le manuel de votre navigateur pour les instructions. Attention : la désactivation des cookies fonctionnels peut affecter le bon fonctionnement du site."
+      },
+      {
+        "title": "6. Tiers",
+        "content": "Certains cookies sont placés par des tiers comme Google (Analytics) et Meta (publicité). Ces parties peuvent traiter les données selon leur propre politique de confidentialité. Nous avons signé des accords de sous-traitance avec eux et ne partageons pas de données personnelles sans votre consentement."
+      },
+      {
+        "title": "7. Vos droits",
+        "content": "Conformément au RGPD, vous disposez des droits suivants :\n\n- Droit d'accès à vos données\n- Droit de rectification des données incorrectes\n- Droit à l'effacement des données\n- Droit d'opposition à certains traitements\n- Droit à la portabilité des données\n\nPour exercer ces droits, contactez-nous à privacy@votresite.fr."
+      },
+      {
+        "title": "8. Traitement et sécurité des données",
+        "content": "Les données collectées via les cookies ne sont pas conservées plus longtemps que nécessaire. Nous appliquons des mesures techniques et organisationnelles appropriées pour sécuriser vos données, telles que le chiffrement et la gestion des accès."
+      },
+      {
+        "title": "9. Modifications de cette déclaration sur les cookies",
+        "content": "Cette déclaration peut être mise à jour, par exemple en cas de nouveaux cookies ou de modifications du site. Les modifications sont publiées sur cette page. En cas de changements importants, une notification vous sera affichée sur le site."
+      },
+      {
+        "title": "10. Contact",
+        "content": "Vous avez des questions, remarques ou plaintes concernant l'utilisation des cookies ? Contactez-nous :\n\n- Email : privacy@votresite.fr\n- Téléphone : [Votre numéro]\n- Adresse : [Nom de votre entreprise], [Adresse], [Code postal et ville]\n\nSi vous n'êtes pas satisfait de notre réponse, vous pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr)."
       }
     ],
     "manage_title": "Gestion des cookies",

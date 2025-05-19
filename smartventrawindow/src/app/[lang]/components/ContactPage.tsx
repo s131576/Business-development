@@ -27,7 +27,7 @@ const ContactForm = ({ translation }: { translation: any }) => {
         "template_8jeha3l",
         {
           from_name: formData.name,
-          to_name: "SmartVentraWindow",
+          to_name: "TABEVEN",
           reply_to: formData.email,
           message: formData.message,
         },

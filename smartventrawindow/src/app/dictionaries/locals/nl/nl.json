@@ -4,7 +4,7 @@
       "scan": "Scan.",
       "split": "Verdeel.",
       "pay": "Betaal.",
-      "subtitle": "Groepskosten verdelen was nog nooit zo simpel. Scan je bonnetje – TabEven regelt de rest. Zonder discussie. Zonder gedoe.",
+      "subtitle": "Groepskosten verdelen was nog nooit zo simpel. Scan je bonnetje - TabEven regelt de rest. Zonder discussie. Zonder gedoe.",
       "cta_start": "Ontdek hoe het werkt",
       "cta_info": "Meer info",
       "title_logo": "TabEven"
@@ -21,7 +21,7 @@
       ],
       "reviews": [
         {
-          "text": "Geen discussies meer na een avondje uit – TabEven regelt alles.",
+          "text": "Geen discussies meer na een avondje uit - TabEven regelt alles.",
           "author": "Student uit Gent",
           "rating": 5
         },
@@ -67,7 +67,7 @@
         },
         {
           "title": "Kies wie meedoet",
-          "desc": "Geef aan wie er mee-eet of betaalde. Nodig gemakkelijk anderen uit via een link – ook zonder account."
+          "desc": "Geef aan wie er mee-eet of betaalde. Nodig gemakkelijk anderen uit via een link - ook zonder account."
         },
         {
           "title": "Betaal meteen",
@@ -84,11 +84,11 @@
         },
         {
           "title": "Directe betalingen",
-          "desc": "PSD2-link naar je bank – zonder de app te verlaten."
+          "desc": "PSD2-link naar je bank - zonder de app te verlaten."
         },
         {
           "title": "Gebruik zonder account",
-          "desc": "Deel een link – mensen kunnen meedoen zonder zich te registreren."
+          "desc": "Deel een link - mensen kunnen meedoen zonder zich te registreren."
         }
       ],
       "cards_right": [
@@ -139,15 +139,15 @@
     "launch": {
       "title": "Onze lancering: in 3 stappen",
       "steps": [
-        "Fase 1: Studenten bereiken via TikTok & Instagram – virale zichtbaarheid met herkenbare situaties.",
-        "Fase 2: Integraties met banken & fintech-platformen – frictieloze betalingen, PSD2-first.",
-        "Fase 3: Uitrollen in Europa – via partnerships, growth loops en user referrals."
+        "Fase 1: Studenten bereiken via TikTok & Instagram - virale zichtbaarheid met herkenbare situaties.",
+        "Fase 2: Integraties met banken & fintech-platformen - frictieloze betalingen, PSD2-first.",
+        "Fase 3: Uitrollen in Europa - via partnerships, growth loops en user referrals."
       ]
     },
     "partners": {
       "title": "🌟 Onze (toekomstige) partners",
       "desc": "We streven naar samenwerkingen met betrouwbare betaalpartners om jouw ervaring nog vlotter te maken.",
-      "disclaimer": "Logos zijn indicatief – samenwerking is toekomstgericht."
+      "disclaimer": "Logos zijn indicatief - samenwerking is toekomstgericht."
     },
     "faq_title": "Veelgestelde Vragen",
     "faq": [
@@ -157,15 +157,15 @@
       },
       {
         "title": "Hebben alle deelnemers de app nodig?",
-        "desc": "Nee, je kan ook mensen uitnodigen als gast – zij kunnen eenvoudig meebetalen zonder account."
+        "desc": "Nee, je kan ook mensen uitnodigen als gast - zij kunnen eenvoudig meebetalen zonder account."
       },
       {
         "title": "Hoe veilig zijn betalingen?",
-        "desc": "Wij maken gebruik van PSD2-technologie en versleuteling – net zoals je bank."
+        "desc": "Wij maken gebruik van PSD2-technologie en versleuteling - net zoals je bank."
       },
       {
         "title": "Wat als de bon wazig is?",
-        "desc": "Onze OCR doet z’n best. Je kan altijd manueel aanpassen of een nieuwe foto nemen."
+        "desc": "Onze OCR doet z'n best. Je kan altijd manueel aanpassen of een nieuwe foto nemen."
       }
     ],
     "download": {
@@ -194,7 +194,7 @@
     "contact": "Contact",
     "rights": "Alle rechten voorbehouden.",
     "privacy": "Privacybeleid",
-    "cookies": "Cookieverklaring"
+    "cookies": "Cookiebeleid"
   },
   "contact": {
     "title": "Neem contact op 📩",
@@ -224,68 +224,163 @@
     "team_title": "Ons Team",
     "cta_title": "Wil je met ons samenwerken?",
     "cta_description": "We staan altijd open voor nieuwe avonturen en partnerschappen. Neem contact op en laten we samen iets moois creëren!",
-    "cta_button": "Contacteer Ons"
+    "cta_button": "Contacteer Ons",
+    "team_members": [
+      {
+        "name": "Ben",
+        "role": "Marketing & Sales",
+        "funFact": "Bedenkt het liefst knotsgekke campagnes 🎉"
+      },
+      {
+        "name": "Enes",
+        "role": "Lead Designer",
+        "funFact": "Schetst ideeën 24/7 met een grote kop koffie ☕"
+      },
+      {
+        "name": "Jafar",
+        "role": "CEO & Visionair",
+        "funFact": "Het meesterbrein achter onze grootste dromen 🚀"
+      },
+      {
+        "name": "Rachad",
+        "role": "Full-Stack Tovenaar",
+        "funFact": "Vindt bugs sneller dan je kunt knipperen 👨"
+      },
+      {
+        "name": "Sofiane",
+        "role": "Product Manager",
+        "funFact": "Weet altijd precies wat gebruikers nodig hebben 📋"
+      }
+    ]
   },
   "privacy": {
     "title": "Privacybeleid",
-    "intro": "Dit privacybeleid beschrijft hoe wij persoonlijke gegevens verzamelen, gebruiken en beschermen wanneer je gebruik maakt van onze website of diensten.",
+    "intro": "Bij TabEven hechten we veel waarde aan je privacy. Dit privacybeleid legt uit welke persoonsgegevens we verzamelen, hoe we deze gebruiken, beveiligen en delen, en welke rechten je hebt. Dit beleid is van toepassing op alle gebruikers van onze website (www.tabeven.app) en onze diensten voor het beheren van gezamenlijke uitgaven.",
     "sections": {
+      "who": {
+        "title": "1. Wie zijn wij?",
+        "text": "TabEven is een dienst ontwikkeld door TabEven, gevestigd aan Ellermanstraat 33, Antwerpen 2060, België, ingeschreven bij de Kamer van Koophandel onder nummer 535.88.359. Wij zijn de verwerkingsverantwoordelijke voor de persoonsgegevens die via onze website en diensten worden verzameld.",
+        "contact": {
+          "email": "smartventrawindow@outlook.com",
+          "address": "Ellermanstraat 33, 2060 Antwerpen",
+          "phone": "03 220 33 00"
+        }
+      },
       "data": {
-        "title": "1. Verzamelde gegevens",
-        "items": [
-          "Naam en voornaam",
-          "E-mailadres",
-          "IP-adres",
-          "Gebruiksgegevens (bv. bezochte pagina’s, klikgedrag)",
-          "Cookies (zie cookieverklaring)"
-        ]
+        "title": "2. Welke persoonsgegevens verzamelen we?",
+        "table": [
+          {
+            "category": "Identiteitsgegevens",
+            "examples": "Naam, voornaam",
+            "source": "Via registratieformulieren of accountaanmaak"
+          },
+          {
+            "category": "Contactgegevens",
+            "examples": "E-mailadres, telefoonnummer (optioneel)",
+            "source": "Via contactformulieren of accountinstellingen"
+          },
+          {
+            "category": "Financiële gegevens",
+            "examples": "Betaalgegevens (bijv. bankrekeningnummer, transactiegegevens)",
+            "source": "Via betalingen voor abonnementen of groepstransacties"
+          },
+          {
+            "category": "Technische gegevens",
+            "examples": "IP-adres, apparaatinformatie, browsergegevens",
+            "source": "Automatisch via websitebezoek of app-gebruik"
+          },
+          {
+            "category": "Gebruiksgegevens",
+            "examples": "Bezochte pagina's, klikgedrag, interacties met groepen",
+            "source": "Via analytische tools (bijv. Google Analytics)"
+          },
+          {
+            "category": "Cookiegegevens",
+            "examples": "Voorkeuren, surfgedrag",
+            "source": "Via cookies (zie onze Cookieverklaring)"
+          },
+          {
+            "category": "Groepsgegevens",
+            "examples": "Informatie over gezamenlijke uitgaven, groepsinstellingen",
+            "source": "Via je gebruik van de TabEven-dienst"
+          }
+        ],
+        "note": "Onze diensten zijn niet bedoeld voor personen onder de 16 jaar. Als we ontdekken dat we gegevens van minderjarigen hebben verzameld zonder ouderlijke toestemming, zullen we deze verwijderen. Neem contact met ons op als je vermoedt dat dit is gebeurd."
       },
       "purpose": {
-        "title": "2. Doeleinden van verwerking",
-        "items": [
-          "Om onze website correct te laten functioneren",
-          "Voor het verbeteren van de gebruikerservaring",
-          "Om contact met je op te nemen indien nodig",
-          "Voor analytische doeleinden (bv. via Google Analytics)"
+        "title": "3. Waarom verzamelen we deze gegevens?",
+        "table": [
+          {
+            "purpose": "Leveren van onze diensten",
+            "example": "Beheren van groepstransacties, verwerken van betalingen",
+            "legal": "Uitvoering van een overeenkomst"
+          },
+          {
+            "purpose": "Functioneren van de website",
+            "example": "Onthouden van je inloggegevens, taalkeuze",
+            "legal": "Gerechtvaardigd belang"
+          },
+          {
+            "purpose": "Verbeteren van onze diensten",
+            "example": "Analyseren van websitegebruik via Google Analytics",
+            "legal": "Toestemming (niet-geanonimiseerde data) of gerechtvaardigd belang (geanonimiseerde data)"
+          },
+          {
+            "purpose": "Klantenservice",
+            "example": "Beantwoorden van vragen via e-mail of contactformulier",
+            "legal": "Uitvoering van een overeenkomst of gerechtvaardigd belang"
+          },
+          {
+            "purpose": "Marketing",
+            "example": "Versturen van nieuwsbrieven (bij inschrijving)",
+            "legal": "Toestemming"
+          },
+          {
+            "purpose": "Wettelijke verplichtingen",
+            "example": "Bewaren van transactiegegevens voor belastingdoeleinden",
+            "legal": "Wettelijke verplichting"
+          }
         ]
       },
       "legal": {
-        "title": "3. Wettelijke basis",
-        "text": "Wij verwerken persoonsgegevens alleen op basis van de wettelijke gronden zoals toestemming, uitvoering van een overeenkomst of gerechtvaardigd belang."
+        "title": "4. Wettelijke basis",
+        "text": "Wij verwerken persoonsgegevens uitsluitend op basis van wettelijke gronden: toestemming, uitvoering van een overeenkomst, gerechtvaardigd belang of wettelijke verplichting."
       },
       "retention": {
-        "title": "4. Bewaartermijn",
-        "text": "We bewaren je persoonsgegevens niet langer dan noodzakelijk voor de doeleinden waarvoor ze zijn verzameld."
+        "title": "5. Bewaartermijn",
+        "text": "We bewaren persoonsgegevens niet langer dan nodig is voor de doeleinden waarvoor ze zijn verzameld. Daarna worden ze veilig verwijderd of geanonimiseerd."
       },
       "sharing": {
-        "title": "5. Delen met derden",
-        "text": "Jouw gegevens worden niet gedeeld met derden, tenzij dit noodzakelijk is voor onze dienstverlening of wettelijk verplicht is."
+        "title": "6. Delen met derden",
+        "text": "We delen je gegevens alleen met derden als dat noodzakelijk is voor onze dienstverlening (zoals betaaldiensten) of als we daartoe wettelijk verplicht zijn. Met derden die namens ons gegevens verwerken sluiten wij verwerkersovereenkomsten af."
       },
       "cookies": {
-        "title": "6. Cookies",
-        "text": "We maken gebruik van cookies om onze website te verbeteren. Voor meer informatie, zie ons",
+        "title": "7. Cookies",
+        "text": "We gebruiken cookies en vergelijkbare technologieën voor functionele, analytische en marketingdoeleinden. Meer informatie hierover vind je in ons",
         "link": "cookiebeleid"
       },
       "rights": {
-        "title": "7. Jouw rechten",
+        "title": "8. Jouw rechten",
         "items": [
-          "Inzage te vragen in je persoonsgegevens",
-          "Je gegevens te laten corrigeren of verwijderen",
-          "Je toestemming in te trekken",
-          "Bezwaar te maken tegen verwerking"
+          "Recht op inzage in je persoonsgegevens",
+          "Recht op correctie van onjuiste gegevens",
+          "Recht op verwijdering van je gegevens",
+          "Recht op beperking of bezwaar tegen verwerking",
+          "Recht op dataportabiliteit",
+          "Recht om eerder gegeven toestemming in te trekken"
         ],
-        "contact": "Neem hiervoor contact met ons op via e-mail"
+        "contact": "Wil je gebruikmaken van je rechten? Neem contact met ons op via: "
       },
       "changes": {
-        "title": "8. Wijzigingen in dit beleid",
-        "text": "Dit privacybeleid kan worden bijgewerkt. De laatste update vond plaats op"
+        "title": "9. Wijzigingen in dit privacybeleid",
+        "text": "We kunnen dit beleid van tijd tot tijd aanpassen, bijvoorbeeld bij wetswijzigingen of nieuwe functionaliteiten. De actuele versie is altijd beschikbaar op onze website. Bij ingrijpende wijzigingen brengen we je op de hoogte.",
+        "lastUpdated": "16 mei 2025"
       }
-    },
-    "lastUpdated": "16 mei 2025"
+    }
   },
   "cookiesverklaring": {
-    "title": "Cookieverklaring",
-    "intro": "Deze website maakt gebruik van cookies om je gebruikerservaring te verbeteren. Hieronder lees je welke cookies we gebruiken en waarom.",
+    "title": "Cookiebeleid",
+    "intro": "Onze website maakt gebruik van cookies en vergelijkbare technologieën om je gebruikerservaring te verbeteren, de werking van de website te waarborgen, het gebruik te analyseren en, indien je daarvoor kiest, gepersonaliseerde advertenties te tonen. Hieronder leggen we uit wat cookies zijn, welke cookies we gebruiken, waarom we ze gebruiken, en hoe je ze kunt beheren.",
     "types_title": "Welke cookies gebruiken we?",
     "types": [
       {
@@ -298,7 +393,49 @@
       },
       {
         "name": "Marketing cookies",
-        "description": "Gebruikt om gebruikers te volgen en gepersonaliseerde advertenties te tonen."
+        "description": "Gebruikt om gebruikers te volgen en gepersonaliseerde advertenties te tonen (bijv. via Facebook Pixel)."
+      }
+    ],
+    "sections": [
+      {
+        "title": "1. Wat zijn cookies?",
+        "content": "Cookies zijn kleine tekstbestanden die op je apparaat (zoals je computer, tablet of smartphone) worden opgeslagen wanneer je onze website bezoekt. Ze stellen ons in staat om informatie te verzamelen, zoals je voorkeuren, surfgedrag of apparaatinstellingen, om de website beter te laten werken en relevanter te maken. Naast cookies kunnen we ook andere technologieën gebruiken, zoals pixels of lokale opslag, die een vergelijkbare functie hebben."
+      },
+      {
+        "title": "2. Waarom gebruiken we cookies?",
+        "content": "We gebruiken cookies voor de volgende doeleinden:\n\n- Functioneel: Om de website goed te laten werken, bijvoorbeeld om je taalkeuze of inloggegevens te onthouden.\n- Analytisch: Om te begrijpen hoe bezoekers onze website gebruiken, zodat we deze kunnen verbeteren.\n- Marketing: Om je relevante advertenties te tonen op onze website of op websites van derden.\n- Personalisatie: Om de inhoud van de website af te stemmen op jouw interesses."
+      },
+      {
+        "title": "3. Welke cookies gebruiken we?",
+        "content": "Hieronder vind je een overzicht van de cookies die we gebruiken:\n\n- cookie_notice_accepted (Functioneel, 1 jaar, Eerste partij): Onthoudt of je de cookiebanner hebt geaccepteerd.\n- lang (Functioneel, Sessie, Eerste partij): Onthoudt je taalkeuze.\n- _ga (Analytisch, 2 jaar, Derde partij - Google): Meet websitegebruik (paginaweergaven, sessieduur), IP geanonimiseerd.\n- _gid (Analytisch, 24 uur, Derde partij - Google): Onderscheidt gebruikers.\n- fr (Marketing, 3 maanden, Derde partij - Meta): Volgt gebruikers voor advertenties.\n- _fbp (Marketing, 3 maanden, Derde partij - Meta): Meet advertentieprestaties."
+      },
+      {
+        "title": "4. Toestemming voor cookies",
+        "content": "Bij je eerste bezoek aan onze website tonen we een cookiebanner waarin je kunt kiezen welke cookies je toestaat. Je kunt:\n\n- Alle cookies accepteren\n- Alleen noodzakelijke cookies toestaan\n- Voorkeuren aanpassen\n\nJe voorkeuren kun je altijd wijzigen via de cookie-instellingen op onze website. Het weigeren van niet-noodzakelijke cookies heeft geen invloed op de kernfunctionaliteit van de site."
+      },
+      {
+        "title": "5. Cookies beheren via je browser",
+        "content": "Naast onze instellingen kun je cookies beheren via je browser. Je kunt:\n\n- Cookies blokkeren of verwijderen\n- Instellen dat cookies automatisch worden verwijderd\n- Bepaalde sites toestaan of blokkeren\n\nRaadpleeg de handleiding van je browser voor instructies. Let op: het uitschakelen van functionele cookies kan invloed hebben op de werking van de website."
+      },
+      {
+        "title": "6. Derde partijen",
+        "content": "Sommige cookies worden geplaatst door derden zoals Google (Analytics) en Meta (advertenties). Deze partijen verwerken gegevens volgens hun eigen privacybeleid. We hebben verwerkersovereenkomsten met hen afgesloten en delen geen persoonlijke gegevens zonder jouw toestemming."
+      },
+      {
+        "title": "7. Je rechten",
+        "content": "Onder de AVG heb je het recht op:\n\n- Inzage in je gegevens\n- Correctie van onjuiste gegevens\n- Verwijdering van je gegevens\n- Bezwaar tegen verwerking\n- Gegevensoverdraagbaarheid\n\nNeem contact met ons op om je rechten uit te oefenen via privacy@jouwwebsite.nl."
+      },
+      {
+        "title": "8. Gegevensverwerking en beveiliging",
+        "content": "Gegevens worden niet langer bewaard dan noodzakelijk is. We nemen passende technische en organisatorische maatregelen, zoals encryptie en toegangsbeheer, om je gegevens te beschermen."
+      },
+      {
+        "title": "9. Wijzigingen in deze cookieverklaring",
+        "content": "We kunnen deze verklaring bijwerken bij wijzigingen in ons cookiegebruik. De laatste wijziging was op 16 mei 2025. Belangrijke wijzigingen worden gemeld op de website."
+      },
+      {
+        "title": "10. Contact",
+        "content": "Heb je vragen, klachten of opmerkingen over deze cookieverklaring?\n\n- E-mail: privacy@jouwwebsite.nl\n- Telefoon: [Jouw telefoonnummer]\n- Adres: [Jouw bedrijfsnaam], [Adres], [Postcode en plaats]\n\nNiet tevreden met onze reactie? Dan kun je een klacht indienen bij de Autoriteit Persoonsgegevens (www.autoriteitpersoonsgegevens.nl)."
       }
     ],
     "manage_title": "Cookies beheren",

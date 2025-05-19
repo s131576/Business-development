@@ -21,6 +21,14 @@ const Page = async ({ params }: { params: Promise<{ lang: Locale }> }) => {
           ))}
         </ul>
 
+        {/* Nieuw: alle secties weergeven */}
+        {translation.cookiesverklaring.sections?.map((section: any, index: number) => (
+          <section key={index} className="mt-6">
+            <h2 className="text-xl font-semibold mb-2">{section.title}</h2>
+            <p className="whitespace-pre-line">{section.content}</p>
+          </section>
+        ))}
+
         <h2 className="text-xl font-semibold mt-6 mb-2">{translation.cookiesverklaring.manage_title}</h2>
         <p>{translation.cookiesverklaring.manage_text}</p>
 

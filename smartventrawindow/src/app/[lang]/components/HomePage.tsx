@@ -176,7 +176,7 @@ export const HomePage = ({ translation }: { translation: any }) => {
                 <p className="text-gray-300 text-sm sm:text-base italic break-words">
                   "{review.text}"
                 </p>
-                <p className="text-sm text-gray-400 mt-3">– {review.author}</p>
+                <p className="text-sm text-gray-400 mt-3">- {review.author}</p>
               </div>
             ))}
           </motion.div>

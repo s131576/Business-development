@@ -4,7 +4,7 @@
       "scan": "Scan.",
       "split": "Split.",
       "pay": "Pay.",
-      "subtitle": "Splitting group expenses has never been easier. Scan your receipt – TabEven handles the rest. No arguments. No hassle.",
+      "subtitle": "Splitting group expenses has never been easier. Scan your receipt - TabEven handles the rest. No arguments. No hassle.",
       "cta_start": "Discover how it works",
       "cta_info": "More info",
       "title_logo": "TabEven"
@@ -21,7 +21,7 @@
       ],
       "reviews": [
         {
-          "text": "No more arguments after a night out – TabEven takes care of everything.",
+          "text": "No more arguments after a night out - TabEven takes care of everything.",
           "author": "Student from Ghent",
           "rating": 5
         },
@@ -84,11 +84,11 @@
         },
         {
           "title": "Instant payments",
-          "desc": "PSD2-link to your bank – without leaving the app."
+          "desc": "PSD2-link to your bank - without leaving the app."
         },
         {
           "title": "Use without account",
-          "desc": "Share a link – people can join without registering."
+          "desc": "Share a link - people can join without registering."
         }
       ],
       "cards_right": [
@@ -139,15 +139,15 @@
     "launch": {
       "title": "Our launch: in 3 steps",
       "steps": [
-        "Phase 1: Reach students thro TikTok & Instagram – viral visibility through relatable content.",
-        "Phase 2: Integrations with banks & fintech platforms – frictionless payments, PSD2-first.",
-        "Phase 3: Expand across Europe – thro partnerships, growth loops, and user referrals."
+        "Phase 1: Reach students thro TikTok & Instagram - viral visibility through relatable content.",
+        "Phase 2: Integrations with banks & fintech platforms - frictionless payments, PSD2-first.",
+        "Phase 3: Expand across Europe - thro partnerships, growth loops, and user referrals."
       ]
     },
     "partners": {
       "title": "🌟 Our (future) partners",
       "desc": "We aim to collaborate with trusted payment partners to make your experience even smoother.",
-      "disclaimer": "Logos are indicative – partnerships are in the future."
+      "disclaimer": "Logos are indicative - partnerships are in the future."
     },
     "faq_title": "Frequently Asked Questions",
     "faq": [
@@ -157,11 +157,11 @@
       },
       {
         "title": "Do all participants need the app?",
-        "desc": "No, you can also invite people as guests – they can easily contribute without an account."
+        "desc": "No, you can also invite people as guests - they can easily contribute without an account."
       },
       {
         "title": "How secure are the payments?",
-        "desc": "We use PSD2 technology and encryption – just like your bank."
+        "desc": "We use PSD2 technology and encryption - just like your bank."
       },
       {
         "title": "What if the receipt is blurry?",
@@ -223,82 +223,219 @@
     "description": "Meet the people behind the magic! 💫",
     "team_title": "Our Team",
     "cta_title": "Want to collaborate with us?",
-    "cta_description": "We’re always open for new adventures and partnerships. Get in touch and let’s create something amazing together!",
-    "cta_button": "Contact Us"
+    "cta_description": "We're always open to new adventures and partnerships. Get in touch and let's create something great together!",
+    "cta_button": "Contact Us",
+    "team_members": [
+      {
+        "name": "Ben",
+        "role": "Marketing & Sales",
+        "funFact": "Loves coming up with wild campaign ideas 🎉"
+      },
+      {
+        "name": "Enes",
+        "role": "Lead Designer",
+        "funFact": "Sketches nonstop with a huge cup of coffee ☕"
+      },
+      {
+        "name": "Jafar",
+        "role": "CEO & Visionary",
+        "funFact": "The mastermind behind all our biggest dreams 🚀"
+      },
+      {
+        "name": "Rachad",
+        "role": "Full-Stack Wizard",
+        "funFact": "Can squash bugs faster than you can blink 👨"
+      },
+      {
+        "name": "Sofiane",
+        "role": "Product Manager",
+        "funFact": "Always knows exactly what users want 📋"
+      }
+    ]
   },
   "privacy": {
     "title": "Privacy Policy",
-    "intro": "This privacy policy describes how we collect, use, and protect personal data when you use our website or services.",
+    "intro": "At TabEven, we value your privacy. This privacy policy explains which personal data we collect, how we use, secure, and share it, and what rights you have. This policy applies to all users of our website (www.tabeven.app) and our services for managing shared expenses.",
     "sections": {
+      "who": {
+        "title": "1. Who are we?",
+        "text": "TabEven is a service developed by TabEven, located at Ellermanstraat 33, Antwerpen 2060, Belgium, registered with the Chamber of Commerce under number 0535.88.359. We are the data controller for the personal data collected through our website and services.",
+        "contact": {
+          "email": "smartventrawindow@outlook.com",
+          "address": "Ellermanstraat 33, 2060 Antwerpen",
+          "phone": "03 220 33 00"
+        }
+      },
       "data": {
-        "title": "1. Collected Data",
-        "items": [
-          "First and last name",
-          "Email address",
-          "IP address",
-          "Usage data (e.g., pages visited, click behavior)",
-          "Cookies (see cookie policy)"
-        ]
+        "title": "2. What personal data do we collect?",
+        "table": [
+          {
+            "category": "Identity data",
+            "examples": "First name, last name",
+            "source": "Via registration forms or account creation"
+          },
+          {
+            "category": "Contact details",
+            "examples": "Email address, phone number (optional)",
+            "source": "Via contact forms or account settings"
+          },
+          {
+            "category": "Financial data",
+            "examples": "Payment details (e.g. bank account number, transaction data)",
+            "source": "Through payments for subscriptions or group transactions"
+          },
+          {
+            "category": "Technical data",
+            "examples": "IP address, device information, browser data",
+            "source": "Automatically via website or app usage"
+          },
+          {
+            "category": "Usage data",
+            "examples": "Visited pages, click behavior, group interactions",
+            "source": "Via analytical tools (e.g. Google Analytics)"
+          },
+          {
+            "category": "Cookie data",
+            "examples": "Preferences, browsing behavior",
+            "source": "Via cookies (see our Cookie Policy)"
+          },
+          {
+            "category": "Group data",
+            "examples": "Information about shared expenses, group settings",
+            "source": "Via your use of the TabEven service"
+          }
+        ],
+        "note": "Our services are not intended for individuals under the age of 16. If we discover that we have collected data from minors without parental consent, we will delete it. Please contact us if you believe this has happened."
       },
       "purpose": {
-        "title": "2. Purposes of Processing",
-        "items": [
-          "To ensure the proper functioning of our website",
-          "To improve user experience",
-          "To contact you if necessary",
-          "For analytical purposes (e.g., via Google Analytics)"
+        "title": "3. Why do we collect this data?",
+        "table": [
+          {
+            "purpose": "Providing our services",
+            "example": "Managing group transactions, processing payments",
+            "legal": "Performance of a contract"
+          },
+          {
+            "purpose": "Website functionality",
+            "example": "Remembering your login details, language preference",
+            "legal": "Legitimate interest"
+          },
+          {
+            "purpose": "Improving our services",
+            "example": "Analyzing website usage via Google Analytics",
+            "legal": "Consent (for non-anonymized data) or legitimate interest (for anonymized data)"
+          },
+          {
+            "purpose": "Customer service",
+            "example": "Responding to inquiries via email or contact form",
+            "legal": "Performance of a contract or legitimate interest"
+          },
+          {
+            "purpose": "Marketing",
+            "example": "Sending newsletters (if you've subscribed)",
+            "legal": "Consent"
+          },
+          {
+            "purpose": "Legal obligations",
+            "example": "Storing transaction data for tax purposes",
+            "legal": "Legal obligation"
+          }
         ]
       },
       "legal": {
-        "title": "3. Legal Basis",
-        "text": "We process personal data only based on legal grounds such as consent, performance of a contract, or legitimate interest."
+        "title": "4. Legal basis for processing",
+        "text": "We only process personal data based on lawful grounds: consent, performance of a contract, legitimate interest, or legal obligation."
       },
       "retention": {
-        "title": "4. Retention Period",
-        "text": "We do not keep your personal data longer than necessary for the purposes for which it was collected."
+        "title": "5. Data retention",
+        "text": "We retain personal data only for as long as necessary to fulfill the purposes for which it was collected. After that, data is securely deleted or anonymized."
       },
       "sharing": {
-        "title": "5. Sharing with Third Parties",
-        "text": "Your data is not shared with third parties unless necessary for our services or legally required."
+        "title": "6. Sharing with third parties",
+        "text": "We only share your data with third parties when necessary for providing our services (e.g. payment providers) or when legally required. We have data processing agreements in place with third parties that process data on our behalf."
       },
       "cookies": {
-        "title": "6. Cookies",
-        "text": "We use cookies to improve our website. For more information, see our",
+        "title": "7. Cookies",
+        "text": "We use cookies and similar technologies for functional, analytical, and marketing purposes. For more information, see our",
         "link": "cookie policy"
       },
       "rights": {
-        "title": "7. Your Rights",
+        "title": "8. Your rights",
         "items": [
-          "Request access to your personal data",
-          "Have your data corrected or deleted",
-          "Withdraw your consent",
-          "Object to processing"
+          "Right to access your personal data",
+          "Right to correct inaccurate data",
+          "Right to request deletion of your data",
+          "Right to restrict or object to data processing",
+          "Right to data portability",
+          "Right to withdraw previously given consent"
         ],
-        "contact": "Please contact us by email to exercise these rights"
+        "contact": "To exercise your rights, contact us at: "
       },
       "changes": {
-        "title": "8. Changes to this Policy",
-        "text": "This privacy policy may be updated. The last update was on"
+        "title": "9. Changes to this privacy policy",
+        "text": "We may update this policy from time to time, for example due to changes in legislation or new features. The current version is always available on our website. If there are significant changes, we will notify you.",
+        "lastUpdated": "May 16, 2025"
       }
-    },
-    "lastUpdated": "May 16, 2025"
+    }
   },
   "cookiesverklaring": {
     "title": "Cookie Policy",
-    "intro": "This website uses cookies to improve your user experience. Below you can read which cookies we use and why.",
+    "intro": "Our website uses cookies and similar technologies to enhance your user experience, ensure the website functions correctly, analyze usage, and, if you choose, display personalized advertisements. Below we explain what cookies are, which cookies we use, why we use them, and how you can manage them.",
     "types_title": "Which cookies do we use?",
     "types": [
       {
         "name": "Functional cookies",
-        "description": "Necessary for the site to function properly (e.g., remembering language preference)."
+        "description": "Required for the site to function properly (e.g., remembering your language choice)."
       },
       {
         "name": "Analytical cookies",
-        "description": "Help us analyze and improve site usage (e.g., via Google Analytics)."
+        "description": "Help us analyze and improve the site's usage (e.g., via Google Analytics)."
       },
       {
         "name": "Marketing cookies",
-        "description": "Used to track users and show personalized ads."
+        "description": "Used to track users and display personalized advertisements (e.g., via Facebook Pixel)."
+      }
+    ],
+    "sections": [
+      {
+        "title": "1. What are cookies?",
+        "content": "Cookies are small text files stored on your device (such as your computer, tablet, or smartphone) when you visit our website. They allow us to collect information such as your preferences, browsing behavior, or device settings to make the website work better and more relevant. In addition to cookies, we may use similar technologies such as pixels or local storage."
+      },
+      {
+        "title": "2. Why do we use cookies?",
+        "content": "We use cookies for the following purposes:\n\n- Functional: To ensure the website functions properly, such as remembering your language or login details.\n- Analytical: To understand how visitors use our site so we can improve it.\n- Marketing: To show you relevant ads on our website or on third-party websites.\n- Personalization: To tailor website content to your interests."
+      },
+      {
+        "title": "3. Which cookies do we use?",
+        "content": "Here's an overview of the cookies we use:\n\n- cookie_notice_accepted (Functional, 1 year, First-party): Remembers if you accepted the cookie banner.\n- lang (Functional, Session, First-party): Remembers your language preference.\n- _ga (Analytical, 2 years, Third-party - Google): Measures site usage (page views, session duration), anonymizes IP addresses.\n- _gid (Analytical, 24 hours, Third-party - Google): Distinguishes users.\n- fr (Marketing, 3 months, Third-party - Meta): Tracks user behavior for ad targeting.\n- _fbp (Marketing, 3 months, Third-party - Meta): Measures Facebook ad performance."
+      },
+      {
+        "title": "4. Cookie consent",
+        "content": "When you first visit our site, we display a cookie banner where you can choose which cookies to allow. You can:\n\n- Accept all cookies\n- Allow only necessary cookies\n- Customize your preferences\n\nYou can change your preferences at any time via the cookie settings on our website. Refusing non-essential cookies will not affect the core functionality of the site."
+      },
+      {
+        "title": "5. Managing cookies via your browser",
+        "content": "In addition to our site settings, you can manage cookies through your browser. You can:\n\n- Block or delete cookies\n- Set your browser to automatically delete cookies when closed\n- Allow or block specific websites\n\nCheck your browser's manual for instructions. Note: disabling functional cookies may affect the website's performance."
+      },
+      {
+        "title": "6. Third parties",
+        "content": "Some cookies are placed by third parties such as Google (for Analytics) and Meta (for ads). These parties may process data according to their own privacy policies. We have signed data processing agreements with them and do not share personal data without your consent."
+      },
+      {
+        "title": "7. Your rights",
+        "content": "Under the GDPR, you have the following rights regarding your personal data:\n\n- Right of access: Request access to the data we hold about you\n- Right to rectification: Correct inaccurate data\n- Right to erasure: Request deletion of your data\n- Right to object: Object to certain processing activities\n- Right to data portability: Receive your data in a structured format\n\nTo exercise these rights, contact us at privacy@yourwebsite.com."
+      },
+      {
+        "title": "8. Data processing and security",
+        "content": "We retain data collected via cookies only as long as necessary for the stated purpose. We take appropriate technical and organizational measures to protect your data, such as encryption and access control."
+      },
+      {
+        "title": "9. Changes to this cookie policy",
+        "content": "We may update this cookie policy from time to time, for example, when adding new cookies or changing our website. Changes will be published on this page, and major updates will be announced via a notice on the site."
+      },
+      {
+        "title": "10. Contact",
+        "content": "Do you have questions, comments, or complaints about our use of cookies?\n\n- Email: privacy@yourwebsite.com\n- Phone: [Your phone number]\n- Address: [Your company name], [Address], [Postal code and city]\n\nIf you're not satisfied with our response, you have the right to file a complaint with the relevant data protection authority."
       }
     ],
     "manage_title": "Managing Cookies",

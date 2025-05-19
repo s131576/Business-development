@@ -4,49 +4,11 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-import jafarImg from "../../../../public/frame.jpg";
-import rachadImg from "../../../../public/frame.jpg";
-import sofianeImg from "../../../../public/frame.jpg";
-import dashiImg from "../../../../public/frame.jpg";
-import benImg from "../../../../public/frame.jpg";
-
-const teamMembers = [
-  { 
-    name: "Ben", 
-    role: "Marketing & Sales", 
-    image: benImg,
-    funFact: "Loves to brainstorm new crazy campaign ideas 🎉",
-    color: "#FFC300"
-  },
-  { 
-    name: "Enes", 
-    role: "Lead Designer", 
-    image: dashiImg,
-    funFact: "Sketching ideas 24/7 with a huge coffee ☕",
-    color: "#FF5733"
-  },
-  { 
-    name: "Jafar", 
-    role: "CEO & Visionary", 
-    image: jafarImg,
-    funFact: "Mastermind behind all our wildest goals 🚀",
-    color: "#C70039"
-  },
-  { 
-    name: "Rachad", 
-    role: "Full-Stack Wizard", 
-    image: rachadImg,
-    funFact: "Can debug code faster than you blink 👨‍💻",
-    color: "#900C3F"
-  },
-  { 
-    name: "Sofiane", 
-    role: "Product Manager", 
-    image: sofianeImg,
-    funFact: "Always knows exactly what the users want 📋",
-    color: "#581845"
-  },
-];
+import avatarBen from "../../../../public/avatarlogo.png";
+import avatarDashi from "../../../../public/avatarlogo.png";
+import avatarJafar from "../../../../public/avatarlogo.png";
+import avatarRachad from "../../../../public/avatarlogo.png";
+import avatarSofiane from "../../../../public/avatarlogo.png";
 
 const AboutPage = ({ translation }: { translation: any }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -54,6 +16,28 @@ const AboutPage = ({ translation }: { translation: any }) => {
   const toggleDropdown = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  // Hardcoded volgorde (voor images en kleur)
+  const rawTeam = [
+    { name: "Ben", image: avatarBen, color: "#FFC300" },
+    { name: "Enes", image: avatarDashi, color: "#FF5733" },
+    { name: "Jafar", image: avatarJafar, color: "#C70039" },
+    { name: "Rachad", image: avatarRachad, color: "#900C3F" },
+    { name: "Sofiane", image: avatarSofiane, color: "#581845" },
+  ];
+
+  // Vertaalde teksten ophalen per naam
+  const translatedTeam = rawTeam.map((member) => {
+    const translated = translation.about.team_members.find(
+      (t: any) => t.name === member.name
+    ) || { role: "", funFact: "" };
+
+    return {
+      ...member,
+      role: translated.role,
+      funFact: translated.funFact,
+    };
+  });
 
   return (
     <div className="min-h-screen text-white px-6 py-20 max-w-7xl mx-auto">
@@ -65,22 +49,21 @@ const AboutPage = ({ translation }: { translation: any }) => {
         className="text-center max-w-4xl mx-auto mb-20"
       >
         <h1 className="text-5xl font-extrabold mb-4 text-yellow-400 drop-shadow-lg">
-          {translation.about.title} 🤪
+          {translation.about.title}
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
           {translation.about.description}
         </p>
       </motion.div>
 
-      {/* Main layout with vertical list + side popup */}
-      <div className="flex flex-col md:flex-row gap-12 items-start justify-center">
-        {/* Cards vertical stack */}
-        <div className="flex flex-col gap-6 w-full max-w-md">
-          {teamMembers.map((member, idx) => (
+      {/* Cards + modals */}
+      <div className="flex flex-col gap-6 w-full max-w-5xl mx-auto">
+        {translatedTeam.map((member, idx) => (
+          <div key={member.name} className="flex gap-6 items-start">
+            {/* Card */}
             <motion.div
-              key={member.name}
               layout
-              className={`relative bg-[#222B3A] rounded-2xl shadow-2xl p-6 cursor-pointer flex items-center gap-6 select-none
+              className={`relative bg-[#222B3A] rounded-2xl shadow-2xl p-6 cursor-pointer flex items-center gap-6 select-none w-full max-w-md
                 ${openIndex === idx ? "ring-4 ring-yellow-400 z-10" : "opacity-70 hover:opacity-100"}`}
               onClick={() => toggleDropdown(idx)}
               whileHover={{ scale: 1.05, boxShadow: `0 0 15px ${member.color}` }}
@@ -99,32 +82,32 @@ const AboutPage = ({ translation }: { translation: any }) => {
                 <p className="text-yellow-300 font-semibold">{member.role}</p>
               </div>
             </motion.div>
-          ))}
-        </div>
 
-        {/* Popup info box */}
-        <AnimatePresence>
-          {openIndex !== null && (
-            <motion.div
-              key="popup"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 50 }}
-              transition={{ duration: 0.4 }}
-              className="bg-yellow-400 text-[#0D1117] rounded-xl p-8 max-w-xl shadow-xl select-none"
-            >
-              <h3 className="text-3xl font-extrabold mb-4">{teamMembers[openIndex].name}</h3>
-              <p className="mb-2 font-semibold text-lg">{teamMembers[openIndex].role}</p>
-              <p className="text-lg">{teamMembers[openIndex].funFact}</p>
-              <button
-                onClick={() => setOpenIndex(null)}
-                className="mt-6 bg-[#0D1117] text-yellow-400 font-bold px-4 py-2 rounded-lg hover:bg-gray-900 transition"
-              >
-                Sluit
-              </button>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            {/* Popup naast deze kaart */}
+            <AnimatePresence>
+              {openIndex === idx && (
+                <motion.div
+                  key="popup"
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 50 }}
+                  transition={{ duration: 0.4 }}
+                  className="bg-yellow-400 text-[#0D1117] rounded-xl p-6 max-w-md shadow-xl w-full"
+                >
+                  <h3 className="text-2xl font-extrabold mb-2">{member.name}</h3>
+                  <p className="mb-1 font-semibold">{member.role}</p>
+                  <p>{member.funFact}</p>
+                  <button
+                    onClick={() => setOpenIndex(null)}
+                    className="mt-4 bg-[#0D1117] text-yellow-400 font-bold px-4 py-2 rounded-lg hover:bg-gray-900 transition"
+                  >
+                    Sluit
+                  </button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        ))}
       </div>
     </div>
   );
